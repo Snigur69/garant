@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Garant</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+        <!-- <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link rel="stylesheet" href="assets/css/slick-style.css" />
+        <link rel="stylesheet" href="assets/css/lato.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header_container container">
+                <div class="row">
+                    <div class="header_logo col-md-2">
+                        <a href="/"><img src="assets/img/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_menu col-md-5">
+                        <ul class="menu">
+                            <li><a href="#">Жилая</a></li>
+                            <li><a href="#">Коммерческая</a></li>
+                            <li><a href="#">Доля в отеле</a></li>
+                            <li><a href="#">Венчурный фонд</a></li>
+                            <li><a href="#">ВНЖ и паспорт</a></li>
+                            <li><a href="#">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_right col-md-5">
+                        <a href="#"
+                            ><img src="assets/img/header_heart.svg" alt=""
+                        /></a>
+                        <div class="header_mob_wrap">
+                            <a href="#" class="header_mob main_header_mob"
+                                >+38 044 299 28 58</a
+                            >
+                            <img src="assets/img/header_mob_arr.svg" alt="" />
+                            <div class="header_hidden_phones">
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                            </div>
+                        </div>
+                        <button class="header_consult">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_section1">
+            <div class="container">
+                <p class="main_sec1_title">
+                    Подбираем недвижимость для жизни и инвестиций в Европейском
+                    союзе и на Карибах
+                </p>
+                <div class="main_sec1_advs">
+                    <div class="single_adv">
+                        <p class="count">6</p>
+                        <p class="subtitle">офисов в России и Европе</p>
+                    </div>
+                    <div class="single_adv middle">
+                        <p class="count">800+</p>
+                        <p class="subtitle">закрытых сделок</p>
+                    </div>
+                    <div class="single_adv">
+                        <p class="count">10</p>
+                        <p class="subtitle">лет опыта</p>
+                    </div>
+                </div>
+            </div>
+            <div id="main_filter">
+                <div class="filter_top">
+                    <div class="filter_input_wrap country_wrap">
+                        <input
+                            type="text"
+                            id="country"
+                            class="filter_input"
+                            placeholder="Страна, город"
+                            autocomplete="off"
+                        />
+                        <div class="hidden_country hidden_dropdown">
+                            <ul class="custom_dropdown_ul">
+                                <li class="selected">Все</li>
+                                <li>Португалия, Лиссабон</li>
+                                <li>Украина, Киев</li>
+                                <li>Россия, Москва</li>
+                                <li>Беларусь, Минск</li>
+                                <li>Португалия, Лиссабон</li>
+                                <li>Украина, Киев</li>
+                                <li>Россия, Москва</li>
+                                <li>Беларусь, Минск</li>
+                                <li>Португалия, Лиссабон</li>
+                                <li>Украина, Киев</li>
+                                <li>Россия, Москва</li>
+                                <li>Беларусь, Минск</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_input_wrap">
+                        <input
+                            type="text"
+                            id="type"
+                            class="filter_input type_input"
+                            placeholder="Тип недвижимости"
+                        />
+                        <div class="hidden_dropdown hidden_type_dropdown">
+                            <p class="hidden_checkbox_title">
+                                Тип недвижимости
+                            </p>
+                            <ul class="hidden_checkbox_menu">
+                                <li>
+                                    <div class="checkbox">
+                                        <input
+                                            class="custom-checkbox"
+                                            type="checkbox"
+                                            id="type1"
+                                            name="type1"
+                                            value="indigo"
+                                        />
+                                        <label for="type1"
+                                            >Квартиры, апартаменты</label
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input
+                                            class="custom-checkbox"
+                                            type="checkbox"
+                                            id="type2"
+                                            name="type2"
+                                            value="indigo"
+                                        />
+                                        <label for="type2"
+                                            >Виллы, коттеджи, дома,
+                                            таунхаусы</label
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input
+                                            class="custom-checkbox"
+                                            type="checkbox"
+                                            id="type3"
+                                            name="type3"
+                                            value="indigo"
+                                        />
+                                        <label for="type3"
+                                            >Земельные участки</label
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input
+                                            class="custom-checkbox"
+                                            type="checkbox"
+                                            id="type4"
+                                            name="type4"
+                                            value="indigo"
+                                        />
+                                        <label for="type4"
+                                            >Отели (доля в отеле)</label
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input
+                                            class="custom-checkbox"
+                                            type="checkbox"
+                                            id="type5"
+                                            name="type5"
+                                            value="indigo"
+                                        />
+                                        <label for="type5">Пентхаусы</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <input
+                                            class="custom-checkbox"
+                                            type="checkbox"
+                                            id="type6"
+                                            name="type6"
+                                            value="indigo"
+                                        />
+                                        <label for="type6"
+                                            >Квартиры, апартаменты</label
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price filter_input_wrap">
+                        <label
+                            class="price_from_label price_label"
+                            for="price_from"
+                        >
+                            Цена от
+                            <input
+                                type="text"
+                                id="price_from"
+                                class="filter_input price_input"
+                                value="250 000"
+                            />
+                        </label>
+                        <label
+                            class="price_to_label price_label"
+                            for="price_to"
+                        >
+                            до
+                            <input
+                                type="text"
+                                id="price_to"
+                                class="filter_input price_input"
+                                value="2 000 000 $"
+                                data-wallet="$"
+                            />
+                        </label>
+                        <div class="hidden_dropdown hidden_price">
+                            <div class="hidden_price_help">
+                                <label
+                                    for=""
+                                    class="hidden_price_from_label hidden_price_label"
+                                >
+                                    от
+                                    <input
+                                        type="text"
+                                        id="hidden_price_from"
+                                        class="hidden_price_input"
+                                    />
+                                </label>
+
+                                <label
+                                    for=""
+                                    class="hidden_price_to_label hidden_price_label"
+                                >
+                                    до
+                                    <input
+                                        type="text"
+                                        id="hidden_price_to"
+                                        class="hidden_price_input"
+                                    />
+                                </label>
+                            </div>
+                            <div class="price_variants">
+                                <ul
+                                    id="price_from_vars"
+                                    class="price_variants_ul"
+                                >
+                                    <li data-value="100 000">100 тыс.</li>
+                                    <li data-value="300 000">300 тыс.</li>
+                                    <li data-value="500 000">500 тыс.</li>
+                                    <li data-value="700 000">700 тыс.</li>
+                                    <li data-value="1 000 000">1 млн.</li>
+                                    <li data-value="3 000 000">3 млн.</li>
+                                    <li data-value="150 000 000">150 млн.</li>
+                                </ul>
+                                <ul
+                                    id="price_to_vars"
+                                    class="price_variants_ul"
+                                >
+                                    <li data-value="100 000">100 тыс.</li>
+                                    <li data-value="300 000">300 тыс.</li>
+                                    <li data-value="500 000">500 тыс.</li>
+                                    <li data-value="700 000">700 тыс.</li>
+                                    <li data-value="1 000 000">1 млн.</li>
+                                    <li data-value="3 000 000">3 млн.</li>
+                                    <li data-value="150 000 000">150 млн.</li>
+                                </ul>
+                            </div>
+                            <div class="price_wallet">
+                                <button class="wallet active">$</button>
+                                <button class="wallet">₽</button>
+                                <button class="wallet">€</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_hidden">
+                    <div class="filter_input_wrap build_type">
+                        <input
+                            type="text"
+                            id="build_type"
+                            class="filter_input"
+                            placeholder="Все"
+                            autocomplete="off"
+                        />
+                        <div
+                            class="hidden_country hidden_build_type hidden_dropdown"
+                        >
+                            <ul class="custom_dropdown_ul">
+                                <li class="selected">Все</li>
+                                <li>Новостройка</li>
+                                <li>Вторичка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space price filter_input_wrap">
+                        <label
+                            class="space_from_label space_label"
+                            for="space_from"
+                        >
+                            Площадь от, м<sup>2</sup>
+                            <input
+                                type="text"
+                                id="space_from"
+                                class="filter_input space_input"
+                                value="20"
+                            />
+                        </label>
+                        <label
+                            class="space_to_label space_label"
+                            for="space_to"
+                        >
+                            до
+                            <input
+                                type="text"
+                                id="space_to"
+                                class="filter_input space_input"
+                                value="20"
+                            />
+                        </label>
+                        <div class="hidden_dropdown hidden_space">
+                            <div class="hidden_space_help">
+                                <label
+                                    for=""
+                                    class="hidden_space_from_label hidden_space_label"
+                                >
+                                    от
+                                    <input
+                                        type="text"
+                                        id="hidden_space_from"
+                                        class="hidden_space_input"
+                                    />
+                                </label>
+
+                                <label
+                                    for=""
+                                    class="hidden_space_to_label hidden_space_label"
+                                >
+                                    до
+                                    <input
+                                        type="text"
+                                        id="hidden_space_to"
+                                        class="hidden_space_input"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room_count">
+                        <p>
+                            Кол-во спален: <span class="room">1</span
+                            ><span class="room active">2</span
+                            ><span class="room">3</span
+                            ><span class="room">4</span
+                            ><span class="room">5</span
+                            ><span class="room">6+</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="filter_controls">
+                    <div class="filter_show_more">
+                        <img src="assets/img/filter_toggle.svg" alt="" />
+                        <p class="default_text">Больше фильтров</p>
+                        <p class="hidden_text">Свернуть фильтр</p>
+                        <img
+                            class="filter_show_more_arr"
+                            src="assets/img/filter_show_more_arr.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="filter_show_results">
+                        <p>Всего <span> 99 999</span> объявлений</p>
+                        <a href="#" class="main_btn"
+                            >Показать результат <span>(94)</span></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section2">
+            <div class="container">
+                <div class="sec2_content">
+                    <div class="sec2_content_up">
+                        <p class="title">Инвесторам</p>
+                        <p class="text">
+                            Мы предлагаем готовые стратегии инвестирования в
+                            зарубежную недвижимость со стартовым капиталом от
+                            <span>€100 000</span>.
+                        </p>
+                    </div>
+                    <div class="sec2_content_down">
+                        <p class="title">Годовая доходность:</p>
+                        <div class="bottom">
+                            <div>
+                                <p class="percents">10 - 15%</p>
+                                <p class="subtitle">Строительство</p>
+                            </div>
+                            <div>
+                                <p class="percents">3 - 4%</p>
+                                <p class="subtitle">Венчурный Фонд</p>
+                            </div>
+                            <div>
+                                <p class="percents">3 - 6%</p>
+                                <p class="subtitle">Доля в отеле</p>
+                            </div>
+                            <div>
+                                <p class="percents">3 - 7%</p>
+                                <p class="subtitle">Арендный бизнес</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section3">
+            <div class="container">
+                <p class="sec3_title">Популярные страны</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#"
+                            ><div
+                                class="sec3_country"
+                                style="
+                                    background: url(assets/img/sec3_country.jpg)
+                                        no-repeat;
+                                "
+                            >
+                                <div class="info">
+                                    <p class="title">Португалия</p>
+                                    <p class="link">
+                                        Перейти
+                                        <img
+                                            src="assets/img/link_arr.svg"
+                                            alt=""
+                                        />
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"
+                            ><div
+                                class="sec3_country"
+                                style="
+                                    background: url(assets/img/sec3_country.jpg)
+                                        no-repeat;
+                                "
+                            >
+                                <div class="info">
+                                    <p class="title">Испания</p>
+                                    <p class="link">
+                                        Перейти
+                                        <img
+                                            src="assets/img/link_arr.svg"
+                                            alt=""
+                                        />
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"
+                            ><div
+                                class="sec3_country"
+                                style="
+                                    background: url(assets/img/sec3_country.jpg)
+                                        no-repeat;
+                                "
+                            >
+                                <div class="info">
+                                    <p class="title">Греция</p>
+                                    <p class="link">
+                                        Перейти
+                                        <img
+                                            src="assets/img/link_arr.svg"
+                                            alt=""
+                                        />
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section4">
+            <div class="container">
+                <div class="section_header">
+                    <p class="sec3_title">Новости рынков недвижимости</p>
+                    <a href="#"
+                        >Перейти ко всем новостям
+                        <img src="assets/img/link_black_arr.svg" alt=""
+                    /></a>
+                </div>
+                <div class="section4_content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="single_news">
+                                    <p class="subtitle">09 окт 2020</p>
+                                    <p class="text">
+                                        Также мы всегда готовы принять вас в
+                                        одном из наших офисов или организовать
+                                        видеоконференцию.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="single_news">
+                                    <p class="subtitle">09 окт 2020</p>
+                                    <p class="text">
+                                        Также мы всегда готовы принять вас в
+                                        одном из наших офисов или организовать
+                                        видеоконференцию.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="single_news">
+                                    <p class="subtitle">09 окт 2020</p>
+                                    <p class="text">
+                                        Также мы всегда готовы принять вас в
+                                        одном из наших офисов или организовать
+                                        видеоконференцию.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="single_news">
+                                    <p class="subtitle">09 окт 2020</p>
+                                    <p class="text">
+                                        Также мы всегда готовы принять вас в
+                                        одном из наших офисов или организовать
+                                        видеоконференцию.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="single_news">
+                                    <p class="subtitle">09 окт 2020</p>
+                                    <p class="text">
+                                        Также мы всегда готовы принять вас в
+                                        одном из наших офисов или организовать
+                                        видеоконференцию.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="single_news">
+                                    <p class="subtitle">09 окт 2020</p>
+                                    <p class="text">
+                                        Также мы всегда готовы принять вас в
+                                        одном из наших офисов или организовать
+                                        видеоконференцию.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section5">
+            <div class="container-fluid">
+                <p class="sec5_title">Отзывы клиентов о нашей работе</p>
+                <div class="reviews_slider">
+                    <div class="single_review">
+                        <div
+                            class="image"
+                            style="
+                                background: url(assets/img/review_image.jpg)
+                                    no-repeat;
+                            "
+                        ></div>
+                        <div class="info">
+                            <img
+                                class="quot"
+                                src="assets/img/quot.svg"
+                                alt=""
+                            />
+                            <p class="title">Иван Иванов</p>
+                            <div class="text">
+                                <p>
+                                    Также мы всегда готовы принять вас в одном
+                                    из наших офисов или организовать
+                                    видеоконференцию. Также мы всегда готовы
+                                    принять вас в одном из наших офисов или
+                                    организовать видеоконференцию.Также мы
+                                    всегда готовы принять вас в одном из наших
+                                    офисов или организовать видеоконференцию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_review">
+                        <div
+                            class="image"
+                            style="
+                                background: url(assets/img/review_image.jpg)
+                                    no-repeat;
+                            "
+                        ></div>
+                        <div class="info">
+                            <img
+                                class="quot"
+                                src="assets/img/quot.svg"
+                                alt=""
+                            />
+                            <p class="title">Иван Иванов</p>
+                            <div class="text">
+                                <p>
+                                    Также мы всегда готовы принять вас в одном
+                                    из наших офисов или организовать
+                                    видеоконференцию. Также мы всегда готовы
+                                    принять вас в одном из наших офисов или
+                                    организовать видеоконференцию.Также мы
+                                    всегда готовы принять вас в одном из наших
+                                    офисов или организовать видеоконференцию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_review">
+                        <div
+                            class="image"
+                            style="
+                                background: url(assets/img/review_image.jpg)
+                                    no-repeat;
+                            "
+                        ></div>
+                        <div class="info">
+                            <img
+                                class="quot"
+                                src="assets/img/quot.svg"
+                                alt=""
+                            />
+                            <p class="title">Иван Иванов</p>
+                            <div class="text">
+                                <p>
+                                    Также мы всегда готовы принять вас в одном
+                                    из наших офисов или организовать
+                                    видеоконференцию. Также мы всегда готовы
+                                    принять вас в одном из наших офисов или
+                                    организовать видеоконференцию.Также мы
+                                    всегда готовы принять вас в одном из наших
+                                    офисов или организовать видеоконференцию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single_review">
+                        <div
+                            class="image"
+                            style="
+                                background: url(assets/img/review_image.jpg)
+                                    no-repeat;
+                            "
+                        ></div>
+                        <div class="info">
+                            <img
+                                class="quot"
+                                src="assets/img/quot.svg"
+                                alt=""
+                            />
+                            <p class="title">Иван Иванов</p>
+                            <div class="text">
+                                <p>
+                                    Также мы всегда готовы принять вас в одном
+                                    из наших офисов или организовать
+                                    видеоконференцию. Также мы всегда готовы
+                                    принять вас в одном из наших офисов или
+                                    организовать видеоконференцию.Также мы
+                                    всегда готовы принять вас в одном из наших
+                                    офисов или организовать видеоконференцию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_review">
+                        <div
+                            class="image"
+                            style="
+                                background: url(assets/img/review_image.jpg)
+                                    no-repeat;
+                            "
+                        ></div>
+                        <div class="info">
+                            <img
+                                class="quot"
+                                src="assets/img/quot.svg"
+                                alt=""
+                            />
+                            <p class="title">Иван Иванов</p>
+                            <div class="text">
+                                <p>
+                                    Также мы всегда готовы принять вас в одном
+                                    из наших офисов или организовать
+                                    видеоконференцию. Также мы всегда готовы
+                                    принять вас в одном из наших офисов или
+                                    организовать видеоконференцию.Также мы
+                                    всегда готовы принять вас в одном из наших
+                                    офисов или организовать видеоконференцию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_review">
+                        <div
+                            class="image"
+                            style="
+                                background: url(assets/img/review_image.jpg)
+                                    no-repeat;
+                            "
+                        ></div>
+                        <div class="info">
+                            <img
+                                class="quot"
+                                src="assets/img/quot.svg"
+                                alt=""
+                            />
+                            <p class="title">Иван Иванов</p>
+                            <div class="text">
+                                <p>
+                                    Также мы всегда готовы принять вас в одном
+                                    из наших офисов или организовать
+                                    видеоконференцию. Также мы всегда готовы
+                                    принять вас в одном из наших офисов или
+                                    организовать видеоконференцию.Также мы
+                                    всегда готовы принять вас в одном из наших
+                                    офисов или организовать видеоконференцию.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section6">
+            <div class="container">
+                <p class="sec6_title">Гражданство и ВНЖ — в комплекте</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="sec6_subtitle">
+                            Программы инвестрирования в недвижимость и
+                            государственные фонды от <span>190 000 €</span>
+                        </p>
+                        <div class="sec6_steps">
+                            <div class="single_step">
+                                <p class="num">01</p>
+                                <div class="info">
+                                    <p class="title">Вид на жительство в:</p>
+                                    <p class="text">
+                                        Испания, Португалия, Греция,
+                                        Великобритания, Монако, Швейцария,
+                                        Люксембург, Аруба, Франция, Австрия
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single_step">
+                                <p class="num">02</p>
+                                <div class="info">
+                                    <p class="title">Гражданство в:</p>
+                                    <p class="text">
+                                        Испания, Португалия, Греция, Кипр,
+                                        Мальта, Нидерладнды, Турция, Черногория,
+                                        Антигуа и Баруда, Вануату, Гренада,
+                                        Доминика, Сент-Киттс и Невис, Сент-Люсия
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card_wrap">
+                            <img
+                                class="card_bg"
+                                src="assets/img/card_bg.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="card"
+                                src="assets/img/card.jpg"
+                                alt=""
+                            />
+                            <button class="details_btn main_btn">
+                                Запросить детали
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sec7_left">
+                        <p class="sec7_title">Агентам и застройщикам</p>
+                        <p class="sec7_subtitle">Обрабатываем заявки</p>
+                        <p class="sec7_text">
+                            GARANT Estate получает более 1000 заявок ежемесячно.
+                            Общаемся с клиентом, выясняем мотивацию для покупки
+                            и требования к объекту недвижимости.
+                        </p>
+                        <p class="sec7_subtitle">Передаем клиента вам</p>
+                        <p class="sec7_text">
+                            Наши партнёры получают заявки не только на свои
+                            объекты, но и часть заявок на объекты других
+                            партнёров.
+                        </p>
+                        <button class="main_btn">Связаться с нами</button>
+                    </div>
+                    <div class="col-md-6 sec7_right">
+                        <p class="sec7_title">Программа аффилиатов</p>
+                        <p class="sec7_text">
+                            Поможем подобрать недвижимость за рубежом для ваших
+                            клиентов, оформить документы и провести сделку, а вы
+                            получите комиссию согласно договору.
+                        </p>
+                        <p class="sec7_subtitle">Нам доверяют своих клиентов</p>
+                        <img src="assets/img/clients.png" alt="" />
+                        <button class="main_btn">
+                            Учавствовать в программе
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_section8">
+            <div class="container">
+                <img
+                    src="assets/img/sec8_right.png"
+                    alt=""
+                    class="sec8_right"
+                />
+                <p class="sec8_title">
+                    Размещение объявлений в каталоге GARANT Estate
+                </p>
+                <p class="sec8_text">
+                    Загрузка жилых и коммерческих объектов в рамках Партнерской
+                    программы или частным образом
+                </p>
+                <button class="main_btn">Узнать больше о размещении</button>
+            </div>
+        </div>
+
+        <div id="main_section9">
+            <div class="container">
+                <div class="sec9_about">
+                    <div class="row">
+                        <div class="col-md-5 about_image">
+                            <img src="assets/img/about_photo.jpg" alt="" />
+                            <img
+                                src="assets/img/about_logo_up.png"
+                                alt=""
+                                class="about_logo_up"
+                            />
+                        </div>
+                        <div class="col-md-7 about_info">
+                            <p class="about_title">Почему GARANT ESTATE?</p>
+                            <div class="advs">
+                                <div class="single_adv">
+                                    <p class="num">01</p>
+                                    <p class="text">
+                                        Самые опытные консультанты на рынке
+                                    </p>
+                                </div>
+                                <div class="single_adv">
+                                    <p class="num">02</p>
+                                    <p class="text">
+                                        6 офисов <br />
+                                        по всему миру
+                                    </p>
+                                </div>
+                                <div class="single_adv">
+                                    <p class="num">03</p>
+                                    <p class="text">
+                                        10 лет в сфере инвестиционной имиграции
+                                    </p>
+                                </div>
+                                <div class="single_adv">
+                                    <p class="num">04</p>
+                                    <p class="text">
+                                        Более 800 заключенных сделок
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="about_subtitle">
+                                Мы не для всех. Но если вы стали нашим клиентом,
+                                то будте уверены вы получите:
+                            </p>
+                            <div class="about_items">
+                                <div class="about_item">
+                                    <div class="img_wrap">
+                                        <img
+                                            src="assets/img/about_item1.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p>Лучший сервис</p>
+                                </div>
+                                <div class="about_item">
+                                    <div class="img_wrap">
+                                        <img
+                                            src="assets/img/about_item2.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p>Своевременный и точный анализ рынка</p>
+                                </div>
+                                <div class="about_item">
+                                    <div class="img_wrap">
+                                        <img
+                                            src="assets/img/about_item3.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p>Только работающие рекоммендации</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec9_form">
+                    <img
+                        src="assets/img/about_logo_down.png"
+                        alt=""
+                        class="about_logo_down"
+                    />
+                    <p class="title">Спорим, что мы найдем для вас обьект?</p>
+                    <p class="subtitle">
+                        Оставьте заявку на подбор — с Вами свяжется риелтор с
+                        юридическим образовнием, который будет закреплен лично
+                        за Вами. Поверьте, он точно подберет нужный объект!
+                    </p>
+                    <form action="">
+                        <div class="inputs">
+                            <input
+                                placeholder="Введите имя"
+                                type="text"
+                                id="name"
+                                class="about_input"
+                            />
+                            <input
+                                placeholder="E-mail"
+                                type="text"
+                                id="email"
+                                class="about_input"
+                            />
+                            <div class="phone_select">
+                                <div class="country_icon">
+                                    <img
+                                        class="selected_country country"
+                                        src="assets/img/select_country.png"
+                                        alt=""
+                                        data-value="kz"
+                                    />
+                                    <img
+                                        class="form_country_arrow"
+                                        src="assets/img/country_arr.svg"
+                                        alt=""
+                                    />
+                                    <div class="hidden_countries">
+                                        <img
+                                            class="country"
+                                            src="assets/img/select_country1.png"
+                                            alt=""
+                                            data-value="ua"
+                                        />
+
+                                        <img
+                                            class="country"
+                                            src="assets/img/select_country2.png"
+                                            alt=""
+                                            data-value="ru"
+                                        />
+                                    </div>
+                                </div>
+                                <input
+                                    placeholder="+38 (099) 999 - 99 - 99"
+                                    type="text"
+                                    id="form_phone"
+                                    class="about_input"
+                                />
+                            </div>
+                        </div>
+                        <button class="main_btn">Спорим</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_offices">
+                    <p class="footer_title">Наши офисы</p>
+                    <div class="offices row">
+                        <div class="col-md-2">
+                            <a href="#" class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office1.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office1_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Москва</p>
+                                    <p class="city">Россия</p>
+                                    <p class="address">
+                                        Уланский переулок 22с1
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <a href="#" class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office2.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office2_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Алматы</p>
+                                    <p class="city">Казахстан</p>
+                                    <p class="address">ул. Таттимбета 24</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <a href="#" class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office3.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office3_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Киев</p>
+                                    <p class="city">Украина</p>
+                                    <p class="address">ул. Сикорского 1а</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <a href="#" class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office4.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office4_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Афины</p>
+                                    <p class="city">Греция</p>
+                                    <p class="address">
+                                        25, Agiou Georgiou str, Grammatiko
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <a href="#" class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office5.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office5_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Торревьеха</p>
+                                    <p class="city">Испания</p>
+                                    <p class="address">
+                                        Avenida Habaneras 87, 03182 Torrevieja
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <a href="#" class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office6.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office6_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Вила-Нова-ди-Гая</p>
+                                    <p class="city">Португалия</p>
+                                    <p class="address">
+                                        Av. Gil Vicente 583 4400-166 Vila Nova
+                                        de Gaia
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer_countries">
+                        <div>
+                            <a href="#">Австрия</a>
+                            <a href="#">Испания</a>
+                            <a href="#">Португалия</a>
+                            <a href="#">Греция</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Велкобритания</a>
+                            <a href="#">Монако</a>
+                            <a href="#">Швейцария</a>
+                            <a href="#">Мальты</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Кипр</a>
+                            <a href="#">Черногории</a>
+                            <a href="#">Греция</a>
+                            <a href="#">Испания</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Антигуа и Барбуда</a>
+                            <a href="#">Сент-Киттс и Невис</a>
+                            <a href="#">Доминика</a>
+                            <a href="#">Вануату</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Гренада</a>
+                            <a href="#">Сент-Люсия</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="footer_collapse">
+                        <div class="single_collapse">
+                            <div class="collapse_head" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne"
+                                    >
+                                        Дома
+                                        <img
+                                            src="assets/img/collapse_arr.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div
+                                id="collapseOne"
+                                class="collapse"
+                                aria-labelledby="headingOne"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="collapse-body">
+                                    Anim pariatur cliche reprehenderit, enim
+                                    eiusmod high life accusamus terry richardson
+                                    ad squid. 3 wolf moon officia aute, non
+                                    cupidatat skateboard dolor brunch. Food
+                                    truck quinoa nesciunt laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a
+                                    bird on it squid single-origin coffee nulla
+                                    assumenda shoreditch et. Nihil anim keffiyeh
+                                    helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan
+                                    excepteur butcher vice lomo. Leggings
+                                    occaecat craft beer farm-to-table, raw denim
+                                    aesthetic synth nesciunt you probably
+                                    haven't heard of them accusamus labore
+                                    sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_collapse">
+                            <div class="collapse_head" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        Квартиры и аппартаменты
+                                        <img
+                                            src="assets/img/collapse_arr.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="collapse-body">
+                                    Anim pariatur cliche reprehenderit, enim
+                                    eiusmod high life accusamus terry richardson
+                                    ad squid. 3 wolf moon officia aute, non
+                                    cupidatat skateboard dolor brunch. Food
+                                    truck quinoa nesciunt laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a
+                                    bird on it squid single-origin coffee nulla
+                                    assumenda shoreditch et. Nihil anim keffiyeh
+                                    helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan
+                                    excepteur butcher vice lomo. Leggings
+                                    occaecat craft beer farm-to-table, raw denim
+                                    aesthetic synth nesciunt you probably
+                                    haven't heard of them accusamus labore
+                                    sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_collapse">
+                            <div class="collapse_head" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        Комерческая недвижимость
+                                        <img
+                                            src="assets/img/collapse_arr.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseThree"
+                                class="collapse"
+                                aria-labelledby="headingThree"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="collapse-body">
+                                    Anim pariatur cliche reprehenderit, enim
+                                    eiusmod high life accusamus terry richardson
+                                    ad squid. 3 wolf moon officia aute, non
+                                    cupidatat skateboard dolor brunch. Food
+                                    truck quinoa nesciunt laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a
+                                    bird on it squid single-origin coffee nulla
+                                    assumenda shoreditch et. Nihil anim keffiyeh
+                                    helvetica, craft beer labore wes anderson
+                                    cred nesciunt sapiente ea proident. Ad vegan
+                                    excepteur butcher vice lomo. Leggings
+                                    occaecat craft beer farm-to-table, raw denim
+                                    aesthetic synth nesciunt you probably
+                                    haven't heard of them accusamus labore
+                                    sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="footer_footer">
+                        <ul>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">In English</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Разместить объявление</a></li>
+                            <li><a href="#">Вход и регистрация</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_socials">
+                        <a href="#"
+                            ><img src="assets/img/footer_logo.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_fb.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_inst.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_tg.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_tw.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_vk.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_yt.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://use.fontawesome.com/421d2d196c.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="assets/js/jquery.mask.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
