@@ -23,15 +23,16 @@
         <link rel="stylesheet" href="assets/css/slick-style.css" />
         <link rel="stylesheet" href="assets/css/lato.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/adaptive.css" />
     </head>
     <body>
         <header>
             <div class="header_container container">
                 <div class="row">
-                    <div class="header_logo col-md-2">
+                    <div class="header_logo col-6 col-lg-2">
                         <a href="/"><img src="assets/img/logo.png" alt="" /></a>
                     </div>
-                    <div class="header_menu col-md-5">
+                    <div class="header_menu col-lg-6 col-xl-5">
                         <ul class="menu">
                             <li><a href="#">Жилая</a></li>
                             <li><a href="#">Коммерческая</a></li>
@@ -41,11 +42,30 @@
                             <li><a href="#">Статьи</a></li>
                         </ul>
                     </div>
-                    <div class="header_right col-md-5">
-                        <a href="#"
+                    <div class="header_right col-6 col-lg-4 col-xl-5">
+                        <div class="mobile_header_phone header_mob_wrap">
+                            <img src="assets/img/mob_header_phone.svg" alt="" />
+                            <div class="header_hidden_phones">
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#favourites_modal"
                             ><img src="assets/img/header_heart.svg" alt=""
                         /></a>
-                        <div class="header_mob_wrap">
+                        <div id="header_phone_wrap" class="header_mob_wrap">
+                            <img src="assets/img/mob_header_phone.svg" alt="" class="header_phone_icon" />
+
                             <a href="#" class="header_mob main_header_mob"
                                 >+38 044 299 28 58</a
                             >
@@ -59,12 +79,37 @@
                                 >
                             </div>
                         </div>
-                        <button class="header_consult">
+
+                        <div class="mobile-toggle">
+                            <div class="button_menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <button
+                            class="header_consult"
+                            data-toggle="modal"
+                            data-target="#contact_modal"
+                        >
                             Получить консультацию
                         </button>
                     </div>
                 </div>
             </div>
+            <div class="menu_responsive">
+                <nav class="main_menu">
+                    <ul >
+                        <li><a href="#">Жилая</a></li>
+                        <li><a href="#">Коммерческая</a></li>
+                        <li><a href="#">Доля в отеле</a></li>
+                        <li><a href="#">Венчурный фонд</a></li>
+                        <li><a href="#">ВНЖ и паспорт</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </div>		
+              </div>
         </header>
 
         <div id="main_section1">
@@ -74,6 +119,10 @@
                     союзе и на Карибах
                 </p>
                 <div class="main_sec1_advs">
+                    <div class="single_adv mob_single_adv">
+                        <p class="count">800+</p>
+                        <p class="subtitle">закрытых сделок</p>
+                    </div>
                     <div class="single_adv">
                         <p class="count">6</p>
                         <p class="subtitle">офисов в России и Европе</p>
@@ -98,9 +147,8 @@
                             placeholder="Страна, город"
                             autocomplete="off"
                         />
-                        <div class="hidden_country hidden_dropdown">
+                        <div id="hidden_country" class="hidden_country hidden_dropdown">
                             <ul class="custom_dropdown_ul">
-                                <li class="selected">Все</li>
                                 <li>Португалия, Лиссабон</li>
                                 <li>Украина, Киев</li>
                                 <li>Россия, Москва</li>
@@ -135,7 +183,7 @@
                                             type="checkbox"
                                             id="type1"
                                             name="type1"
-                                            value="indigo"
+                                            value="Квартиры, апартаменты"
                                         />
                                         <label for="type1"
                                             >Квартиры, апартаменты</label
@@ -149,11 +197,10 @@
                                             type="checkbox"
                                             id="type2"
                                             name="type2"
-                                            value="indigo"
+                                            value="Виллы, коттеджи, дома, таунхаусы"
                                         />
                                         <label for="type2"
-                                            >Виллы, коттеджи, дома,
-                                            таунхаусы</label
+                                            >Виллы, коттеджи, дома, таунхаусы</label
                                         >
                                     </div>
                                 </li>
@@ -164,7 +211,7 @@
                                             type="checkbox"
                                             id="type3"
                                             name="type3"
-                                            value="indigo"
+                                            value="Земельные участки"
                                         />
                                         <label for="type3"
                                             >Земельные участки</label
@@ -178,7 +225,7 @@
                                             type="checkbox"
                                             id="type4"
                                             name="type4"
-                                            value="indigo"
+                                            value="Отели (доля в отеле)"
                                         />
                                         <label for="type4"
                                             >Отели (доля в отеле)</label
@@ -192,7 +239,7 @@
                                             type="checkbox"
                                             id="type5"
                                             name="type5"
-                                            value="indigo"
+                                            value="Пентхаусы"
                                         />
                                         <label for="type5">Пентхаусы</label>
                                     </div>
@@ -204,7 +251,7 @@
                                             type="checkbox"
                                             id="type6"
                                             name="type6"
-                                            value="indigo"
+                                            value="Квартиры, апартаменты"
                                         />
                                         <label for="type6"
                                             >Квартиры, апартаменты</label
@@ -232,11 +279,12 @@
                             for="price_to"
                         >
                             до
+                            <label for="" class="input_price_wallet">$</label>
                             <input
                                 type="text"
                                 id="price_to"
                                 class="filter_input price_input"
-                                value="2 000 000 $"
+                                value="2 000 000"
                                 data-wallet="$"
                             />
                         </label>
@@ -307,7 +355,7 @@
                             type="text"
                             id="build_type"
                             class="filter_input"
-                            placeholder="Все"
+                            placeholder="Состояние объекта"
                             autocomplete="off"
                         />
                         <div
@@ -396,6 +444,8 @@
                             alt=""
                         />
                     </div>
+                    <p class="mobile_filter_count">Всего <span> 99 999</span> объявлений</p>
+
                     <div class="filter_show_results">
                         <p>Всего <span> 99 999</span> объявлений</p>
                         <a href="#" class="main_btn"
@@ -446,7 +496,7 @@
             <div class="container">
                 <p class="sec3_title">Популярные страны</p>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 sec3_country_wrap">
                         <a href="#"
                             ><div
                                 class="sec3_country"
@@ -468,12 +518,12 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 sec3_country_wrap">
                         <a href="#"
                             ><div
                                 class="sec3_country"
                                 style="
-                                    background: url(assets/img/sec3_country.jpg)
+                                    background: url(assets/img/sec3_country2.jpg)
                                         no-repeat;
                                 "
                             >
@@ -490,12 +540,12 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 sec3_country_wrap">
                         <a href="#"
                             ><div
                                 class="sec3_country"
                                 style="
-                                    background: url(assets/img/sec3_country.jpg)
+                                    background: url(assets/img/sec3_country3.jpg)
                                         no-repeat;
                                 "
                             >
@@ -527,7 +577,7 @@
                 </div>
                 <div class="section4_content">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-lg-4">
                             <a href="#">
                                 <div class="single_news">
                                     <p class="subtitle">09 окт 2020</p>
@@ -539,7 +589,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-lg-4">
                             <a href="#">
                                 <div class="single_news">
                                     <p class="subtitle">09 окт 2020</p>
@@ -551,7 +601,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-lg-4">
                             <a href="#">
                                 <div class="single_news">
                                     <p class="subtitle">09 окт 2020</p>
@@ -563,7 +613,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-lg-4">
                             <a href="#">
                                 <div class="single_news">
                                     <p class="subtitle">09 окт 2020</p>
@@ -575,7 +625,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-lg-4">
                             <a href="#">
                                 <div class="single_news">
                                     <p class="subtitle">09 окт 2020</p>
@@ -587,7 +637,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-lg-4">
                             <a href="#">
                                 <div class="single_news">
                                     <p class="subtitle">09 окт 2020</p>
@@ -600,6 +650,10 @@
                             </a>
                         </div>
                     </div>
+                    <a class="mobile_hidden_link" href="#"
+                    >Перейти ко всем новостям
+                    <img src="assets/img/link_black_arr.svg" alt=""
+                /></a>
                 </div>
             </div>
         </div>
@@ -785,11 +839,25 @@
             <div class="container">
                 <p class="sec6_title">Гражданство и ВНЖ — в комплекте</p>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <p class="sec6_subtitle">
                             Программы инвестрирования в недвижимость и
                             государственные фонды от <span>190 000 €</span>
                         </p>
+                        <div id="left_card_wrap" class="card_wrap">
+                            <img
+                                class="card_bg"
+                                src="assets/img/card_bg.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="card"
+                                src="assets/img/card.jpg"
+                                alt=""
+                            />
+
+                            <img class="mobile_card_img" src="assets/img/mobile_card_img.png" alt="">
+                        </div>
                         <div class="sec6_steps">
                             <div class="single_step">
                                 <p class="num">01</p>
@@ -816,8 +884,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card_wrap">
+                    <div class="col-lg-6">
+                        <div id="right_card_wrap" class="card_wrap">
                             <img
                                 class="card_bg"
                                 src="assets/img/card_bg.jpg"
@@ -828,7 +896,11 @@
                                 src="assets/img/card.jpg"
                                 alt=""
                             />
-                            <button class="details_btn main_btn">
+                            <button
+                                class="details_btn main_btn"
+                                data-toggle="modal"
+                                data-target="#contact_modal"
+                            >
                                 Запросить детали
                             </button>
                         </div>
@@ -840,7 +912,7 @@
         <div id="main_section7">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 sec7_left">
+                    <div class="col-lg-6 sec7_left">
                         <p class="sec7_title">Агентам и застройщикам</p>
                         <p class="sec7_subtitle">Обрабатываем заявки</p>
                         <p class="sec7_text">
@@ -854,9 +926,15 @@
                             объекты, но и часть заявок на объекты других
                             партнёров.
                         </p>
-                        <button class="main_btn">Связаться с нами</button>
+                        <button
+                            class="main_btn"
+                            data-toggle="modal"
+                            data-target="#contact_modal"
+                        >
+                            Связаться с нами
+                        </button>
                     </div>
-                    <div class="col-md-6 sec7_right">
+                    <div class="col-lg-6 sec7_right">
                         <p class="sec7_title">Программа аффилиатов</p>
                         <p class="sec7_text">
                             Поможем подобрать недвижимость за рубежом для ваших
@@ -865,7 +943,11 @@
                         </p>
                         <p class="sec7_subtitle">Нам доверяют своих клиентов</p>
                         <img src="assets/img/clients.png" alt="" />
-                        <button class="main_btn">
+                        <button
+                            class="main_btn"
+                            data-toggle="modal"
+                            data-target="#contact_modal"
+                        >
                             Учавствовать в программе
                         </button>
                     </div>
@@ -880,6 +962,11 @@
                     alt=""
                     class="sec8_right"
                 />
+                <!-- <img
+                    src="assets/img/sec8_mob_right.png"
+                    alt=""
+                    class="sec8_mob_right"
+                /> -->
                 <p class="sec8_title">
                     Размещение объявлений в каталоге GARANT Estate
                 </p>
@@ -887,7 +974,13 @@
                     Загрузка жилых и коммерческих объектов в рамках Партнерской
                     программы или частным образом
                 </p>
-                <button class="main_btn">Узнать больше о размещении</button>
+                <button
+                    class="main_btn"
+                    data-toggle="modal"
+                    data-target="#contact_modal"
+                >
+                    Узнать больше о размещении
+                </button>
             </div>
         </div>
 
@@ -903,7 +996,7 @@
                                 class="about_logo_up"
                             />
                         </div>
-                        <div class="col-md-7 about_info">
+                        <div class="col-lg-7 about_info">
                             <p class="about_title">Почему GARANT ESTATE?</p>
                             <div class="advs">
                                 <div class="single_adv">
@@ -932,6 +1025,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <img class="mob_about_image" src="assets/img/about_photo.jpg" alt="" />
                             <p class="about_subtitle">
                                 Мы не для всех. Но если вы стали нашим клиентом,
                                 то будте уверены вы получите:
@@ -984,15 +1078,15 @@
                     <form action="">
                         <div class="inputs">
                             <input
-                                placeholder="Введите имя"
-                                type="text"
-                                id="name"
-                                class="about_input"
-                            />
-                            <input
                                 placeholder="E-mail"
                                 type="text"
                                 id="email"
+                                class="about_input"
+                            />
+                            <input
+                                placeholder="Введите имя"
+                                type="text"
+                                id="name"
                                 class="about_input"
                             />
                             <div class="phone_select">
@@ -1008,7 +1102,9 @@
                                         src="assets/img/country_arr.svg"
                                         alt=""
                                     />
-                                    <div class="hidden_countries">
+                                    <div
+                                        class="hidden_countries hidden_about_countries"
+                                    >
                                         <img
                                             class="country"
                                             src="assets/img/select_country1.png"
@@ -1043,8 +1139,8 @@
                 <div class="footer_offices">
                     <p class="footer_title">Наши офисы</p>
                     <div class="offices row">
-                        <div class="col-md-2">
-                            <a href="#" class="single_office_link">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
                                 <div class="single_office">
                                     <img
                                         class="office_img"
@@ -1065,8 +1161,8 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2">
-                            <a href="#" class="single_office_link">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
                                 <div class="single_office">
                                     <img
                                         class="office_img"
@@ -1085,8 +1181,8 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2">
-                            <a href="#" class="single_office_link">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
                                 <div class="single_office">
                                     <img
                                         class="office_img"
@@ -1105,8 +1201,8 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2">
-                            <a href="#" class="single_office_link">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
                                 <div class="single_office">
                                     <img
                                         class="office_img"
@@ -1127,8 +1223,8 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2">
-                            <a href="#" class="single_office_link">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
                                 <div class="single_office">
                                     <img
                                         class="office_img"
@@ -1149,8 +1245,8 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2">
-                            <a href="#" class="single_office_link">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
                                 <div class="single_office">
                                     <img
                                         class="office_img"
@@ -1208,150 +1304,14 @@
                         </div>
                     </div>
 
-                    <!-- <div class="footer_collapse">
-                        <div class="single_collapse">
-                            <div class="collapse_head" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button
-                                        class="btn btn-link"
-                                        type="button"
-                                        data-toggle="collapse"
-                                        data-target="#collapseOne"
-                                        aria-expanded="true"
-                                        aria-controls="collapseOne"
-                                    >
-                                        Дома
-                                        <img
-                                            src="assets/img/collapse_arr.svg"
-                                            alt=""
-                                        />
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div
-                                id="collapseOne"
-                                class="collapse"
-                                aria-labelledby="headingOne"
-                                data-parent="#accordionExample"
-                            >
-                                <div class="collapse-body">
-                                    Anim pariatur cliche reprehenderit, enim
-                                    eiusmod high life accusamus terry richardson
-                                    ad squid. 3 wolf moon officia aute, non
-                                    cupidatat skateboard dolor brunch. Food
-                                    truck quinoa nesciunt laborum eiusmod.
-                                    Brunch 3 wolf moon tempor, sunt aliqua put a
-                                    bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh
-                                    helvetica, craft beer labore wes anderson
-                                    cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur butcher vice lomo. Leggings
-                                    occaecat craft beer farm-to-table, raw denim
-                                    aesthetic synth nesciunt you probably
-                                    haven't heard of them accusamus labore
-                                    sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_collapse">
-                            <div class="collapse_head" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button
-                                        class="btn btn-link collapsed"
-                                        type="button"
-                                        data-toggle="collapse"
-                                        data-target="#collapseTwo"
-                                        aria-expanded="false"
-                                        aria-controls="collapseTwo"
-                                    >
-                                        Квартиры и аппартаменты
-                                        <img
-                                            src="assets/img/collapse_arr.svg"
-                                            alt=""
-                                        />
-                                    </button>
-                                </h2>
-                            </div>
-                            <div
-                                id="collapseTwo"
-                                class="collapse"
-                                aria-labelledby="headingTwo"
-                                data-parent="#accordionExample"
-                            >
-                                <div class="collapse-body">
-                                    Anim pariatur cliche reprehenderit, enim
-                                    eiusmod high life accusamus terry richardson
-                                    ad squid. 3 wolf moon officia aute, non
-                                    cupidatat skateboard dolor brunch. Food
-                                    truck quinoa nesciunt laborum eiusmod.
-                                    Brunch 3 wolf moon tempor, sunt aliqua put a
-                                    bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh
-                                    helvetica, craft beer labore wes anderson
-                                    cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur butcher vice lomo. Leggings
-                                    occaecat craft beer farm-to-table, raw denim
-                                    aesthetic synth nesciunt you probably
-                                    haven't heard of them accusamus labore
-                                    sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_collapse">
-                            <div class="collapse_head" id="headingThree">
-                                <h2 class="mb-0">
-                                    <button
-                                        class="btn btn-link collapsed"
-                                        type="button"
-                                        data-toggle="collapse"
-                                        data-target="#collapseThree"
-                                        aria-expanded="false"
-                                        aria-controls="collapseThree"
-                                    >
-                                        Комерческая недвижимость
-                                        <img
-                                            src="assets/img/collapse_arr.svg"
-                                            alt=""
-                                        />
-                                    </button>
-                                </h2>
-                            </div>
-                            <div
-                                id="collapseThree"
-                                class="collapse"
-                                aria-labelledby="headingThree"
-                                data-parent="#accordionExample"
-                            >
-                                <div class="collapse-body">
-                                    Anim pariatur cliche reprehenderit, enim
-                                    eiusmod high life accusamus terry richardson
-                                    ad squid. 3 wolf moon officia aute, non
-                                    cupidatat skateboard dolor brunch. Food
-                                    truck quinoa nesciunt laborum eiusmod.
-                                    Brunch 3 wolf moon tempor, sunt aliqua put a
-                                    bird on it squid single-origin coffee nulla
-                                    assumenda shoreditch et. Nihil anim keffiyeh
-                                    helvetica, craft beer labore wes anderson
-                                    cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur butcher vice lomo. Leggings
-                                    occaecat craft beer farm-to-table, raw denim
-                                    aesthetic synth nesciunt you probably
-                                    haven't heard of them accusamus labore
-                                    sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="footer_footer">
                         <ul>
                             <li><a href="#">О проекте</a></li>
                             <li><a href="#">Контакты</a></li>
                             <li><a href="#">In English</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Разместить объявление</a></li>
-                            <li><a href="#">Вход и регистрация</a></li>
+                            <li class="footer_large_link"><a href="#">Политика конфиденциальности</a></li>
+                            <li class="footer_large_link"><a href="#">Разместить объявление</a></li>
+                            <li class="footer_large_link"><a href="#">Вход и регистрация</a></li>
                         </ul>
                     </div>
 
@@ -1381,6 +1341,192 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Contact Modal -->
+        <div
+            class="modal fade"
+            id="contact_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="modal-body">
+                        <p class="modal_title">Запросить детали</p>
+                        <p class="modal_text">
+                            С Вами свяжется ведущий специалист по продаже
+                            недвижимости в Греции и проконсультирует по всем
+                            интересующим вопросам
+                        </p>
+                        <form action="" class="modal_form">
+                            <div class="inputs">
+                                <input
+                                    placeholder="E-mail"
+                                    type="text"
+                                    id="email"
+                                    class="about_input modal_input"
+                                />
+                                <input
+                                    placeholder="Введите имя"
+                                    type="text"
+                                    id="name"
+                                    class="about_input modal_input"
+                                />
+                                <div class="phone_select">
+                                    <div class="country_icon">
+                                        <img
+                                            class="selected_modal_country modal_country"
+                                            src="assets/img/select_country.png"
+                                            alt=""
+                                            data-value="kz"
+                                        />
+                                        <img
+                                            class="form_country_arrow"
+                                            src="assets/img/country_arr.svg"
+                                            alt=""
+                                        />
+                                        <div
+                                            class="hidden_countries hidden_modal_counties"
+                                        >
+                                            <img
+                                                class="modal_country"
+                                                src="assets/img/select_country1.png"
+                                                alt=""
+                                                data-value="ua"
+                                            />
+
+                                            <img
+                                                class="modal_country"
+                                                src="assets/img/select_country2.png"
+                                                alt=""
+                                                data-value="ru"
+                                            />
+                                        </div>
+                                    </div>
+                                    <input
+                                        placeholder="+38 (099) 999 - 99 - 99"
+                                        type="text"
+                                        id="modal_form_phone"
+                                        class="about_input"
+                                    />
+                                </div>
+                            </div>
+                            <button class="main_btn">Запросить детали</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourites Modal -->
+        <div
+            class="modal fade"
+            id="favourites_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal_favs_head">
+                            <p class="modal_favs_title">Избранное</p>
+                            <a href="#" class="modal_favs_link"
+                                >Смотреть избранное
+                                <img src="assets/img/modal_fav_arr.svg" alt=""
+                            /></a>
+                        </div>
+
+                        <div class="modal_favs_content">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        id="tab1_title"
+                                        data-toggle="tab"
+                                        href="#tab1"
+                                        role="tab"
+                                        aria-controls="tab1"
+                                        aria-selected="true"
+                                        >Квартиры</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="tab2_title"
+                                        data-toggle="tab"
+                                        href="#tab2"
+                                        role="tab"
+                                        aria-controls="tab2"
+                                        aria-selected="false"
+                                        >Дома</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="tab3_title"
+                                        data-toggle="tab"
+                                        href="#tab3"
+                                        role="tab"
+                                        aria-controls="tab3"
+                                        aria-selected="false"
+                                        >Земельные участки</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="tab1"
+                                    role="tabpanel"
+                                    aria-labelledby="tab1_title"
+                                >
+                                    tab1
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab2"
+                                    role="tabpanel"
+                                    aria-labelledby="tab2_title"
+                                >
+                                    tab2
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab3"
+                                    role="tabpanel"
+                                    aria-labelledby="tab3_title"
+                                >
+                                    tab3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://use.fontawesome.com/421d2d196c.js"></script>
         <script

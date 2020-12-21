@@ -1,0 +1,635 @@
+@media (max-width: 1500px) {
+    #main_section8 .sec8_right {
+        right: 0;
+    }
+    .reviews_slider .single_review .info {
+        width: calc(555px - 300px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .header_container {
+        max-width: 960px !important;
+    }
+    #header_phone_wrap {
+        display: none !important;
+    }
+    .mobile_header_phone {
+        display: block;
+    }
+    .mobile_header_phone:hover img {
+        transform: none;
+    }
+    .header_consult {
+        margin-left: 10px;
+        padding: 10px 13px;
+    }
+    .header_hidden_phones {
+        width: 165px;
+        left: -61px;
+        top: 35px;
+    }
+    .menu li a {
+        font-size: 12px;
+    }
+    .sec3_country .info .title {
+        font-size: 30px;
+    }
+    #main_section6 {
+        background-size: cover;
+    }
+    .card_bg {
+        display: none;
+    }
+
+    #main_section8 .sec8_right {
+        display: none;
+    }
+    #main_section8 {
+        background: url("../img/sec8_laptop_bg.png") no-repeat;
+        background-position: right;
+        background-color: #0f4c81;
+        background-size: contain;
+    }
+    .about_image .about_logo_up {
+        display: none;
+    }
+    .about_image img {
+        width: 100%;
+    }
+    .about_info .advs .single_adv .text {
+        font-size: 14px;
+    }
+    .about_info .advs .single_adv {
+        padding-right: 5px;
+        width: 49.5%;
+    }
+    .about_info .advs .single_adv .num {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header_menu {
+        display: none;
+    }
+    .header_logo img {
+        width: auto;
+        margin: 0 auto;
+    }
+    .mobile-toggle {
+        display: block;
+    }
+    .header_consult {
+        display: none;
+    }
+    .main_sec1_title {
+        font-size: 29px;
+        line-height: 33px;
+        margin-bottom: 15px;
+    }
+    .header_container {
+        max-width: 720px !important;
+    }
+    .main_sec1_advs .single_adv {
+        width: 50%;
+    }
+    .main_sec1_advs .mob_single_adv {
+        display: block;
+        width: 100%;
+    }
+
+    .single_adv.middle {
+        display: none;
+    }
+    .main_sec1_advs {
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+    .main_sec1_advs .single_adv .subtitle {
+        margin-bottom: 0;
+    }
+    .filter_top,
+    .filter_hidden.active {
+        flex-direction: column;
+        align-items: center;
+    }
+    .default_text,
+    .hidden_text,
+    .filter_show_more_arr {
+        display: none !important;
+    }
+    .filter_input_wrap,
+    .room_count {
+        margin: 5px 0;
+    }
+    .filter_hidden.active {
+        margin-top: 0;
+    }
+    .filter_show_results p {
+        display: none;
+    }
+    .mobile_filter_count {
+        display: block;
+    }
+    .filter_show_results {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .filter_controls {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    #main_filter {
+        padding: 10px 15px;
+        width: 310px;
+        bottom: -126px;
+    }
+    #main_section1.unpacked {
+        min-height: 555px;
+    }
+    .filter_show_more > img {
+        width: 20px;
+    }
+    .sec2_content {
+        margin: 153px auto 30px;
+    }
+    .sec2_content_up {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 5px 5px 0px 0px;
+    }
+    #main_section2 {
+        background-size: cover;
+    }
+    .sec3_country_wrap {
+        max-width: 350px;
+        margin: 0 auto 30px;
+    }
+    #main_section4 .section_header a {
+        display: none;
+    }
+    #main_section4 .mobile_hidden_link {
+        display: block;
+        margin-top: 15px;
+    }
+    .single_news {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    #main_section4 {
+        padding-bottom: 50px;
+    }
+    #left_card_wrap {
+        display: flex;
+        height: unset;
+        margin-bottom: 15px;
+    }
+    #left_card_wrap .card_bg {
+        display: block;
+        top: 0;
+    }
+    #right_card_wrap img {
+        display: none;
+    }
+    #right_card_wrap .details_btn {
+        margin-top: 0;
+    }
+    .sec6_subtitle {
+        margin-bottom: 30px;
+    }
+    .sec6_steps .single_step .title {
+        padding-top: 7px;
+    }
+    #main_section6 {
+        padding-bottom: 50px;
+    }
+    #main_section7 .sec7_left {
+        margin-bottom: 50px;
+    }
+    .sec7_left button {
+        margin-top: 0;
+    }
+    .sec7_right button {
+        display: block;
+        width: fit-content;
+        margin-left: 0;
+    }
+    .about_image {
+        display: none;
+    }
+    .about_info .mob_about_image {
+        display: block;
+        margin: 10px auto;
+    }
+    .about_info .advs {
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .about_info .advs > div {
+        max-width: 288px;
+        margin: 0 5px 10px;
+    }
+    .sec9_form {
+        border: 1px solid #0f4c81;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 20px 15px 30px;
+    }
+    .sec9_form .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec9_form .inputs > .about_input {
+        margin-bottom: 20px;
+    }
+    .single_office_link .single_office {
+        margin-bottom: 40px;
+    }
+    .footer_footer {
+        border-top: 1px solid #464646;
+        border-bottom: 1px solid #464646;
+        padding-top: 15px;
+    }
+    .footer_footer ul {
+        flex-wrap: wrap;
+    }
+    .footer_footer ul li {
+        margin-bottom: 15px;
+    }
+    .footer_footer .footer_large_link {
+        width: 100%;
+    }
+    .footer_offices .offices {
+        border-bottom: 1px solid #464646;
+    }
+    .footer_countries {
+        margin-bottom: 25px;
+    }
+    .modal_favs_content ul li {
+        margin-bottom: 10px;
+    }
+    .reviews_slider .single_review::after {
+        content: unset;
+    }
+    .reviews_slider .single_review .info .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .reviews_slider .single_review .info .text p {
+        font-size: 14px;
+    }
+    .reviews_slider .single_review {
+        z-index: 1;
+        box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+        max-width: unset;
+        margin: 0 15px;
+        border-radius: 5px;
+    }
+    .reviews_slider .single_review {
+        flex-direction: column;
+    }
+    .reviews_slider .single_review > div {
+        width: 100% !important;
+    }
+    .reviews_slider .single_review .image {
+        min-height: 250px;
+    }
+    .reviews_slider .slick-list {
+        padding: unset;
+        margin: unset;
+    }
+    .reviews_slider {
+        margin-bottom: 50px;
+    }
+    .reviews_slider .slick-prev,
+    .reviews_slider .slick-next {
+        top: calc(100% + 25px);
+    }
+    .reviews_slider .slick-next {
+        right: 43%;
+    }
+    .reviews_slider .slick-prev {
+        left: 43%;
+    }
+    .sec5_title {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_sec1_advs {
+        margin-bottom: 90px;
+    }
+    #main_section1.unpacked > .container {
+        margin-top: -110px;
+    }
+    .footer_countries > div {
+        width: 50%;
+        margin-top: 15px;
+    }
+    #left_card_wrap .card_bg {
+        width: 100%;
+    }
+    #contact_modal .modal-content {
+        min-width: unset;
+    }
+    #contact_modal .modal-dialog {
+        min-width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .main_sec1_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec2_content_up .title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .sec2_content_up .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sec2_content_down .bottom div .subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .sec2_content_up {
+        padding: 20px;
+    }
+    .sec3_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec3_country .info .title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec3_country .info .link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    #main_section4 .mobile_hidden_link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .single_news .subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .single_news .text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .sec5_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec6_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec6_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .sec6_subtitle span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .mobile_card_img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+    #left_card_wrap .card,
+    #left_card_wrap .card_bg {
+        display: none;
+    }
+    .sec6_steps .single_step .title {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    .sec6_steps .single_step .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sec6_steps .single_step .num {
+        margin-right: 10px;
+    }
+    #right_card_wrap .details_btn {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sec7_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec7_subtitle {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .sec7_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sec7_left button,
+    .sec7_right button,
+    #main_section8 button,
+    .sec9_form form button {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sec7_right > img {
+        width: 100%;
+    }
+    .sec8_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec8_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .about_info .about_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .about_info .about_subtitle {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .about_items {
+        flex-direction: column;
+    }
+    .about_items .about_item {
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    .about_items .about_item:last-child {
+        border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    .about_items .about_item .img_wrap {
+        display: none;
+    }
+    .about_items .about_item > p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sec9_form .title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sec9_form .subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sec9_form .inputs > .about_input {
+        font-size: 14px;
+        line-height: 17px;
+        width: 100%;
+    }
+    .phone_select #form_phone {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .phone_select {
+        width: 100%;
+    }
+    .phone_select #form_phone {
+        width: calc(100% - 37px);
+    }
+    .footer_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .footer_offices .offices .single_office .country {
+        font-size: 18px;
+        line-height: 22px;
+        min-height: unset;
+    }
+    .footer_offices .offices .single_office .city {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .footer_offices .offices .single_office .address {
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .footer_countries > div > a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer_footer ul li a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .about_info .mob_about_image {
+        width: 100%;
+    }
+    .about_info .advs .single_adv {
+        width: 264px;
+    }
+    #main_section1 {
+        min-height: 425px;
+    }
+    #main_section6 .row > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sec6_steps .single_step,
+    .sec6_subtitle,
+    #right_card_wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .menu_responsive .main_menu li {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .reviews_slider .slick-next {
+        right: 38%;
+    }
+    .reviews_slider .slick-prev {
+        left: 38%;
+    }
+    .reviews_slider .single_review .image {
+        min-height: 200px;
+    }
+    .reviews_slider .single_review {
+        border: 1px solid rgba(15, 76, 129, 0.16);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 430px) {
+    .about_logo_down {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #main_section1 {
+        min-height: 500px;
+    }
+    .sec3_country {
+        min-height: 180px;
+    }
+    #main_section8 {
+        background-size: cover;
+        background-position-x: -100px;
+    }
+    .about_info .about_title {
+        text-align: left;
+    }
+    .about_info .advs .single_adv {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .about_info .mob_about_image {
+        border-radius: 5px;
+    }
+    .sec9_form .title,
+    .sec9_form .subtitle {
+        text-align: left;
+    }
+    .modal_form button {
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .modal_form .inputs .modal_input {
+        width: 200px;
+    }
+    .phone_select #modal_form_phone {
+        width: 164px;
+    }
+    .menu_responsive .main_menu li {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .reviews_slider .slick-next {
+        right: 34%;
+    }
+    .reviews_slider .slick-prev {
+        left: 34%;
+    }
+    .reviews_slider .single_review {
+        margin: 0;
+    }
+}
