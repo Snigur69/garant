@@ -63,7 +63,9 @@ header {
     z-index: 1;
     width: 100%;
     left: 15px;
-    padding: 0 10px 5px;
+    padding: 5px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 .header_mob_wrap:hover .header_hidden_phones {
     display: block;
@@ -96,6 +98,32 @@ header {
 }
 .header_container {
     max-width: 1287px !important;
+}
+.header_langs {
+    position: relative;
+    margin-left: 20px;
+}
+.header_langs a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+.header_langs .hidden_lang {
+    position: absolute;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: -10px;
+    display: none;
+}
+.header_langs:hover .hidden_lang {
+    display: block;
+}
+.header_langs:hover > img {
+    transform: rotate(180deg);
 }
 
 /* ================ HEADER ================ */
@@ -872,6 +900,7 @@ header {
     padding: 5px 0;
     border-bottom: 1px solid #e2e2e2;
     min-width: 275px;
+    padding-right: 15px;
 }
 
 #main_filter label {
@@ -892,6 +921,10 @@ header {
     letter-spacing: 0.01em;
     color: #333333;
     border-bottom: none;
+    padding-right: 0;
+}
+.input_price_wallet {
+    border-bottom: none;
 }
 #main_filter .filter_input_wrap {
     position: relative;
@@ -911,6 +944,7 @@ header {
 #main_filter #price_from {
     width: 59px;
     min-width: 59px;
+    padding-right: 0;
 }
 #main_filter #price_to {
     width: 147px;
@@ -1367,6 +1401,563 @@ input[type="number"] {
 .mobile_card_img {
     display: none;
 }
+.page_breadcrumbs {
+    margin-top: 10px;
+}
+.page_breadcrumbs a,
+.page_breadcrumbs span,
+.page_breadcrumbs .current_page {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: #adadad;
+    margin: 0;
+    display: inline;
+}
+#estate_section1 {
+    padding-top: 60px;
+}
+.estate_page_title {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin-bottom: 60px;
+}
+.estate_filter_wrap #main_filter {
+    width: 100%;
+    position: relative;
+    bottom: unset;
+}
+.estate_filter_wrap #main_filter .filter_input_wrap,
+.estate_filter_wrap #main_filter .room_count {
+    min-width: 310px;
+}
+.estate_filter_wrap #main_filter .filter_input {
+    width: 100%;
+}
+.estate_filter_wrap #main_filter .space_from_label input {
+    width: 40px;
+    padding-right: 0;
+}
+.estate_filter_wrap #main_filter .space_to_label input {
+    width: 100px;
+    min-width: 100px !important;
+}
+.estate_filter_wrap #main_filter .filter_input,
+.estate_filter_wrap #main_filter label {
+    font-size: 16px;
+}
+.estate_filter_wrap #main_filter .filter_show_more p {
+    font-size: 14px;
+}
+.estate_filter_wrap #main_filter .filter_show_more > img:first-child {
+    width: 24px;
+}
+.estate_filter_wrap #main_filter #price_from {
+    width: 85px;
+    padding-right: 0;
+}
+.estate_filter_wrap #main_filter #price_to {
+    width: 115px;
+    min-width: 83px;
+}
+.estate_filter_wrap #main_filter .room_count p,
+.estate_filter_wrap #main_filter .room_count p span {
+    font-size: 16px;
+    line-height: 20px;
+}
+.estate_filter_wrap #main_filter .filter_show_results a {
+    font-size: 14px;
+    line-height: 20px;
+}
+.estate_filter_wrap #main_filter .hidden_space_label input,
+.estate_filter_wrap #main_filter .hidden_price_label input {
+    width: 79%;
+}
+.estate_filter_wrap #main_filter .input_price_wallet {
+    border-bottom: none;
+}
+.estate_filter_wrap #main_filter .hidden_space_label,
+.estate_filter_wrap #main_filter .hidden_price_label {
+    font-size: 12px;
+}
+#estate_section2 {
+    padding: 60px 0;
+}
+#estate_section2 .sec3_country .info .title {
+    font-size: 24px;
+    line-height: 20px;
+}
+.estate_sec3_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin-bottom: 60px;
+    text-align: left;
+}
+.estate_doubled_wrap,
+.estate_single_wrap {
+    margin-bottom: 40px;
+}
+.estate_doubled_block {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    height: 100%;
+}
+.estate_doubled_block .left_info {
+    padding: 30px;
+    width: 50%;
+}
+.estate_doubled_block .right_image {
+    width: 50%;
+    background-position: center !important;
+    background-size: cover !important;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.estate_single_block {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    height: 100%;
+    padding: 30px;
+}
+.estate_doubled_block .left_info .left_info_title,
+.estate_single_block .left_info_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.estate_doubled_block .left_info ul,
+.estate_single_block ul {
+    list-style: none;
+    margin: 0;
+}
+.estate_doubled_block .left_info ul li a,
+.estate_single_block ul li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+}
+.estate_doubled_block .left_info ul li,
+.estate_single_block ul li {
+    margin: 3px 0;
+}
+.estate_single_with_form {
+    background: url("../img/single_with_form.jpg") no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+.estate_single_with_form .estate_single_subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 33px;
+    max-width: 170px;
+}
+.estate_single_with_form button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    padding: 8px 30px;
+    background: #3f89ca;
+    border-radius: 54px;
+    filter: drop-shadow(0px 6px 7px rgba(15, 76, 129, 0.15));
+    border: none;
+    cursor: pointer;
+}
+#estate_section3 {
+    padding-bottom: 20px;
+}
+#estate_section4 .estate_sec3_title {
+    margin-bottom: 40px;
+}
+.estate_objects_controls {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.estate_objects_controls > button {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    padding: 8px 15px;
+    background: #ebeef4;
+    border-radius: 111px;
+    border: none;
+    border: 1px solid #ebeef4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.estate_objects_controls > button.active,
+.estate_objects_controls > button:hover {
+    border: 1px solid #0f4c81;
+    background: #fff;
+    color: #0f4c81;
+}
+.estate_popular,
+.estate_popular2,
+.estate_popular3,
+.estate_popular4 {
+    margin-bottom: 60px;
+}
+.estate_single_card {
+    /* border: 1px solid rgba(15, 76, 129, 0.1); */
+    /* border-radius: 5px; */
+}
+.estate_single_card .info_wrap {
+    padding: 20px;
+    margin: 0 5px;
+    border: 1px solid rgba(15, 76, 129, 0.1);
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.estate_single_card .info_wrap .price_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    align-items: center;
+}
+.estate_single_card .info_wrap .price_wrap .liked {
+    background: none;
+    padding: none;
+    line-height: 0;
+    border: none;
+    cursor: pointer;
+}
+.estate_single_card .info_wrap .price_wrap .liked i {
+    font-size: 24px;
+    color: #0f4c81;
+}
+.estate_single_card .info_wrap .price_wrap p {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+}
+.estate_single_card .info_wrap .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.estate_single_card .info_wrap .info .divider {
+    color: #0f4c81;
+}
+.estate_single_card .info_wrap .info p {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+.estate_single_card .info_wrap .info1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin: 0;
+}
+.estate_single_card .info_wrap .info2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.estate_single_card .info_wrap .date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #9e9e9e;
+    margin-bottom: 0;
+}
+.estate_single_card .estate_main_slider .single_main_slide_wrap {
+    width: 100%;
+}
+.estate_single_card .estate_main_slider .single_main_slide {
+    width: calc(100% - 10px) !important;
+    height: 227px;
+    margin-left: 5px;
+    background-position: center !important;
+    background-size: cover !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.estate_single_card .estate_help_slide {
+    margin-top: 5px;
+}
+.estate_single_card .estate_help_slide .estate_help_single_slide {
+    margin: 0 5px;
+    border-radius: 5px;
+    height: 65px;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.estate_main_slider .slick-next {
+    z-index: 1;
+    right: 5px;
+}
+.estate_main_slider .slick-prev {
+    left: 5px;
+    z-index: 1;
+}
+.estate_main_slider .slick-prev::before,
+.estate_main_slider .slick-next::before {
+    background-position: center;
+    width: 10px;
+    height: 28px;
+}
+.estate_main_slider .slick-prev::before {
+    content: url("../img/estate_slick_prev.svg");
+}
+.estate_main_slider .slick-next::before {
+    content: url("../img/estate_slick_next.svg");
+}
+.estate_form_wrap {
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid rgba(15, 76, 129, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: url("../img/estate_form_bg.jpg") no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-bottom: 90px;
+}
+.estate_form_wrap .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin-bottom: 20px;
+}
+.estate_form_wrap .subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #252525;
+    margin-bottom: 0;
+    max-width: 700px;
+}
+.estate_form_wrap form {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.estate_form_wrap form button {
+    margin: 0;
+    padding: 7px 70px;
+    font-size: 14px;
+    filter: drop-shadow(0px 6px 7px rgba(15, 76, 129, 0.15));
+}
+.estate_form_wrap form .about_input {
+    font-size: 14px;
+    width: 230px;
+    border-bottom: 0.5px solid rgba(15, 76, 129, 0.5);
+}
+.estate_form_wrap form .phone_select .country_icon {
+    border-bottom: 0.5px solid rgba(15, 76, 129, 0.5);
+}
+.estate_form_wrap .phone_select #form_phone {
+    width: 193px;
+}
+#estate_section5 {
+    margin-bottom: 60px;
+}
+#estate_section5 .about_info .about_title {
+    text-align: left;
+}
+#estate_section5 .about_info .about_subtitle {
+    font-size: 18px;
+}
+#estate_section5 .about_info .advs .single_adv {
+    border-radius: 5px;
+}
+#estate_section5 .about_items {
+    margin-top: 30px;
+}
+#estate_section5 .about_info,
+#estate_section5 .about_image {
+    margin-bottom: 0;
+}
+#estate_section5 .about_items .about_item {
+    padding: 25px 20px;
+    border: 1px solid rgba(15, 76, 129, 0.1);
+    border-bottom: none;
+    position: relative;
+}
+#estate_section5 .about_items .about_item:first-child {
+    border-left: none;
+    right: -1px;
+}
+#estate_section5 .about_items .about_item:last-child {
+    border-right: none;
+    left: -1px;
+}
+#estate_section6 {
+    margin-bottom: 60px;
+}
+.estate_sec6_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin-bottom: 40px;
+    max-width: 460px;
+}
+.estate_how_to_buy .single_buy_block > img {
+    margin-bottom: 25px;
+}
+.estate_how_to_buy .single_buy_block .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.estate_how_to_buy .single_buy_block .title span {
+    color: #0f4c81;
+}
+.estate_how_to_buy .single_buy_block .text {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #0f2335;
+}
+#estate_section7 .estate_sec3_title {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+.estate_faq_wrap .single_question .question_header button {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.estate_faq_wrap .single_question .question_header button img {
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.estate_faq_wrap .single_question .question_header button.collapsed img {
+    transform: rotate(90deg);
+}
+.estate_faq_wrap .single_question .question_header button.collapsed {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.estate_faq_wrap .single_question {
+    padding: 40px 0 40px;
+    border-bottom: 1px solid rgba(15, 76, 129, 0.5);
+}
+.estate_faq_wrap .single_question .question_header {
+    /* padding: 0 0 30px; */
+}
+.estate_faq_wrap .single_question .single_question_body p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #0f2335;
+    margin-bottom: 0;
+}
+.estate_faq_wrap .single_question .single_question_body > div {
+    padding-top: 30px;
+    max-width: 900px;
+}
+#estate_section7 {
+    margin-bottom: 60px;
+}
+.estate_form_wrap .about_logo_down {
+    display: none;
+}
+.estate_mob_filter_trigger {
+    display: none;
+}
+.estate_single_card .info_wrap .help_price {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #8a8a8a;
+    display: none;
+}
 /* ================ BODY ================ */
 
 /* ================ FOOTER ================ */
@@ -1643,7 +2234,7 @@ footer {
     right: 0;
     opacity: 0;
     pointer-events: none;
-    width: 75%;
+    width: 100%;
     z-index: 2;
     transform: translateX(100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -1652,7 +2243,7 @@ footer {
 .menu_responsive .main_menu {
     padding: 0px 40px 0;
     display: flex;
-    background: #f6f8fa;
+    background: #ffffff;
     width: 100%;
     flex-direction: column;
     overflow: scroll;
@@ -1671,7 +2262,7 @@ footer {
     padding: 10px 0;
     /* text-transform: uppercase; */
     font-weight: 500;
-    text-align: right;
+    text-align: center;
 }
 .menu_responsive .main_menu li a {
     color: #0b2d4a;
@@ -1682,6 +2273,32 @@ footer {
     opacity: 1;
     pointer-events: all;
     transform: translateX(0);
+}
+.mobile_langs ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+    max-width: 50%;
+    border-top: 1px solid rgba(15, 76, 129, 0.1);
+    margin: 10px auto 0 !important;
+    padding-top: 10px;
+}
+.mobile_langs ul li {
+    margin: 0 10px;
+}
+.mobile_langs ul li a {
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 18px;
+    line-height: 22px; */
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+.mobile_langs ul li:hover a {
+    color: #0f4c81;
 }
 
 /* ==================================================================================== */

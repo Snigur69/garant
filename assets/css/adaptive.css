@@ -7,6 +7,12 @@
     }
 }
 
+@media (max-width: 1230px) {
+    .header_langs {
+        margin-left: 8px;
+    }
+}
+
 @media (max-width: 1200px) {
     .header_container {
         max-width: 960px !important;
@@ -67,6 +73,54 @@
     .about_info .advs .single_adv .num {
         margin-right: 8px;
     }
+    .estate_filter_wrap #main_filter .filter_input_wrap,
+    .estate_filter_wrap #main_filter .room_count {
+        min-width: 275px;
+        width: 275px;
+    }
+    .estate_filter_wrap #main_filter #price_to {
+        width: 89px;
+    }
+    .estate_filter_wrap #main_filter .space_to_label input {
+        width: 80px;
+        min-width: 80px !important;
+    }
+    .estate_filter_wrap #main_filter #price_from {
+        width: 81px;
+        padding-right: 0;
+    }
+    .estate_filter_wrap #main_filter #price_from,
+    .estate_filter_wrap #main_filter #price_to {
+        font-size: 14px;
+    }
+    #estate_section2 .sec3_country {
+        min-height: 170px;
+    }
+    .estate_doubled_block .left_info ul li a,
+    .estate_single_block ul li a {
+        font-size: 14px;
+    }
+    .estate_form_wrap form .about_input {
+        width: 190px;
+    }
+    .estate_form_wrap .phone_select #form_phone {
+        width: 153px;
+    }
+    .estate_form_wrap {
+        background-size: cover;
+    }
+    .estate_how_to_buy .single_buy_block .title {
+        font-size: 17px;
+    }
+    .estate_faq_wrap .single_question .single_question_body > div {
+        max-width: 800px;
+    }
+    .header_mob_wrap {
+        margin-left: 0;
+    }
+    .header_consult {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -76,6 +130,8 @@
     .header_logo img {
         width: auto;
         margin: 0 auto;
+        position: relative;
+        z-index: 3;
     }
     .mobile-toggle {
         display: block;
@@ -316,6 +372,65 @@
     .sec5_title {
         text-align: left;
     }
+    #main_filter #price_to {
+        width: 139px;
+        min-width: 127px;
+    }
+    .estate_filter_wrap #main_filter {
+        max-width: 307px;
+    }
+    .estate_doubled_block {
+        flex-direction: column-reverse;
+    }
+    .estate_doubled_block .left_info {
+        width: 100%;
+    }
+    .estate_doubled_block .right_image {
+        width: 100%;
+        min-height: 230px;
+    }
+    .estate_single_block {
+        height: fit-content;
+        width: 100%;
+    }
+    .estate_objects_controls > button {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+    .estate_single_card {
+        max-width: 375px;
+        margin: 0 auto 30px;
+    }
+    .estate_form_wrap form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .estate_form_wrap form .about_input,
+    .estate_form_wrap .phone_select {
+        margin-bottom: 30px;
+    }
+    .estate_form_wrap .phone_select #form_phone {
+        margin-bottom: 0;
+    }
+    .estate_form_wrap form .about_input {
+        width: 230px;
+    }
+    .estate_form_wrap .phone_select #form_phone {
+        width: 193px;
+    }
+    .estate_form_wrap {
+        /* background: url("../img/about_logo_down.png") no-repeat; */
+    }
+    .estate_how_to_buy .single_buy_block {
+        margin-bottom: 30px;
+    }
+    .estate_faq_wrap .single_question .question_header button span {
+        white-space: normal;
+        text-align: left;
+    }
+    .header_langs {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -337,6 +452,38 @@
     }
     #contact_modal .modal-dialog {
         min-width: unset;
+    }
+    .estate_doubled_block,
+    .estate_single_block {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #estate_section3 > .container > .row {
+        flex-flow: wrap;
+    }
+    .first_estate_single {
+        order: 3;
+    }
+    .second_estate_single {
+        order: 2;
+    }
+    .first_estate_double {
+        order: 1;
+    }
+    .second_estate_double {
+        order: 4;
+    }
+    .estate_objects_controls > button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .estate_form_wrap {
+        background: none;
+        position: relative;
+    }
+    .estate_form_wrap .about_logo_down {
+        display: block;
     }
 }
 
@@ -571,6 +718,212 @@
         border: 1px solid rgba(15, 76, 129, 0.16);
         box-sizing: border-box;
         box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    }
+    .estate_page_title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+    #estate_section1 {
+        padding-top: 30px;
+    }
+    .estate_mob_filter_trigger {
+        display: block;
+        background: #ffffff;
+        border: 1px solid #f1f1f1;
+        box-sizing: border-box;
+        border-radius: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #808080;
+        margin: 0 auto;
+        padding: 7px 12px;
+    }
+    .estate_mob_filter_trigger > img {
+        margin-right: 5px;
+        width: 25px;
+    }
+    .estate_filter_wrap {
+        display: none;
+    }
+    #estate_section2 {
+        padding: 35px 0 20px;
+    }
+    .sec3_country_wrap {
+        max-width: 320px;
+    }
+    #estate_section2 .sec3_country .info .title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #estate_section2 .sec3_country .info .link {
+        margin-top: 3px;
+    }
+    .estate_sec3_title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+    .estate_doubled_block,
+    .estate_single_block {
+        max-width: 290px;
+    }
+    .estate_doubled_block .right_image {
+        width: 100%;
+        min-height: 165px;
+        background-size: auto !important;
+    }
+    .estate_doubled_block .left_info {
+        padding: 20px 15px;
+    }
+    .estate_doubled_block .left_info .left_info_title,
+    .estate_single_block .left_info_title {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+    .estate_single_with_form .estate_single_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .estate_single_block {
+        padding: 20px 15px;
+    }
+    #estate_section3 {
+        padding-bottom: 10px;
+    }
+    .estate_objects_controls > button {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 10px;
+    }
+    .estate_single_card {
+        max-width: 290px;
+    }
+    .estate_single_card .estate_main_slider .single_main_slide {
+        height: 180px;
+    }
+    .estate_single_card .estate_help_slide .estate_help_single_slide {
+        height: 55px;
+    }
+    .estate_single_card .info_wrap .info p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .estate_single_card .info_wrap .info span {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .estate_single_card .info_wrap .info1 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .estate_single_card .info_wrap .info2 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 0;
+    }
+    .estate_single_card .info_wrap .date {
+        display: none;
+    }
+    .estate_single_card .info_wrap {
+        padding: 20px 0;
+    }
+    .estate_single_card .info_wrap {
+        border: none;
+    }
+    .estate_single_card {
+        margin-bottom: 0;
+    }
+    .estate_popular,
+    .estate_popular2,
+    .estate_popular3,
+    .estate_popular4 {
+        margin-bottom: 30px;
+    }
+    .estate_products_wrap .row > div {
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    .estate_single_card .info_wrap .help_price {
+        display: block;
+        margin-bottom: 13px;
+    }
+    .estate_single_card .info_wrap .price_wrap {
+        margin-bottom: 0;
+    }
+    .estate_popular2 {
+        margin-bottom: 0;
+    }
+    .estate_form_wrap {
+        padding: 20px 15px;
+        margin-bottom: 50px;
+    }
+    .estate_form_wrap .title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .estate_form_wrap .subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .estate_form_wrap form {
+        margin-top: 20px;
+    }
+    #estate_section5 .about_info .about_subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    #estate_section5 .about_items .about_item {
+        border-left: none;
+        border-right: none;
+    }
+    #estate_section5 .about_items .about_item {
+        padding: 20px 0;
+    }
+    #estate_section5 .about_items {
+        margin-top: 20px;
+    }
+    #estate_section5 {
+        margin-bottom: 30px;
+    }
+    .estate_sec6_title {
+        max-width: unset;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .estate_how_to_buy .single_buy_block > img {
+        margin-bottom: 20px;
+    }
+    .estate_how_to_buy .single_buy_block .title {
+        margin-bottom: 10px;
+    }
+    #estate_section7 .estate_sec3_title {
+        padding-left: 0;
+    }
+
+    .estate_faq_wrap .single_question .question_header button {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .estate_faq_wrap .single_question .question_header button.collapsed {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .estate_faq_wrap .single_question .single_question_body p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .estate_faq_wrap .single_question {
+        padding: 20px 0;
+    }
+    .estate_faq_wrap .single_question .single_question_body > div {
+        padding-top: 20px;
     }
 }
 
