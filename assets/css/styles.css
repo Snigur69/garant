@@ -1643,6 +1643,9 @@ input[type="number"] {
     /* border: 1px solid rgba(15, 76, 129, 0.1); */
     /* border-radius: 5px; */
 }
+.estate_single_card_wrap a {
+    text-decoration: none !important;
+}
 .estate_single_card .info_wrap {
     padding: 20px;
     margin: 0 5px;
@@ -1890,7 +1893,7 @@ input[type="number"] {
 }
 #estate_section7 .estate_sec3_title {
     margin-bottom: 0;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 .estate_faq_wrap .single_question .question_header button {
     padding: 0;
@@ -1957,6 +1960,383 @@ input[type="number"] {
     letter-spacing: 0.01em;
     color: #8a8a8a;
     display: none;
+}
+.estate_page_title .title_country_flag {
+    margin-left: 20px;
+}
+#country_section2 {
+    /* padding-top: 40px; */
+}
+.single_country_object_wrap {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+}
+.single_country_object_wrap a {
+    text-decoration: none !important;
+    position: relative;
+    z-index: 1;
+}
+.single_country_object_wrap .single_country_object::before {
+    width: calc(100% + 80px);
+    height: calc(100% + 80px);
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    content: none;
+    transition: 0.3s;
+    z-index: 0;
+}
+.single_country_object_wrap a:hover .single_country_object::before {
+    content: "";
+}
+.single_country_object {
+    display: flex;
+    position: relative;
+}
+.single_country_object .image_wrap {
+    width: 40%;
+}
+.single_country_object .info_wrap {
+    padding-left: 40px;
+    width: 60%;
+}
+.single_country_object .info_wrap .date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+.single_country_object .info_wrap .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin-bottom: 30px;
+}
+.single_country_object .info_wrap .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.single_country_object .info_wrap .price p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 0;
+}
+.single_country_object .info_wrap .price button {
+    background: none;
+    padding: none;
+    line-height: 0;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.single_country_object .info_wrap .price button i {
+    font-size: 24px;
+    color: #0f4c81;
+}
+.single_country_object .info_wrap .help_price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #8a8a8a;
+    margin-bottom: 20px;
+}
+.single_country_object .info_wrap .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.single_country_object .info_wrap .info p {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+.single_country_object .info_wrap .info .divider {
+    color: #0f4c81;
+    margin: 0 15px;
+}
+.single_country_object .info_wrap .help_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin-bottom: 10px;
+}
+.single_country_object .info_wrap .place {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.single_country_object .info_wrap .place p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin: 0;
+}
+.single_country_object .info_wrap .place button {
+    background: none;
+    padding: none;
+    line-height: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.single_country_object .info_wrap button i {
+    font-size: 24px;
+    color: #0f4c81;
+}
+.single_country_object .info_wrap .description {
+    padding-top: 10px;
+    border-top: 1px solid rgba(15, 76, 129, 0.1);
+}
+.single_country_object .info_wrap .description p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 0;
+}
+.single_country_object_wrap .call {
+    display: none;
+}
+.single_country_object_main_slider .single_county_main_slide {
+    width: 100%;
+    min-height: 300px;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.single_country_object_help_slider {
+    margin-top: 10px;
+}
+.single_country_object_help_slider .single_country_help_slide {
+    border-radius: 5px;
+    min-height: 80px;
+    background-position: center !important;
+    background-size: cover !important;
+    margin: 0 5px;
+}
+.single_country_object_main_slider .slick-next {
+    z-index: 1;
+    right: 5px;
+}
+.single_country_object_main_slider .slick-prev {
+    left: 5px;
+    z-index: 1;
+}
+.single_country_object_main_slider .slick-prev::before,
+.single_country_object_main_slider .slick-next::before {
+    background-position: center;
+    width: 10px;
+    height: 28px;
+}
+.single_country_object_main_slider .slick-prev::before {
+    content: url("../img/estate_slick_prev.svg");
+}
+.single_country_object_main_slider .slick-next::before {
+    content: url("../img/estate_slick_next.svg");
+}
+#country_section2 .estate_form_wrap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.country_page .divider_after_form {
+    border-top: 1px solid rgba(15, 76, 129, 0.1);
+}
+.country_objects_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 60px;
+    flex-wrap: wrap;
+}
+.country_objects_navigation > button {
+    background: #fff;
+    border: 1px solid #a5a5a5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    padding: 0px 7px 0px 7px;
+    cursor: pointer;
+    margin: 0 12px;
+}
+.country_objects_navigation > button i {
+    font-size: 11px;
+    line-height: 0;
+    color: #a5a5a5;
+}
+.country_objects_navigation > button:hover {
+    border: 1px solid #3f89ca;
+}
+.country_objects_navigation > button:hover i {
+    color: #3f89ca;
+}
+.country_objects_navigation ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.country_objects_navigation ul li a,
+.country_objects_navigation ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.country_objects_navigation ul li {
+    margin: 0 12px;
+}
+.country_objects_navigation ul li.current_page {
+    border: 1px solid #3f89ca;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.country_objects_navigation ul li.current_page a {
+    color: #3f89ca;
+    padding: 0 6px;
+}
+#country_section3 {
+    background: #eff3f7;
+    padding: 60px 0 30px;
+}
+#country_section3 .country_sec3_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin-bottom: 40px;
+}
+#country_section3 .country_sec3_steps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#country_section3 .country_sec3_steps p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 30px;
+    max-width: 250px;
+    display: flex;
+}
+#country_section3 .country_sec3_steps p span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin-right: 10px;
+}
+#country_section3 #right_card_wrap button {
+    filter: drop-shadow(0px 6px 7px rgba(15, 76, 129, 0.15));
+}
+#country_section4 {
+    padding: 60px 0 0 0;
+}
+.country_buttons_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.country_buttons_title p {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin: 0;
+}
+.country_buttons_title img {
+    width: 53px;
+}
+.country_faqs
+    .estate_faq_wrap
+    .single_question
+    .question_header
+    button.collapsed {
+    font-size: 18px;
+    line-height: 22px;
+}
+.country_faqs .estate_faq_wrap .single_question {
+    padding: 30px 0;
+}
+
+#city_filter .city_filter_wrap {
+    padding: 40px 0 20px;
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#city_filter .city_filter_wrap a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #808080;
+    text-decoration: none !important;
+}
+#city_filter .city_filter_wrap .divider {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin: 0 2px;
+}
+#city_filter .city_filter_wrap a.active {
+    color: #0f4c81;
+}
+.city_mobile_filter {
+    display: none;
+}
+.city_mobile_filter a {
+    text-decoration: none !important;
 }
 /* ================ BODY ================ */
 

@@ -26,7 +26,6 @@ jQuery(function ($) {
     });
 
     let estate_cards = $(".estate_single_card");
-
     for (let i = 0; i < estate_cards.length; i++) {
         $(estate_cards[i])
             .find(".estate_main_slider")
@@ -44,6 +43,36 @@ jQuery(function ($) {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 asNavFor: $(estate_cards[i]).find(".estate_main_slider"),
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true,
+                arrows: false,
+            });
+    }
+
+    let country_cards = $(".single_country_object");
+
+    for (let i = 0; i < country_cards.length; i++) {
+        $(country_cards[i])
+            .find(".single_country_object_main_slider")
+            .slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: $(country_cards[i]).find(
+                    ".single_country_object_help_slider"
+                ),
+            });
+
+        $(country_cards[i])
+            .find(".single_country_object_help_slider")
+            .slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: $(country_cards[i]).find(
+                    ".single_country_object_main_slider"
+                ),
                 dots: false,
                 centerMode: false,
                 focusOnSelect: true,
@@ -384,6 +413,39 @@ jQuery(function ($) {
         }
     );
 
+    $(".single_country_object .info_wrap .price .liked").on(
+        "click",
+        function () {
+            $(this).find("i").toggleClass("fa-heart-o");
+            $(this).find("i").toggleClass("fa-heart");
+        }
+    );
+
+    $(".single_country_object .info_wrap .place .liked").on(
+        "click",
+        function () {
+            $(this).find("i").toggleClass("fa-heart-o");
+            $(this).find("i").toggleClass("fa-heart");
+        }
+    );
+
+    $(".single_country_object_wrap > a").on("click", function (e) {
+        if (e.target.nodeName === "BUTTON" || e.target.nodeName === "I") {
+            e.preventDefault();
+        }
+    });
+
+    $(".estate_single_card_wrap > a").on("click", function (e) {
+        if (e.target.nodeName === "BUTTON" || e.target.nodeName === "I") {
+            e.preventDefault();
+        }
+    });
+
+    $(".city_mobile_filter .current_option").on("click", function (e) {
+        e.preventDefault();
+        $(this).parent().find("img").toggleClass("active");
+        $(this).parent().find(".hidden_options").toggleClass("opened");
+    });
     // $(".question_header > button").on("click", function () {
     //     console.log($(this).parent().find(".single_question_body"));
     //     $(this)

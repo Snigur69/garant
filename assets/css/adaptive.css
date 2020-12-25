@@ -121,6 +121,12 @@
     .header_consult {
         font-size: 13px;
     }
+    .single_country_object_wrap .single_country_object::before {
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+        top: -20px;
+        left: -20px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -431,6 +437,30 @@
     .header_langs {
         display: none;
     }
+    .single_country_object {
+        flex-direction: column;
+    }
+    .single_country_object .image_wrap {
+        width: 100%;
+    }
+    .single_country_object .info_wrap {
+        padding-left: 0;
+        width: 100%;
+        padding: 30px 5px 0;
+    }
+    .single_country_object_wrap {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #country_section3 .country_sec3_steps {
+        margin-top: 30px;
+    }
+    .single_country_object_wrap a:hover .single_country_object::before {
+        content: none;
+    }
+    #city_filter .city_filter_wrap {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -484,6 +514,9 @@
     }
     .estate_form_wrap .about_logo_down {
         display: block;
+    }
+    .estate_page_title .title_country_flag {
+        display: none;
     }
 }
 
@@ -924,6 +957,146 @@
     }
     .estate_faq_wrap .single_question .single_question_body > div {
         padding-top: 20px;
+    }
+    .single_country_object_wrap {
+        max-width: unset;
+    }
+    .single_country_object {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .single_country_object_main_slider .single_county_main_slide {
+        min-height: 182px;
+    }
+    .single_country_object_help_slider .single_country_help_slide {
+        min-height: 55px;
+    }
+    .single_country_object .info_wrap .date,
+    .single_country_object .info_wrap .title {
+        display: none;
+    }
+    .single_country_object .info_wrap .price button {
+        display: block;
+    }
+    .single_country_object .info_wrap .place button,
+    .single_country_object .info_wrap .description {
+        display: none;
+    }
+    .single_country_object_wrap {
+        padding: 30px 0 0;
+    }
+    .single_country_object .info_wrap .help_price {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+    .single_country_object .info_wrap .info p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .single_country_object .info_wrap .help_info {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .single_country_object .info_wrap .info .divider {
+        color: #0f4c81;
+        margin: 0 4px;
+    }
+    .single_country_object_wrap .call a {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #3f89ca;
+    }
+    .single_country_object_wrap .call {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid rgba(15, 76, 129, 0.1);
+        /* border-bottom: 1px solid rgba(15, 76, 129, 0.1); */
+    }
+    #country_section2 .container {
+        padding: 0;
+    }
+    #country_section2 .estate_form_wrap {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .single_country_object .info_wrap .price p {
+        color: #0f4c81;
+    }
+    .single_country_object .info_wrap {
+        padding-top: 15px;
+    }
+    #country_section3 .country_sec3_title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    #country_section3 .country_sec3_steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    #country_section3 {
+        padding-bottom: 50px;
+    }
+    .country_buttons_title p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .country_buttons_title {
+        margin-bottom: 30px;
+    }
+    #country_section3 .country_sec3_wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #country_section3 .country_sec3_wrap .country_sec3_title,
+    #country_section3 .country_sec3_wrap .country_sec3_steps {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .country_objects_navigation ul li {
+        margin: 0 10px;
+    }
+    #city_filter .city_filter_wrap {
+        display: none;
+    }
+    .city_mobile_filter {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+        padding: 30px 0 18px;
+        position: relative;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .city_mobile_filter img.active {
+        transform: rotate(180deg);
+    }
+    .city_mobile_filter .hidden_options {
+        position: absolute;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        padding: 5px 10px;
+        width: 100%;
+        bottom: -20px;
+        /* left: -10px; */
+        display: none;
+    }
+    .city_mobile_filter .hidden_options.opened {
+        display: block;
+    }
+    .city_mobile_filter a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #0f4c81;
     }
 }
 
