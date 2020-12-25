@@ -1098,6 +1098,46 @@
         letter-spacing: 0.01em;
         color: #0f4c81;
     }
+    #favourites_page #forvourites_tabs_controls a span {
+        display: none;
+    }
+    #favourites_page
+        #favourites_content
+        .single_country_object_wrap:last-child {
+        border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    #favourites_section1 > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #favourites_section1 #forvourites_tabs_controls {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 30px;
+    }
+    #favourites_section1 .favourites_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    #favourites_section1 {
+        padding-top: 30px;
+    }
+    #favourites_page #favourites_content .empty {
+        padding: 10px 15px 50px;
+    }
+    #favourites_page #favourites_content .empty img {
+        width: 50px;
+        margin: 0 auto 10px;
+    }
+    #favourites_page #favourites_content .empty .title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    #favourites_page #favourites_content .empty .subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1157,5 +1197,9 @@
     }
     .reviews_slider .single_review {
         margin: 0;
+    }
+    .modal_favs_head .modal_favs_link {
+        font-size: 12px;
+        line-height: 17px;
     }
 }

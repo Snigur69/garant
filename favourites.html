@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Garant</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+        <!-- <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link rel="stylesheet" href="assets/css/slick-style.css" />
+        <link rel="stylesheet" href="assets/css/lato.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/adaptive.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header_container container">
+                <div class="row">
+                    <div class="header_logo col-6 col-lg-2">
+                        <a href="/"><img src="assets/img/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_menu col-lg-6 col-xl-5">
+                        <ul class="menu">
+                            <li><a href="/estate.html">Недвижимость</a></li>
+                            <li><a href="#">Доля в отеле</a></li>
+                            <li><a href="#">Венчурный фонд</a></li>
+                            <li><a href="#">ВНЖ и паспорт</a></li>
+                            <li><a href="#">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_right col-6 col-lg-4 col-xl-5">
+                        <div class="mobile_header_phone header_mob_wrap">
+                            <img src="assets/img/mob_header_phone.svg" alt="" />
+                            <div class="header_hidden_phones">
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#favourites_modal"
+                            ><img src="assets/img/header_heart.svg" alt=""
+                        /></a>
+                        <div id="header_phone_wrap" class="header_mob_wrap">
+                            <img
+                                src="assets/img/mob_header_phone.svg"
+                                alt=""
+                                class="header_phone_icon"
+                            />
+
+                            <a href="#" class="header_mob main_header_mob"
+                                >+38 044 299 28 58</a
+                            >
+                            <img src="assets/img/header_mob_arr.svg" alt="" />
+                            <div class="header_hidden_phones">
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="mobile-toggle">
+                            <div class="button_menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <button
+                            class="header_consult"
+                            data-toggle="modal"
+                            data-target="#contact_modal"
+                        >
+                            Получить консультацию
+                        </button>
+                        <div class="header_langs">
+                            <a href="#" class="current_lang">RU</a>
+                            <img src="assets/img/header_mob_arr.svg" alt="" />
+                            <div class="hidden_lang">
+                                <a href="#">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_responsive">
+                <nav class="main_menu">
+                    <ul>
+                        <li><a href="/estate.html">Недвижимость</a></li>
+                        <li><a href="#">Доля в отеле</a></li>
+                        <li><a href="#">Венчурный фонд</a></li>
+                        <li><a href="#">ВНЖ и паспорт</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                    <div class="mobile_langs">
+                        <ul>
+                            <li><a href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="favourites_page">
+            <div class="page_breadcrumbs">
+                <div class="container">
+                    <a href="/">Главная</a>
+                    <span class="divider"> | </span>
+                    <p class="current_page">Избранные</p>
+                </div>
+            </div>
+
+            <div id="favourites_section1">
+                <div class="container">
+                    <p class="favourites_title">Избранные</p>
+
+                    <!-- Если использоваться будут табы - то это навигация -->
+                    <div id="favourites_tabs_nav">
+                        <ul class="nav" id="fav_tab" role="tablist">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    id="fav_tab1_title"
+                                    data-toggle="tab"
+                                    href="#fav_tab1"
+                                    role="tab"
+                                    aria-controls="fav_tab1"
+                                    aria-selected="true"
+                                    >Квартиры</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="fav_tab2_title"
+                                    data-toggle="tab"
+                                    href="#fav_tab2"
+                                    role="tab"
+                                    aria-controls="fav_tab2"
+                                    aria-selected="false"
+                                    >Дома</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="fav_tab3_title"
+                                    data-toggle="tab"
+                                    href="#fav_tab3"
+                                    role="tab"
+                                    aria-controls="fav_tab3"
+                                    aria-selected="false"
+                                    >Земельные участки</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="fav_tab4_title"
+                                    data-toggle="tab"
+                                    href="#fav_tab4"
+                                    role="tab"
+                                    aria-controls="fav_tab4"
+                                    aria-selected="false"
+                                    >Отели</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="fav_tab5_title"
+                                    data-toggle="tab"
+                                    href="#fav_tab5"
+                                    role="tab"
+                                    aria-controls="fav_tab5"
+                                    aria-selected="false"
+                                    >Пентхаусы</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="forvourites_tabs_controls">
+                        <a href="#" class="sort"
+                            ><img src="assets/img/fav_sort_icon.svg" alt="" />
+                            <span>По дате добавления в избранное</span></a
+                        >
+                        <a href="#" class="remove_all"
+                            ><img src="assets/img/fav_remove_icon.svg" alt="" />
+                            <span>Удалить все</span></a
+                        >
+                    </div>
+
+                    <div id="favourites_content">
+                        <div class="non_empty">
+                            <div class="single_country_object_wrap">
+                                <a href="#">
+                                    <div class="single_country_object">
+                                        <div class="image_wrap">
+                                            <div
+                                                class="single_country_object_main_slider"
+                                            >
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                            <div
+                                                class="single_country_object_help_slider"
+                                            >
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="info_wrap">
+                                            <p class="date">
+                                                Объект сдан в 2019
+                                            </p>
+                                            <p class="title">
+                                                3-комн. квартира в Порту с
+                                                бассейном
+                                            </p>
+                                            <div class="price">
+                                                <p>€ 300 000</p>
+                                                <button
+                                                    class="liked hidden_button"
+                                                >
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <p class="help_price">1 029 €/м2</p>
+                                            <div class="info">
+                                                <p>3-комн. квартира</p>
+                                                <span class="divider">•</span>
+                                                <p>169,2 м</p>
+                                                <span class="divider">•</span>
+                                                <p>3/11 этаж</p>
+                                            </div>
+                                            <p class="help_info">
+                                                Бассейн, терраса, паркоместо,
+                                                камин, зона для барбекю
+                                            </p>
+                                            <div class="place">
+                                                <p>Порту, 3 км до океана</p>
+                                                <button class="liked">
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <div class="description">
+                                                <p>
+                                                    Продается 2-этажная вилла
+                                                    площадью 148 кв.м В Пафосе.
+                                                    Первый этаж состоит из одной
+                                                    спальной комнаты, гостиной с
+                                                    кухней, одной ванной
+                                                    комнаты. Второй этаж состоит
+                                                    из 2 спальных комнат, 2
+                                                    ванных комнат. Из окон
+                                                    открывается вид на море, на
+                                                    горы. У объекта есть
+                                                    солнечные батареи для
+                                                    нагрева воды, батареи для
+                                                    нагрева воды
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="call">
+                                    <a href="#">Позвонить</a>
+                                </div>
+                            </div>
+                            <div class="single_country_object_wrap">
+                                <a href="#">
+                                    <div class="single_country_object">
+                                        <div class="image_wrap">
+                                            <div
+                                                class="single_country_object_main_slider"
+                                            >
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                            <div
+                                                class="single_country_object_help_slider"
+                                            >
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="info_wrap">
+                                            <p class="date">
+                                                Объект сдан в 2019
+                                            </p>
+                                            <p class="title">
+                                                3-комн. квартира в Порту с
+                                                бассейном
+                                            </p>
+                                            <div class="price">
+                                                <p>€ 300 000</p>
+                                                <button
+                                                    class="liked hidden_button"
+                                                >
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <p class="help_price">1 029 €/м2</p>
+                                            <div class="info">
+                                                <p>3-комн. квартира</p>
+                                                <span class="divider">•</span>
+                                                <p>169,2 м</p>
+                                                <span class="divider">•</span>
+                                                <p>3/11 этаж</p>
+                                            </div>
+                                            <p class="help_info">
+                                                Бассейн, терраса, паркоместо,
+                                                камин, зона для барбекю
+                                            </p>
+                                            <div class="place">
+                                                <p>Порту, 3 км до океана</p>
+                                                <button class="liked">
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <div class="description">
+                                                <p>
+                                                    Продается 2-этажная вилла
+                                                    площадью 148 кв.м В Пафосе.
+                                                    Первый этаж состоит из одной
+                                                    спальной комнаты, гостиной с
+                                                    кухней, одной ванной
+                                                    комнаты. Второй этаж состоит
+                                                    из 2 спальных комнат, 2
+                                                    ванных комнат. Из окон
+                                                    открывается вид на море, на
+                                                    горы. У объекта есть
+                                                    солнечные батареи для
+                                                    нагрева воды, батареи для
+                                                    нагрева воды
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="call">
+                                    <a href="#">Позвонить</a>
+                                </div>
+                            </div>
+
+                            <div class="single_country_object_wrap">
+                                <a href="#">
+                                    <div class="single_country_object">
+                                        <div class="image_wrap">
+                                            <div
+                                                class="single_country_object_main_slider"
+                                            >
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                            <div
+                                                class="single_country_object_help_slider"
+                                            >
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="info_wrap">
+                                            <p class="date">
+                                                Объект сдан в 2019
+                                            </p>
+                                            <p class="title">
+                                                3-комн. квартира в Порту с
+                                                бассейном
+                                            </p>
+                                            <div class="price">
+                                                <p>€ 300 000</p>
+                                                <button
+                                                    class="liked hidden_button"
+                                                >
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <p class="help_price">1 029 €/м2</p>
+                                            <div class="info">
+                                                <p>3-комн. квартира</p>
+                                                <span class="divider">•</span>
+                                                <p>169,2 м</p>
+                                                <span class="divider">•</span>
+                                                <p>3/11 этаж</p>
+                                            </div>
+                                            <p class="help_info">
+                                                Бассейн, терраса, паркоместо,
+                                                камин, зона для барбекю
+                                            </p>
+                                            <div class="place">
+                                                <p>Порту, 3 км до океана</p>
+                                                <button class="liked">
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <div class="description">
+                                                <p>
+                                                    Продается 2-этажная вилла
+                                                    площадью 148 кв.м В Пафосе.
+                                                    Первый этаж состоит из одной
+                                                    спальной комнаты, гостиной с
+                                                    кухней, одной ванной
+                                                    комнаты. Второй этаж состоит
+                                                    из 2 спальных комнат, 2
+                                                    ванных комнат. Из окон
+                                                    открывается вид на море, на
+                                                    горы. У объекта есть
+                                                    солнечные батареи для
+                                                    нагрева воды, батареи для
+                                                    нагрева воды
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="call">
+                                    <a href="#">Позвонить</a>
+                                </div>
+                            </div>
+
+                            <div class="single_country_object_wrap">
+                                <a href="#">
+                                    <div class="single_country_object">
+                                        <div class="image_wrap">
+                                            <div
+                                                class="single_country_object_main_slider"
+                                            >
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_county_main_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                            <div
+                                                class="single_country_object_help_slider"
+                                            >
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+
+                                                <div
+                                                    class="single_country_help_slide"
+                                                    style="
+                                                        background: url(assets/img/single_country_object.jpg)
+                                                            no-repeat;
+                                                    "
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div class="info_wrap">
+                                            <p class="date">
+                                                Объект сдан в 2019
+                                            </p>
+                                            <p class="title">
+                                                3-комн. квартира в Порту с
+                                                бассейном
+                                            </p>
+                                            <div class="price">
+                                                <p>€ 300 000</p>
+                                                <button
+                                                    class="liked hidden_button"
+                                                >
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <p class="help_price">1 029 €/м2</p>
+                                            <div class="info">
+                                                <p>3-комн. квартира</p>
+                                                <span class="divider">•</span>
+                                                <p>169,2 м</p>
+                                                <span class="divider">•</span>
+                                                <p>3/11 этаж</p>
+                                            </div>
+                                            <p class="help_info">
+                                                Бассейн, терраса, паркоместо,
+                                                камин, зона для барбекю
+                                            </p>
+                                            <div class="place">
+                                                <p>Порту, 3 км до океана</p>
+                                                <button class="liked">
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <div class="description">
+                                                <p>
+                                                    Продается 2-этажная вилла
+                                                    площадью 148 кв.м В Пафосе.
+                                                    Первый этаж состоит из одной
+                                                    спальной комнаты, гостиной с
+                                                    кухней, одной ванной
+                                                    комнаты. Второй этаж состоит
+                                                    из 2 спальных комнат, 2
+                                                    ванных комнат. Из окон
+                                                    открывается вид на море, на
+                                                    горы. У объекта есть
+                                                    солнечные батареи для
+                                                    нагрева воды, батареи для
+                                                    нагрева воды
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="call">
+                                    <a href="#">Позвонить</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="empty">
+                            <img src="assets/img/empty_box.svg" alt="" />
+                            <p class="title">
+                                Добавляйте обьявления в избранные
+                            </p>
+                            <p class="subtitle">
+                                Отмечайте интересные обьявления и следите за
+                                изменением цены
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Если использоваться будут табы - то это контент -->
+                    <div id="favourites_tabs_content">
+                        <div class="tab-content" id="favTabContent">
+                            <div
+                                class="tab-pane fade show active"
+                                id="fav_tab1"
+                                role="tabpanel"
+                                aria-labelledby="fav_tab1_title"
+                            ></div>
+                            <div
+                                class="tab-pane fade"
+                                id="fav_tab2"
+                                role="tabpanel"
+                                aria-labelledby="fav_tab2_title"
+                            >
+                                Дома
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="fav_tab3"
+                                role="tabpanel"
+                                aria-labelledby="fav_tab3_title"
+                            >
+                                Земельные участки
+                            </div>
+
+                            <div
+                                class="tab-pane fade"
+                                id="fav_tab4"
+                                role="tabpanel"
+                                aria-labelledby="fav_tab4_title"
+                            >
+                                Отели
+                            </div>
+
+                            <div
+                                class="tab-pane fade"
+                                id="fav_tab5"
+                                role="tabpanel"
+                                aria-labelledby="fav_tab5_title"
+                            >
+                                Пентхаусы
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_offices">
+                    <p class="footer_title">Наши офисы</p>
+                    <div class="offices row">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office1.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office1_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Москва</p>
+                                    <p class="city">Россия</p>
+                                    <p class="address">
+                                        Уланский переулок 22с1
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office2.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office2_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Алматы</p>
+                                    <p class="city">Казахстан</p>
+                                    <p class="address">ул. Таттимбета 24</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office3.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office3_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Киев</p>
+                                    <p class="city">Украина</p>
+                                    <p class="address">ул. Сикорского 1а</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office4.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office4_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Афины</p>
+                                    <p class="city">Греция</p>
+                                    <p class="address">
+                                        25, Agiou Georgiou str, Grammatiko
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office5.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office5_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Торревьеха</p>
+                                    <p class="city">Испания</p>
+                                    <p class="address">
+                                        Avenida Habaneras 87, 03182 Torrevieja
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office6.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office6_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Вила-Нова-ди-Гая</p>
+                                    <p class="city">Португалия</p>
+                                    <p class="address">
+                                        Av. Gil Vicente 583 4400-166 Vila Nova
+                                        de Gaia
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer_countries">
+                        <div>
+                            <a href="#">Австрия</a>
+                            <a href="#">Испания</a>
+                            <a href="#">Португалия</a>
+                            <a href="#">Греция</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Велкобритания</a>
+                            <a href="#">Монако</a>
+                            <a href="#">Швейцария</a>
+                            <a href="#">Мальты</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Кипр</a>
+                            <a href="#">Черногории</a>
+                            <a href="#">Греция</a>
+                            <a href="#">Испания</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Антигуа и Барбуда</a>
+                            <a href="#">Сент-Киттс и Невис</a>
+                            <a href="#">Доминика</a>
+                            <a href="#">Вануату</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Гренада</a>
+                            <a href="#">Сент-Люсия</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_footer">
+                        <ul>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">In English</a></li>
+                            <li class="footer_large_link">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                            <li class="footer_large_link">
+                                <a href="#">Разместить объявление</a>
+                            </li>
+                            <li class="footer_large_link">
+                                <a href="#">Вход и регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_socials">
+                        <a href="#"
+                            ><img src="assets/img/footer_logo.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_fb.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_inst.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_tg.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_tw.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_vk.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_yt.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Contact Modal -->
+        <div
+            class="modal fade"
+            id="contact_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="modal-body">
+                        <p class="modal_title">Запросить детали</p>
+                        <p class="modal_text">
+                            С Вами свяжется ведущий специалист по продаже
+                            недвижимости в Греции и проконсультирует по всем
+                            интересующим вопросам
+                        </p>
+                        <form action="" class="modal_form">
+                            <div class="inputs">
+                                <input
+                                    placeholder="E-mail"
+                                    type="text"
+                                    id="email"
+                                    class="about_input modal_input"
+                                />
+                                <input
+                                    placeholder="Введите имя"
+                                    type="text"
+                                    id="name"
+                                    class="about_input modal_input"
+                                />
+                                <div class="phone_select">
+                                    <div class="country_icon">
+                                        <img
+                                            class="selected_modal_country modal_country"
+                                            src="assets/img/select_country.png"
+                                            alt=""
+                                            data-value="kz"
+                                        />
+                                        <img
+                                            class="form_country_arrow"
+                                            src="assets/img/country_arr.svg"
+                                            alt=""
+                                        />
+                                        <div
+                                            class="hidden_countries hidden_modal_counties"
+                                        >
+                                            <img
+                                                class="modal_country"
+                                                src="assets/img/select_country1.png"
+                                                alt=""
+                                                data-value="ua"
+                                            />
+
+                                            <img
+                                                class="modal_country"
+                                                src="assets/img/select_country2.png"
+                                                alt=""
+                                                data-value="ru"
+                                            />
+                                        </div>
+                                    </div>
+                                    <input
+                                        placeholder="+38 (099) 999 - 99 - 99"
+                                        type="text"
+                                        id="modal_form_phone"
+                                        class="about_input"
+                                    />
+                                </div>
+                            </div>
+                            <button class="main_btn">Запросить детали</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourites Modal -->
+        <div
+            class="modal fade"
+            id="favourites_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal_favs_head">
+                            <p class="modal_favs_title">Избранное</p>
+                            <a href="#" class="modal_favs_link"
+                                >Смотреть избранное
+                                <img src="assets/img/modal_fav_arr.svg" alt=""
+                            /></a>
+                        </div>
+
+                        <div class="modal_favourites_content">
+                            <div class="non_empty">
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="empty">
+                                <img src="assets/img/empty_box.svg" alt="" />
+                                <p class="title">
+                                    Добавляйте обьявления в избранные
+                                </p>
+                                <p class="subtitle">
+                                    Отмечайте интересные обьявления и следите за
+                                    изменением цены
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Если будем использовать табі, то они здесь -->
+                        <div class="modal_favs_content">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        id="tab1_title"
+                                        data-toggle="tab"
+                                        href="#tab1"
+                                        role="tab"
+                                        aria-controls="tab1"
+                                        aria-selected="true"
+                                        >Квартиры</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="tab2_title"
+                                        data-toggle="tab"
+                                        href="#tab2"
+                                        role="tab"
+                                        aria-controls="tab2"
+                                        aria-selected="false"
+                                        >Дома</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="tab3_title"
+                                        data-toggle="tab"
+                                        href="#tab3"
+                                        role="tab"
+                                        aria-controls="tab3"
+                                        aria-selected="false"
+                                        >Земельные участки</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="tab1"
+                                    role="tabpanel"
+                                    aria-labelledby="tab1_title"
+                                >
+                                    tab1
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab2"
+                                    role="tabpanel"
+                                    aria-labelledby="tab2_title"
+                                >
+                                    tab2
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab3"
+                                    role="tabpanel"
+                                    aria-labelledby="tab3_title"
+                                >
+                                    tab3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://use.fontawesome.com/421d2d196c.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="assets/js/jquery.mask.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
