@@ -148,24 +148,69 @@ jQuery(function ($) {
     });
 
     $(".filter_input").on("focus", function () {
-        toggleHelpFilter();
         $(this).parent().find(".hidden_dropdown").toggleClass("active");
         $(this).parent().toggleClass("open");
     });
 
+    $(".estate_filter_wrap #main_filter .filter_input#country").on(
+        "focus",
+        function () {
+            toggleHelpFilter();
+        }
+    );
+
+    $(".estate_filter_wrap #main_filter .filter_input#type").on(
+        "focus",
+        function () {
+            toggleHelpFilter();
+        }
+    );
+
+    $(".estate_filter_wrap #main_filter .filter_input#build_type").on(
+        "focus",
+        function () {
+            toggleHelpFilter();
+        }
+    );
+
     $(".filter_input_wrap.space").on("mousedown", function (e) {
+        if ($(window).width() < 576) {
+            if ($("#filter_mob_bg").length) {
+                $("#filter_mob_bg").addClass("active");
+            }
+        }
         $(e.currentTarget).find(".hidden_dropdown").addClass("active");
         $(e.currentTarget).addClass("open");
     });
 
-    $(".filter_input").on("blur", function () {
-        toggleHelpFilter();
+    $(".filter_input_wrap.space > label > input").on("mousedown", function (e) {
+        if ($(window).width() < 576) {
+            if ($("#filter_mob_bg").length) {
+                $("#filter_mob_bg").toggleClass("active");
+            }
+        }
+    });
 
+    $(".filter_input").on("blur", function () {
         if (!$(this).hasClass("type_input")) {
             $(this).parent().toggleClass("open");
             $(this).parent().find(".hidden_dropdown").toggleClass("active");
         }
     });
+
+    $(".estate_filter_wrap #main_filter .filter_input#country").on(
+        "blur",
+        function () {
+            toggleHelpFilter();
+        }
+    );
+
+    $(".estate_filter_wrap #main_filter .filter_input#build_type").on(
+        "blur",
+        function () {
+            toggleHelpFilter();
+        }
+    );
 
     $("#hidden_space_from").on("change", function () {
         $("#space_from").val($(this).val());
@@ -232,8 +277,17 @@ jQuery(function ($) {
     });
 
     $(".filter_top > .price").on("click", function (e) {
+        if ($(window).width() < 576) {
+            if ($("#filter_mob_bg").length) {
+                $("#filter_mob_bg").addClass("active");
+            }
+        }
         $(e.currentTarget).find(".hidden_dropdown").addClass("active");
         $(e.currentTarget).addClass("open");
+    });
+
+    $(".filter_top > .price > label").on("click", function (e) {
+        toggleHelpFilter();
     });
 
     $(".room_count .room").on("click", function () {
@@ -246,25 +300,30 @@ jQuery(function ($) {
                 if (!$(e.target).hasClass("hidden_checkbox_title")) {
                     $(".hidden_type_dropdown").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "DIV") {
                 if (!$(e.target).hasClass("hidden_type_dropdown")) {
                     $(".hidden_type_dropdown").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "LI") {
                 if (!$(e.target).parent().hasClass("hidden_checkbox_menu")) {
                     $(".hidden_type_dropdown").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "LABEL") {
                 if (!$(e.target).parent().hasClass("checkbox")) {
                     $(".hidden_type_dropdown").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else {
                 $(".hidden_type_dropdown").removeClass("active");
                 $(".filter_input_wrap").removeClass("open");
+                toggleHelpFilter();
             }
         }
 
@@ -276,6 +335,7 @@ jQuery(function ($) {
                 ) {
                     $(".hidden_space").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "INPUT") {
                 if (
@@ -284,6 +344,7 @@ jQuery(function ($) {
                 ) {
                     $(".hidden_space").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "LABEL") {
                 if (
@@ -292,10 +353,12 @@ jQuery(function ($) {
                 ) {
                     $(".hidden_space").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else {
                 $(".hidden_space").removeClass("active");
                 $(".filter_input_wrap").removeClass("open");
+                toggleHelpFilter();
             }
         }
 
@@ -309,6 +372,7 @@ jQuery(function ($) {
                 ) {
                     $(".hidden_price").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "INPUT") {
                 if (
@@ -317,6 +381,7 @@ jQuery(function ($) {
                 ) {
                     $(".hidden_price").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "LABEL") {
                 if (
@@ -325,6 +390,7 @@ jQuery(function ($) {
                 ) {
                     $(".hidden_price").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else if (e.target.nodeName === "LI") {
                 if (!$(e.target).parent().hasClass("price_variants_ul")) {
@@ -335,10 +401,12 @@ jQuery(function ($) {
                 if (!$(e.target).hasClass("wallet")) {
                     $(".hidden_price").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
                 }
             } else {
                 $(".hidden_price").removeClass("active");
                 $(".filter_input_wrap").removeClass("open");
+                toggleHelpFilter();
             }
         }
     });
@@ -505,6 +573,14 @@ jQuery(function ($) {
         $(this).parent().find("img").toggleClass("active");
         $(this).parent().find(".hidden_options").toggleClass("opened");
     });
+
+    $(".estate_mob_filter_trigger").on("click", function () {
+        $(".estate_filter_wrap").toggleClass("mobile_active");
+    });
+    $(".mobile_filter_header > button").on("click", function () {
+        $(".estate_filter_wrap").toggleClass("mobile_active");
+    });
+
     // $(".question_header > button").on("click", function () {
     //     console.log($(this).parent().find(".single_question_body"));
     //     $(this)

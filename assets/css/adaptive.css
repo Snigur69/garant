@@ -893,7 +893,7 @@
     /* ============= МОБИЛЬНЫЙ ФИЛЬТР ДЛЯ НЕДВИЖИМОСТИ ============= */
 
     .estate_filter_wrap {
-        display: flex;
+        /* display: flex; */
         display: none;
         position: fixed;
         width: 100%;
@@ -903,6 +903,10 @@
         background: #fff;
         z-index: 10;
         align-items: center;
+        flex-direction: column;
+    }
+    .estate_filter_wrap.mobile_active {
+        display: flex;
     }
     .estate_filter_wrap #main_filter {
         /* height: 100%; */
@@ -915,7 +919,7 @@
     .estate_filter_wrap #main_filter .filter_controls .filter_show_more {
         display: none;
     }
-    .estate_filter_hidden_label {
+    .estate_filter_wrap .estate_filter_hidden_label {
         display: block;
         font-style: normal;
         font-weight: normal !important;
@@ -941,6 +945,27 @@
         width: 100%;
         top: -10px !important;
     }
+    .estate_filter_wrap .mobile_filter_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 15px;
+        border-bottom: 1px solid rgba(63, 137, 202, 0.1);
+    }
+    .estate_filter_wrap .mobile_filter_header p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #3f89ca;
+        margin: 0;
+    }
+    .estate_filter_wrap .mobile_filter_header button {
+        border: none;
+        background: none;
+    }
     .estate_filter_wrap #main_filter .custom_dropdown_ul {
         padding: 10px 0;
     }
@@ -960,6 +985,7 @@
         font-size: 14px;
         line-height: 20px;
         color: #000000;
+        padding-right: 35px;
     }
     .estate_filter_wrap #main_filter .filter_input_wrap::after {
         content: url(../img/mob_filter_arr.svg);
@@ -1003,15 +1029,23 @@
     }
     .estate_filter_wrap #main_filter #price_from {
         width: calc(100% - 22px);
+        padding-right: 0;
+        padding-left: 0;
     }
     .estate_filter_wrap #main_filter #price_to {
         width: calc(100% - 38px);
+        padding-left: 0;
+        padding-right: 0;
     }
     .estate_filter_wrap #main_filter .space_from_label #space_from {
         width: calc(100% - 51px);
+        padding-right: 0;
+        padding-left: 0;
     }
     .estate_filter_wrap #main_filter .space_to_label #space_to {
         width: calc(100% - 24px);
+        padding-right: 0;
+        padding-left: 0;
     }
     .estate_filter_wrap #main_filter .space_to_label {
         left: -5px;
@@ -1060,6 +1094,14 @@
     }
     .estate_filter_wrap #main_filter .filter_show_results {
         margin-top: 0;
+    }
+    .estate_filter_wrap .hidden_space_label,
+    .estate_filter_wrap .hidden_price_label {
+        max-width: unset;
+        width: 48%;
+    }
+    .estate_filter_wrap .price_variants_ul {
+        width: 48%;
     }
     /* ============= МОБИЛЬНЫЙ ФИЛЬТР ДЛЯ НЕДВИЖИМОСТИ ============= */
 

@@ -1844,6 +1844,9 @@ input[type="number"] {
     margin-bottom: 0;
     max-width: 700px;
 }
+.mobile_filter_header {
+    display: none;
+}
 .estate_form_wrap form {
     margin-top: 50px;
     display: flex;

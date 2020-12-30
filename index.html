@@ -154,6 +154,9 @@
             </div>
             <div id="main_filter">
                 <div class="filter_top">
+                    <label class="estate_filter_hidden_label"
+                        >Выбрать город</label
+                    >
                     <div class="filter_input_wrap country_wrap">
                         <input
                             type="text"
@@ -182,6 +185,9 @@
                             </ul>
                         </div>
                     </div>
+                    <label class="estate_filter_hidden_label"
+                        >Тип недвижимости</label
+                    >
                     <div class="filter_input_wrap">
                         <input
                             type="text"
@@ -280,12 +286,13 @@
                             </ul>
                         </div>
                     </div>
+                    <label class="estate_filter_hidden_label">Цена</label>
                     <div class="price filter_input_wrap">
                         <label
                             class="price_from_label price_label"
                             for="price_from"
                         >
-                            Цена от
+                            <span>Цена</span> от
                             <input
                                 type="text"
                                 id="price_from"
@@ -369,6 +376,9 @@
                 </div>
 
                 <div class="filter_hidden">
+                    <label class="estate_filter_hidden_label"
+                        >Возраст объекта</label
+                    >
                     <div class="filter_input_wrap build_type">
                         <input
                             type="text"
@@ -387,12 +397,13 @@
                             </ul>
                         </div>
                     </div>
+                    <label class="estate_filter_hidden_label">Площадь</label>
                     <div class="space price filter_input_wrap">
                         <label
                             class="space_from_label space_label"
                             for="space_from"
                         >
-                            Площадь от, м<sup>2</sup>
+                            <span>Площадь</span> от, м<sup>2</sup>
                             <input
                                 type="text"
                                 id="space_from"
@@ -441,8 +452,12 @@
                         </div>
                     </div>
                     <div class="room_count">
+                        <label class="estate_filter_hidden_label"
+                            >Кол-во спален:</label
+                        >
                         <p>
-                            Кол-во спален: <span class="room">1</span
+                            <span class="room_count_title">Кол-во спален:</span>
+                            <span class="room">1</span
                             ><span class="room active">2</span
                             ><span class="room">3</span
                             ><span class="room">4</span
@@ -463,14 +478,9 @@
                             alt=""
                         />
                     </div>
-                    <p class="mobile_filter_count">
-                        Всего <span> 99 999</span> объявлений
-                    </p>
-
                     <div class="filter_show_results">
-                        <p>Всего <span> 99 999</span> объявлений</p>
                         <a href="#" class="main_btn"
-                            >Показать результат <span>(94)</span></a
+                            >Показать (<span>94</span>)</a
                         >
                     </div>
                 </div>
