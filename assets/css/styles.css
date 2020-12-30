@@ -94,8 +94,15 @@ header {
     background: #3f89ca;
     border-radius: 20px;
     padding: 10px 18px;
-    border: none !important;
     cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #3f89ca !important;
+}
+.header_consult:hover {
+    background: #ffffff;
+    border: 1px solid #3f89ca !important;
+    box-sizing: border-box;
+    color: #3f89ca;
 }
 .header_container {
     max-width: 1287px !important;
@@ -614,6 +621,17 @@ header {
     border: none;
     padding: 10px 33px;
     margin: 40px auto 0;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #3f89ca;
+    filter: drop-shadow(0px 6px 7px rgba(15, 76, 129, 0.15));
+}
+.main_btn:hover {
+    background: #ffffff;
+    border: 1px solid #3f89ca;
+    box-sizing: border-box;
+    border-radius: 54px;
+    color: #3f89ca !important;
 }
 #main_section7 {
     padding: 55px 0;
@@ -1565,6 +1583,10 @@ input[type="number"] {
     letter-spacing: 0.01em;
     color: #0f4c81;
 }
+.estate_doubled_block .left_info ul li a:hover,
+.estate_single_block ul li a:hover {
+    text-decoration-color: rgba(15, 76, 129, 0.6);
+}
 .estate_doubled_block .left_info ul li,
 .estate_single_block ul li {
     margin: 3px 0;
@@ -1598,6 +1620,15 @@ input[type="number"] {
     filter: drop-shadow(0px 6px 7px rgba(15, 76, 129, 0.15));
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #3f89ca;
+}
+.estate_single_with_form button:hover {
+    background: #ffffff;
+    border: 1px solid #3f89ca;
+    box-sizing: border-box;
+    border-radius: 54px;
+    color: #3f89ca;
 }
 #estate_section3 {
     padding-bottom: 20px;
@@ -1667,10 +1698,24 @@ input[type="number"] {
     line-height: 0;
     border: none;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
 .estate_single_card .info_wrap .price_wrap .liked i {
     font-size: 24px;
     color: #0f4c81;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.estate_single_card .info_wrap .price_wrap .liked i.fa-heart-o {
+    background: url("../img/fav_heart.svg") no-repeat;
+}
+.estate_single_card .info_wrap .price_wrap .liked i.fa-heart {
+    background: url("../img/fav_heart_hov.svg") no-repeat;
+}
+.estate_single_card .info_wrap .price_wrap .liked i::before {
+    content: none;
 }
 .estate_single_card .info_wrap .price_wrap p {
     margin: 0;
@@ -2111,10 +2156,41 @@ input[type="number"] {
     cursor: pointer;
     position: relative;
     z-index: 1;
+    width: 24px;
+    height: 24px;
 }
 .single_country_object .info_wrap button i {
     font-size: 24px;
     color: #0f4c81;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.estate_filter_hidden_label {
+    display: none;
+}
+#filter_mob_bg {
+    display: none;
+    z-index: 5;
+}
+#filter_mob_bg.active {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.3);
+}
+.single_country_object .info_wrap button i.fa-heart-o {
+    background: url("../img/fav_heart.svg") no-repeat;
+}
+.single_country_object .info_wrap button i.fa-heart {
+    background: url("../img/fav_heart_hov.svg") no-repeat;
+}
+.single_country_object .info_wrap button i::before {
+    content: none;
 }
 .single_country_object .info_wrap .description {
     padding-top: 10px;
@@ -2542,6 +2618,433 @@ input[type="number"] {
     color: #0f4c81;
     margin: 0 5px;
     font-size: 12px;
+}
+.page_breadcrumbs .object_current_page {
+    color: #0f4c81;
+}
+#single_object_page #single_object {
+    padding-top: 90px;
+}
+#single_object .single_object_main_slider .single_object_main_slide {
+    width: 100%;
+    height: 350px;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+#single_object .single_object_help_slider {
+    margin-top: 10px;
+}
+#single_object .single_object_help_slider .single_object_help_slide {
+    width: 100%;
+    height: 64px;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+#single_object .single_object_left_info {
+    margin-top: 40px;
+}
+#single_object .single_object_left_info .left_info_title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+#single_object .single_object_left_info .specifications {
+    padding: 20px 0;
+    border-top: 1px solid rgba(15, 76, 129, 0.1);
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+}
+#single_object .single_object_left_info .specifications .single_spec {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#single_object .single_object_left_info .specifications .single_spec .type {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #808080;
+    margin: 0;
+}
+#single_object .single_object_left_info .specifications .single_spec .value {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #0f2335;
+    margin: 0;
+}
+#single_object .single_object_left_info .description {
+    margin-top: 40px;
+}
+#single_object .single_object_left_info .description p {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #0f2335;
+}
+#single_object .object_right_section .mobile_object_left_info {
+    display: none;
+}
+#single_object .object_right_section .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin-bottom: 30px;
+}
+#single_object .object_right_section .price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+#single_object .object_right_section .price p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 0;
+}
+#single_object .object_right_section .price a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #3f89ca;
+    text-decoration: none;
+    margin-left: 55px;
+}
+#single_object .object_right_section .price button {
+    display: none;
+}
+#single_object .object_right_section .subprice {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #8a8a8a;
+    margin: 0;
+}
+#single_object .object_right_section .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+#single_object .object_right_section .info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin: 0;
+}
+#single_object .object_right_section .info .divider {
+    margin: 0 15px;
+    color: #0f4c81;
+    font-size: 13px;
+}
+#single_object .object_right_section .categories {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #3f89ca;
+    margin: 20px 0 0px;
+}
+#single_object .object_right_section .help_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+#single_object .object_right_section .date {
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #919191;
+}
+#single_object .object_right_section .views {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+}
+#single_object .object_right_section .views p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #adadad;
+    margin-bottom: 0;
+}
+#single_object .object_right_section .views p img {
+    margin-right: 10px;
+}
+#single_object .object_right_section .views button {
+    background: none;
+    padding: 0;
+    line-height: 0;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+#single_object .object_right_section .views button i {
+    font-size: 24px;
+    color: #0f4c81;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#single_object .object_right_section .views button i.fa-heart-o {
+    background: url("../img/fav_heart.svg") no-repeat;
+}
+#single_object .object_right_section .views button i.fa-heart {
+    background: url("../img/fav_heart_hov.svg") no-repeat;
+}
+#single_object .object_right_section .views button i.fa-heart-o::before {
+    content: none;
+}
+#single_object .object_right_section .views button i.fa-heart::before {
+    content: none;
+}
+#single_object .object_right_section .services_calculate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+#single_object .object_right_section .services_calculate > img {
+    margin-right: 15px;
+}
+#single_object .object_right_section .services_calculate div p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #252525;
+    margin-bottom: 0px;
+}
+#single_object .object_right_section .services_calculate div a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #3f89ca;
+    margin: 0;
+}
+#single_object .object_right_section .callback {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 20px 40px;
+}
+#single_object .object_right_section .callback .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin-bottom: 20px;
+}
+#single_object .object_right_section .callback .callback_info {
+    display: flex;
+    align-items: flex-start;
+}
+#single_object .object_right_section .callback .callback_info > img {
+    margin-right: 40px;
+    border-radius: 50%;
+}
+#single_object
+    .object_right_section
+    .callback
+    .callback_info
+    .info_info
+    .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+#single_object
+    .object_right_section
+    .callback
+    .callback_info
+    .info_info
+    .subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #808080;
+    margin: 0;
+}
+#single_object .object_right_section .callback .callback_form input {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    font-size: 14px;
+}
+#single_object .object_right_section .callback .callback_form .phone_select {
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+}
+#single_object
+    .object_right_section
+    .callback
+    .callback_form
+    .phone_select
+    .country_icon {
+    border-bottom: none;
+}
+#single_object
+    .object_right_section
+    .callback
+    .callback_form
+    .phone_select
+    #form_phone {
+    width: calc(100% - 37px);
+    margin-top: 0;
+    border-bottom: none;
+}
+#single_object .object_right_section .callback .callback_form button {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    filter: drop-shadow(0px 6px 7px rgba(15, 76, 129, 0.15));
+}
+#single_object_page #single_object_calculator {
+    padding: 40px 0;
+}
+#single_object_page .object_page_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #0b2d4a;
+    margin-bottom: 40px;
+}
+#similar_objects .similar_objects_wrap .single_country_object_wrap {
+    padding-top: 0;
+    border: none;
+}
+#similar_objects
+    .similar_objects_wrap
+    .single_country_object_wrap
+    .single_country_object::before {
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    transition: 0.3s;
+    z-index: 0;
+}
+#single_object_form .estate_form_wrap {
+    margin: 20px 0 35px;
+}
+#single_object_location {
+    padding: 60px 0;
+    background: url("../img/single_obj_location_bg.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #0f4c81;
+    min-height: 500px;
+}
+#single_object_location .location_title {
+    max-width: 688px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin: 0 auto;
+}
+#single_object_location .left_location p,
+#single_object_location .right_location p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+#single_object_location .left_location p {
+    padding: 0 0 20px;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 50px;
+    max-width: 420px;
+}
+#single_object_location .right_location span {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    display: block;
+    max-width: 400px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#single_object_location .right_location p {
+    padding-top: 20px;
+    border-top: 1px solid #ffffff;
+    max-width: 400px;
+    margin: 90px 0 15px auto;
 }
 /* ================ BODY ================ */
 

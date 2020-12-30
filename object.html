@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Garant</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+        <!-- <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link rel="stylesheet" href="assets/css/slick-style.css" />
+        <link rel="stylesheet" href="assets/css/lato.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/adaptive.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header_container container">
+                <div class="row">
+                    <div class="header_logo col-6 col-lg-2">
+                        <a href="/"><img src="assets/img/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header_menu col-lg-6 col-xl-5">
+                        <ul class="menu">
+                            <li><a href="/estate.html">Недвижимость</a></li>
+                            <li><a href="#">Доля в отеле</a></li>
+                            <li><a href="#">Венчурный фонд</a></li>
+                            <li><a href="#">ВНЖ и паспорт</a></li>
+                            <li><a href="#">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_right col-6 col-lg-4 col-xl-5">
+                        <div class="mobile_header_phone header_mob_wrap">
+                            <img src="assets/img/mob_header_phone.svg" alt="" />
+                            <div class="header_hidden_phones">
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#favourites_modal"
+                            ><img src="assets/img/header_heart.svg" alt=""
+                        /></a>
+                        <div id="header_phone_wrap" class="header_mob_wrap">
+                            <img
+                                src="assets/img/mob_header_phone.svg"
+                                alt=""
+                                class="header_phone_icon"
+                            />
+
+                            <a href="#" class="header_mob main_header_mob"
+                                >+38 044 299 28 58</a
+                            >
+                            <img src="assets/img/header_mob_arr.svg" alt="" />
+                            <div class="header_hidden_phones">
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                                <a href="#" class="header_mob"
+                                    >+38 044 299 28 58</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="mobile-toggle">
+                            <div class="button_menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <button
+                            class="header_consult"
+                            data-toggle="modal"
+                            data-target="#contact_modal"
+                        >
+                            Получить консультацию
+                        </button>
+                        <div class="header_langs">
+                            <a href="#" class="current_lang">RU</a>
+                            <img src="assets/img/header_mob_arr.svg" alt="" />
+                            <div class="hidden_lang">
+                                <a href="#">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_responsive">
+                <nav class="main_menu">
+                    <ul>
+                        <li><a href="/estate.html">Недвижимость</a></li>
+                        <li><a href="#">Доля в отеле</a></li>
+                        <li><a href="#">Венчурный фонд</a></li>
+                        <li><a href="#">ВНЖ и паспорт</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                    <div class="mobile_langs">
+                        <ul>
+                            <li><a href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="single_object_page">
+            <div class="page_breadcrumbs">
+                <div class="container">
+                    <a href="/">Главная</a>
+                    <span class="divider"> | </span>
+                    <a href="/">Недвижимость</a>
+                    <span class="divider"> | </span>
+                    <p class="current_page object_current_page">
+                        Очаровательная угловая квартира в Верхней Петралоне,
+                        Афины
+                    </p>
+                </div>
+            </div>
+
+            <div id="single_object">
+                <div class="container">
+                    <div class="row">
+                        <div class="object_left_section col-lg-6">
+                            <div class="single_object_main_slider">
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_main_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                            </div>
+                            <div class="single_object_help_slider">
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                                <div
+                                    class="single_object_help_slide"
+                                    style="
+                                        background: url(assets/img/single_country_object.jpg)
+                                            no-repeat;
+                                    "
+                                ></div>
+                            </div>
+                            <div class="single_object_left_info">
+                                <p class="left_info_title">Общая</p>
+                                <div class="specifications">
+                                    <div class="single_spec">
+                                        <p class="type">Тип жилья</p>
+                                        <p class="value">Вторичка</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Площадь общая</p>
+                                        <p class="value">169,2 м2</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Высота потолков</p>
+                                        <p class="value">3,2 м</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Санузел</p>
+                                        <p class="value">2 совмещ.</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Балкон/лоджия</p>
+                                        <p class="value">2 балкона, 1 лоджия</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Ремонт</p>
+                                        <p class="value">Дизайнерский</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Вид из окон</p>
+                                        <p class="value">Во двор, на улицу</p>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Зависит от страны. Например, немецкие
+                                        банки охотно выдают ипотеку иностранцам
+                                        под 1,5–2 % годовых, которая может
+                                        оплатить до 70 % стоимости объекта.
+                                        Испания предлагает менее выгодные
+                                        условия: минимальная ставка для
+                                        иностранцев составляет 2,5 % годовых.
+                                        Другая ситуация в Греции: хотя формально
+                                        выдача кредитов не запрещена, на
+                                        практике греческие банки не выдают займы
+                                        ни местным, ни иностранным покупателям
+                                        недвижимости. Вы можете узнать об
+                                        условиях получения ипотеки в
+                                        интересующей вас стране, связавшись с
+                                        менеджерами Tranio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object_right_section col-lg-6">
+                            <p class="title">
+                                3-комн. квартира в Порту с бассейном
+                            </p>
+                            <div class="price">
+                                <p>€ 300 000</p>
+                                <a href="#"
+                                    >Пересчитать в рубли
+                                    <img
+                                        src="assets/img/object_arrow.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <button class="like">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="subprice">€ 169,2 / м2</p>
+                            <div class="info">
+                                <p>3-комн. квартира</p>
+                                <span class="divider">•</span>
+                                <p>169,2 м</p>
+                                <span class="divider">•</span>
+                                <p>3/11 этаж</p>
+                            </div>
+                            <p class="categories">
+                                С бассейном, с террасой, с зоной барбекю
+                            </p>
+                            <p class="help_info">Порту, 3 км до океана</p>
+                            <p class="date">
+                                Объект сдан в 2019, площадь участка 40 м2
+                            </p>
+                            <div class="views">
+                                <p>
+                                    <img
+                                        src="assets/img/object_view.svg"
+                                        alt=""
+                                    />
+                                    1 344
+                                </p>
+                                <button class="liked">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                            </div>
+                            <div class="services_calculate">
+                                <img src="assets/img/object_to_do.svg" alt="" />
+                                <div>
+                                    <p>
+                                        Расчет коммунальных услуг и всех налогов
+                                        по данному объекту
+                                    </p>
+                                    <a href="#"
+                                        >Рассчитать мгновенно
+                                        <img
+                                            src="assets/img/object_arrow.svg"
+                                            alt=""
+                                    /></a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="single_object_left_info mobile_object_left_info"
+                            >
+                                <p class="left_info_title">Общая</p>
+                                <div class="specifications">
+                                    <div class="single_spec">
+                                        <p class="type">Тип жилья</p>
+                                        <p class="value">Вторичка</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Площадь общая</p>
+                                        <p class="value">169,2 м2</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Высота потолков</p>
+                                        <p class="value">3,2 м</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Санузел</p>
+                                        <p class="value">2 совмещ.</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Балкон/лоджия</p>
+                                        <p class="value">2 балкона, 1 лоджия</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Ремонт</p>
+                                        <p class="value">Дизайнерский</p>
+                                    </div>
+                                    <div class="single_spec">
+                                        <p class="type">Вид из окон</p>
+                                        <p class="value">Во двор, на улицу</p>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Зависит от страны. Например, немецкие
+                                        банки охотно выдают ипотеку иностранцам
+                                        под 1,5–2 % годовых, которая может
+                                        оплатить до 70 % стоимости объекта.
+                                        Испания предлагает менее выгодные
+                                        условия: минимальная ставка для
+                                        иностранцев составляет 2,5 % годовых.
+                                        Другая ситуация в Греции: хотя формально
+                                        выдача кредитов не запрещена, на
+                                        практике греческие банки не выдают займы
+                                        ни местным, ни иностранным покупателям
+                                        недвижимости. Вы можете узнать об
+                                        условиях получения ипотеки в
+                                        интересующей вас стране, связавшись с
+                                        менеджерами Tranio.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="callback">
+                                <p class="title">
+                                    Оставить заявку на эту квартиру
+                                </p>
+                                <div class="callback_info">
+                                    <img src="assets/img/girl.jpg" alt="" />
+                                    <div class="info_info">
+                                        <p class="title">Елена Троценко</p>
+                                        <p class="subtitle">
+                                            Ведущий специалист по продаже
+                                            недвижимости в Греции
+                                        </p>
+                                    </div>
+                                </div>
+                                <form class="callback_form" action="">
+                                    <input
+                                        placeholder="E-mail"
+                                        type="text"
+                                        id="email"
+                                        class="about_input"
+                                    />
+                                    <input
+                                        placeholder="Введите имя"
+                                        type="text"
+                                        id="name"
+                                        class="about_input"
+                                    />
+                                    <div class="phone_select">
+                                        <div class="country_icon">
+                                            <img
+                                                class="selected_country country"
+                                                src="assets/img/select_country.png"
+                                                alt=""
+                                                data-value="kz"
+                                            />
+                                            <img
+                                                class="form_country_arrow"
+                                                src="assets/img/country_arr.svg"
+                                                alt=""
+                                            />
+                                            <div
+                                                class="hidden_countries hidden_about_countries"
+                                            >
+                                                <img
+                                                    class="country"
+                                                    src="assets/img/select_country1.png"
+                                                    alt=""
+                                                    data-value="ua"
+                                                />
+
+                                                <img
+                                                    class="country"
+                                                    src="assets/img/select_country2.png"
+                                                    alt=""
+                                                    data-value="ru"
+                                                />
+                                            </div>
+                                        </div>
+                                        <input
+                                            placeholder="+38 (099) 999 - 99 - 99"
+                                            type="text"
+                                            id="form_phone"
+                                            class="about_input"
+                                        />
+                                    </div>
+
+                                    <button class="main_btn">
+                                        Оставить заявку
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="single_object_calculator"></div>
+
+            <div id="similar_objects">
+                <div class="container">
+                    <p class="object_page_title">Похожие обьявления</p>
+
+                    <div class="similar_objects_wrap">
+                        <div class="single_country_object_wrap">
+                            <a href="#">
+                                <div class="single_country_object">
+                                    <div class="image_wrap">
+                                        <div
+                                            class="single_country_object_main_slider"
+                                        >
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                        </div>
+                                        <div
+                                            class="single_country_object_help_slider"
+                                        >
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <p class="date">Объект сдан в 2019</p>
+                                        <p class="title">
+                                            3-комн. квартира в Порту с бассейном
+                                        </p>
+                                        <div class="price">
+                                            <p>€ 300 000</p>
+                                            <button class="liked hidden_button">
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                        <p class="help_price">1 029 €/м2</p>
+                                        <div class="info">
+                                            <p>3-комн. квартира</p>
+                                            <span class="divider">•</span>
+                                            <p>169,2 м</p>
+                                            <span class="divider">•</span>
+                                            <p>3/11 этаж</p>
+                                        </div>
+                                        <p class="help_info">
+                                            Бассейн, терраса, паркоместо, камин,
+                                            зона для барбекю
+                                        </p>
+                                        <div class="place">
+                                            <p>Порту, 3 км до океана</p>
+                                            <button class="liked">
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                Продается 2-этажная вилла
+                                                площадью 148 кв.м В Пафосе.
+                                                Первый этаж состоит из одной
+                                                спальной комнаты, гостиной с
+                                                кухней, одной ванной комнаты.
+                                                Второй этаж состоит из 2
+                                                спальных комнат, 2 ванных
+                                                комнат. Из окон открывается вид
+                                                на море, на горы. У объекта есть
+                                                солнечные батареи для нагрева
+                                                воды, батареи для нагрева воды
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="call">
+                                <a href="#">Позвонить</a>
+                            </div>
+                        </div>
+
+                        <div class="single_country_object_wrap">
+                            <a href="#">
+                                <div class="single_country_object">
+                                    <div class="image_wrap">
+                                        <div
+                                            class="single_country_object_main_slider"
+                                        >
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                        </div>
+                                        <div
+                                            class="single_country_object_help_slider"
+                                        >
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <p class="date">Объект сдан в 2019</p>
+                                        <p class="title">
+                                            3-комн. квартира в Порту с бассейном
+                                        </p>
+                                        <div class="price">
+                                            <p>€ 300 000</p>
+                                            <button class="liked hidden_button">
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                        <p class="help_price">1 029 €/м2</p>
+                                        <div class="info">
+                                            <p>3-комн. квартира</p>
+                                            <span class="divider">•</span>
+                                            <p>169,2 м</p>
+                                            <span class="divider">•</span>
+                                            <p>3/11 этаж</p>
+                                        </div>
+                                        <p class="help_info">
+                                            Бассейн, терраса, паркоместо, камин,
+                                            зона для барбекю
+                                        </p>
+                                        <div class="place">
+                                            <p>Порту, 3 км до океана</p>
+                                            <button class="liked">
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                Продается 2-этажная вилла
+                                                площадью 148 кв.м В Пафосе.
+                                                Первый этаж состоит из одной
+                                                спальной комнаты, гостиной с
+                                                кухней, одной ванной комнаты.
+                                                Второй этаж состоит из 2
+                                                спальных комнат, 2 ванных
+                                                комнат. Из окон открывается вид
+                                                на море, на горы. У объекта есть
+                                                солнечные батареи для нагрева
+                                                воды, батареи для нагрева воды
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="call">
+                                <a href="#">Позвонить</a>
+                            </div>
+                        </div>
+
+                        <div class="single_country_object_wrap">
+                            <a href="#">
+                                <div class="single_country_object">
+                                    <div class="image_wrap">
+                                        <div
+                                            class="single_country_object_main_slider"
+                                        >
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_county_main_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                        </div>
+                                        <div
+                                            class="single_country_object_help_slider"
+                                        >
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+
+                                            <div
+                                                class="single_country_help_slide"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                        </div>
+                                    </div>
+                                    <div class="info_wrap">
+                                        <p class="date">Объект сдан в 2019</p>
+                                        <p class="title">
+                                            3-комн. квартира в Порту с бассейном
+                                        </p>
+                                        <div class="price">
+                                            <p>€ 300 000</p>
+                                            <button class="liked hidden_button">
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                        <p class="help_price">1 029 €/м2</p>
+                                        <div class="info">
+                                            <p>3-комн. квартира</p>
+                                            <span class="divider">•</span>
+                                            <p>169,2 м</p>
+                                            <span class="divider">•</span>
+                                            <p>3/11 этаж</p>
+                                        </div>
+                                        <p class="help_info">
+                                            Бассейн, терраса, паркоместо, камин,
+                                            зона для барбекю
+                                        </p>
+                                        <div class="place">
+                                            <p>Порту, 3 км до океана</p>
+                                            <button class="liked">
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                Продается 2-этажная вилла
+                                                площадью 148 кв.м В Пафосе.
+                                                Первый этаж состоит из одной
+                                                спальной комнаты, гостиной с
+                                                кухней, одной ванной комнаты.
+                                                Второй этаж состоит из 2
+                                                спальных комнат, 2 ванных
+                                                комнат. Из окон открывается вид
+                                                на море, на горы. У объекта есть
+                                                солнечные батареи для нагрева
+                                                воды, батареи для нагрева воды
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="call">
+                                <a href="#">Позвонить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="single_object_form">
+                <div class="container">
+                    <div class="estate_form_wrap">
+                        <img
+                            class="about_logo_down"
+                            src="assets/img/about_logo_down.png"
+                            alt=""
+                        />
+                        <p class="title">
+                            Спорим, что мы найдем для вас обьект?
+                        </p>
+                        <p class="subtitle">
+                            Оставьте заявку на подбор — с Вами свяжется риелтор
+                            с юридическим образовнием, который будет закреплен
+                            лично за Вами. Поверьте, он точно подберет нужный
+                            объект!
+                        </p>
+                        <form action="">
+                            <input
+                                placeholder="E-mail"
+                                type="text"
+                                id="email"
+                                class="about_input"
+                            />
+                            <input
+                                placeholder="Введите имя"
+                                type="text"
+                                id="name"
+                                class="about_input"
+                            />
+                            <div class="phone_select">
+                                <div class="country_icon">
+                                    <img
+                                        class="selected_country country"
+                                        src="assets/img/select_country.png"
+                                        alt=""
+                                        data-value="kz"
+                                    />
+                                    <img
+                                        class="form_country_arrow"
+                                        src="assets/img/country_arr.svg"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="hidden_countries hidden_about_countries"
+                                    >
+                                        <img
+                                            class="country"
+                                            src="assets/img/select_country1.png"
+                                            alt=""
+                                            data-value="ua"
+                                        />
+
+                                        <img
+                                            class="country"
+                                            src="assets/img/select_country2.png"
+                                            alt=""
+                                            data-value="ru"
+                                        />
+                                    </div>
+                                </div>
+                                <input
+                                    placeholder="+38 (099) 999 - 99 - 99"
+                                    type="text"
+                                    id="form_phone"
+                                    class="about_input"
+                                />
+                            </div>
+
+                            <button class="main_btn">Спорим</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="single_object_location">
+                <div class="container">
+                    <p class="location_title">
+                        Мы — не голос посредника в трубке. Мы реально находимся
+                        в Москве, можем встретится вживую и ответить на все
+                        интересующие вопросы.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6 left_location">
+                            <p>1. Удаленно откроем счет ИНН, cчет в банке.</p>
+                        </div>
+                        <div class="col-lg-6 right_location">
+                            <p>
+                                2. Гарантированно привезем Вас на просмотр
+                                недвижимости в Португалию.
+                            </p>
+                            <span>Без карантина</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="country_section4">
+                <div class="container">
+                    <div class="country_buttons_title">
+                        <p>Подборки по Испании</p>
+                        <img src="assets/img/spain_flag.png" alt="" />
+                    </div>
+                    <div class="estate_objects_controls">
+                        <button class="active">Коттеджи</button>
+                        <button>Квартиры в новостройке</button>
+                        <button>Минимальный объект для ВНЖ</button>
+                        <button>Долевое участие</button>
+                        <button>Пентхаусы</button>
+                        <button>Эксклюзив</button>
+                        <button>2 комнатные квартиры</button>
+                        <button>Виллы в порту</button>
+                        <button>Популярные объекты</button>
+                        <button>До €120 000</button>
+                        <button>Квартиры в Лиссабоне</button>
+                        <button>Популярные объекты</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="estate_section5">
+                <div class="container">
+                    <div class="sec9_about">
+                        <div class="row">
+                            <div class="col-lg-7 about_info">
+                                <p class="about_title">Почему GARANT ESTATE?</p>
+                                <div class="advs">
+                                    <div class="single_adv">
+                                        <p class="num">01</p>
+                                        <p class="text">
+                                            Самые опытные консультанты на рынке
+                                        </p>
+                                    </div>
+                                    <div class="single_adv">
+                                        <p class="num">02</p>
+                                        <p class="text">
+                                            6 офисов <br />
+                                            по всему миру
+                                        </p>
+                                    </div>
+                                    <div class="single_adv">
+                                        <p class="num">03</p>
+                                        <p class="text">
+                                            10 лет в сфере инвестиционной
+                                            имиграции
+                                        </p>
+                                    </div>
+                                    <div class="single_adv">
+                                        <p class="num">04</p>
+                                        <p class="text">
+                                            Более 800 заключенных сделок
+                                        </p>
+                                    </div>
+                                </div>
+                                <img
+                                    class="mob_about_image"
+                                    src="assets/img/about_photo.jpg"
+                                    alt=""
+                                />
+                                <p class="about_subtitle">
+                                    Мы не для всех. Но если вы стали нашим
+                                    клиентом, то будте уверены вы получите:
+                                </p>
+                                <div class="about_items">
+                                    <div class="about_item">
+                                        <p>
+                                            Своевременный и точный анализ рынка
+                                        </p>
+                                    </div>
+                                    <div class="about_item">
+                                        <p>Качественный сервис</p>
+                                    </div>
+                                    <div class="about_item">
+                                        <p>Только работающие рекоммендации</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 about_image">
+                                <img src="assets/img/about_photo.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="estate_section6">
+                <div class="container">
+                    <p class="estate_sec6_title">
+                        Как купить недвижимость с GARANT Estate
+                    </p>
+                    <div class="row estate_how_to_buy">
+                        <div class="col-sm-6 col-lg-3 single_buy_block">
+                            <img src="assets/img/estate_buy_icon1.svg" alt="" />
+                            <p class="title"><span>01.</span> Заявка</p>
+                            <p class="text">
+                                Отправьте нам запрос с примерным описанием
+                                объекта недвижимости или инвистиционного
+                                проекта, который вас интересует.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 single_buy_block">
+                            <img src="assets/img/estate_buy_icon2.svg" alt="" />
+                            <p class="title">
+                                <span>02.</span> Подбор предложений
+                            </p>
+                            <p class="text">
+                                Вместе мы выбераем подходящие варианты. GARANT
+                                Estate не берет с вас комиссию - цена объекта
+                                остается такой же, как и если бы вы обратились к
+                                нашему партнеру на прямую.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 single_buy_block">
+                            <img src="assets/img/estate_buy_icon3.svg" alt="" />
+                            <p class="title">
+                                <span>03.</span> Просмотровый тур
+                            </p>
+                            <p class="text">
+                                Вы отправляетесь на осмотр объекта или объектов.
+                                На месте вас встретят наши партнеры или
+                                сотрудники Европейских офисов GARANT Estate
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 single_buy_block">
+                            <img src="assets/img/estate_buy_icon4.svg" alt="" />
+                            <p class="title">
+                                <span>04.</span> Заключение сделки
+                            </p>
+                            <p class="text">
+                                Выбрав лучший объект вы подписываете договор
+                                купли - продажи или договор инвестирования (для
+                                девелопера)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="estate_section7" class="country_faqs">
+                <div class="container">
+                    <p class="estate_sec3_title">Часто задаваемые вопросы</p>
+                    <div class="estate_faq_wrap">
+                        <div class="accordion" id="accordionExample">
+                            <div class="single_question">
+                                <div class="question_header">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#faq_answer1"
+                                        aria-expanded="true"
+                                        aria-controls="faq_answer1"
+                                    >
+                                        <span
+                                            >Можно ли получить ипотеку за
+                                            рубежом?</span
+                                        >
+                                        <img
+                                            src="assets/img/collapse_icon.svg"
+                                            alt=""
+                                            class="collapse_icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    id="faq_answer1"
+                                    class="single_question_body collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionExample"
+                                >
+                                    <div>
+                                        <p>
+                                            Зависит от страны. Например,
+                                            немецкие банки охотно выдают ипотеку
+                                            иностранцам под 1,5–2 % годовых,
+                                            которая может оплатить до 70 %
+                                            стоимости объекта. Испания
+                                            предлагает менее выгодные условия:
+                                            минимальная ставка для иностранцев
+                                            составляет 2,5 % годовых. Другая
+                                            ситуация в Греции: хотя формально
+                                            выдача кредитов не запрещена, на
+                                            практике греческие банки не выдают
+                                            займы ни местным, ни иностранным
+                                            покупателям недвижимости. Вы можете
+                                            узнать об условиях получения ипотеки
+                                            в интересующей вас стране,
+                                            связавшись с менеджерами Tranio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single_question">
+                                <div class="question_header">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#faq_answer2"
+                                        aria-expanded="true"
+                                        aria-controls="faq_answer2"
+                                    >
+                                        <span>Какова процедура покупки?</span>
+                                        <img
+                                            src="assets/img/collapse_icon.svg"
+                                            alt=""
+                                            class="collapse_icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    id="faq_answer2"
+                                    class="single_question_body collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionExample"
+                                >
+                                    <div>
+                                        <p>
+                                            Зависит от страны. Например,
+                                            немецкие банки охотно выдают ипотеку
+                                            иностранцам под 1,5–2 % годовых,
+                                            которая может оплатить до 70 %
+                                            стоимости объекта. Испания
+                                            предлагает менее выгодные условия:
+                                            минимальная ставка для иностранцев
+                                            составляет 2,5 % годовых. Другая
+                                            ситуация в Греции: хотя формально
+                                            выдача кредитов не запрещена, на
+                                            практике греческие банки не выдают
+                                            займы ни местным, ни иностранным
+                                            покупателям недвижимости. Вы можете
+                                            узнать об условиях получения ипотеки
+                                            в интересующей вас стране,
+                                            связавшись с менеджерами Tranio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_question">
+                                <div class="question_header">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#faq_answer3"
+                                        aria-expanded="true"
+                                        aria-controls="faq_answer3"
+                                    >
+                                        <span
+                                            >Можно ли получить вид на жительство
+                                            при покупке недвижимости?</span
+                                        >
+                                        <img
+                                            src="assets/img/collapse_icon.svg"
+                                            alt=""
+                                            class="collapse_icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    id="faq_answer3"
+                                    class="single_question_body collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionExample"
+                                >
+                                    <div>
+                                        <p>
+                                            Зависит от страны. Например,
+                                            немецкие банки охотно выдают ипотеку
+                                            иностранцам под 1,5–2 % годовых,
+                                            которая может оплатить до 70 %
+                                            стоимости объекта. Испания
+                                            предлагает менее выгодные условия:
+                                            минимальная ставка для иностранцев
+                                            составляет 2,5 % годовых. Другая
+                                            ситуация в Греции: хотя формально
+                                            выдача кредитов не запрещена, на
+                                            практике греческие банки не выдают
+                                            займы ни местным, ни иностранным
+                                            покупателям недвижимости. Вы можете
+                                            узнать об условиях получения ипотеки
+                                            в интересующей вас стране,
+                                            связавшись с менеджерами Tranio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single_question">
+                                <div class="question_header">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#faq_answer4"
+                                        aria-expanded="true"
+                                        aria-controls="faq_answer4"
+                                    >
+                                        <span
+                                            >Можно ли получать доход от квартиры
+                                            у моря?</span
+                                        >
+                                        <img
+                                            src="assets/img/collapse_icon.svg"
+                                            alt=""
+                                            class="collapse_icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    id="faq_answer4"
+                                    class="single_question_body collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionExample"
+                                >
+                                    <div>
+                                        <p>
+                                            Зависит от страны. Например,
+                                            немецкие банки охотно выдают ипотеку
+                                            иностранцам под 1,5–2 % годовых,
+                                            которая может оплатить до 70 %
+                                            стоимости объекта. Испания
+                                            предлагает менее выгодные условия:
+                                            минимальная ставка для иностранцев
+                                            составляет 2,5 % годовых. Другая
+                                            ситуация в Греции: хотя формально
+                                            выдача кредитов не запрещена, на
+                                            практике греческие банки не выдают
+                                            займы ни местным, ни иностранным
+                                            покупателям недвижимости. Вы можете
+                                            узнать об условиях получения ипотеки
+                                            в интересующей вас стране,
+                                            связавшись с менеджерами Tranio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single_question">
+                                <div class="question_header">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#faq_answer5"
+                                        aria-expanded="true"
+                                        aria-controls="faq_answer5"
+                                    >
+                                        <span
+                                            >На чём мы зарабатываем, если наши
+                                            услуги бесплатны?</span
+                                        >
+                                        <img
+                                            src="assets/img/collapse_icon.svg"
+                                            alt=""
+                                            class="collapse_icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    id="faq_answer5"
+                                    class="single_question_body collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionExample"
+                                >
+                                    <div>
+                                        <p>
+                                            Зависит от страны. Например,
+                                            немецкие банки охотно выдают ипотеку
+                                            иностранцам под 1,5–2 % годовых,
+                                            которая может оплатить до 70 %
+                                            стоимости объекта. Испания
+                                            предлагает менее выгодные условия:
+                                            минимальная ставка для иностранцев
+                                            составляет 2,5 % годовых. Другая
+                                            ситуация в Греции: хотя формально
+                                            выдача кредитов не запрещена, на
+                                            практике греческие банки не выдают
+                                            займы ни местным, ни иностранным
+                                            покупателям недвижимости. Вы можете
+                                            узнать об условиях получения ипотеки
+                                            в интересующей вас стране,
+                                            связавшись с менеджерами Tranio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single_question">
+                                <div class="question_header">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#faq_answer6"
+                                        aria-expanded="true"
+                                        aria-controls="faq_answer6"
+                                    >
+                                        <span
+                                            >Кто гарантирует безопасность
+                                            сделки?</span
+                                        >
+                                        <img
+                                            src="assets/img/collapse_icon.svg"
+                                            alt=""
+                                            class="collapse_icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    id="faq_answer6"
+                                    class="single_question_body collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionExample"
+                                >
+                                    <div>
+                                        <p>
+                                            Зависит от страны. Например,
+                                            немецкие банки охотно выдают ипотеку
+                                            иностранцам под 1,5–2 % годовых,
+                                            которая может оплатить до 70 %
+                                            стоимости объекта. Испания
+                                            предлагает менее выгодные условия:
+                                            минимальная ставка для иностранцев
+                                            составляет 2,5 % годовых. Другая
+                                            ситуация в Греции: хотя формально
+                                            выдача кредитов не запрещена, на
+                                            практике греческие банки не выдают
+                                            займы ни местным, ни иностранным
+                                            покупателям недвижимости. Вы можете
+                                            узнать об условиях получения ипотеки
+                                            в интересующей вас стране,
+                                            связавшись с менеджерами Tranio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_offices">
+                    <p class="footer_title">Наши офисы</p>
+                    <div class="offices row">
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office1.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office1_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Москва</p>
+                                    <p class="city">Россия</p>
+                                    <p class="address">
+                                        Уланский переулок 22с1
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office2.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office2_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Алматы</p>
+                                    <p class="city">Казахстан</p>
+                                    <p class="address">ул. Таттимбета 24</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office3.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office3_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Киев</p>
+                                    <p class="city">Украина</p>
+                                    <p class="address">ул. Сикорского 1а</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office4.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office4_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Афины</p>
+                                    <p class="city">Греция</p>
+                                    <p class="address">
+                                        25, Agiou Georgiou str, Grammatiko
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office5.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office5_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Торревьеха</p>
+                                    <p class="city">Испания</p>
+                                    <p class="address">
+                                        Avenida Habaneras 87, 03182 Torrevieja
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-lg-2">
+                            <a class="single_office_link">
+                                <div class="single_office">
+                                    <img
+                                        class="office_img"
+                                        src="assets/img/foot_office6.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="office_img_hover"
+                                        src="assets/img/foot_office6_hover.png"
+                                        alt=""
+                                    />
+                                    <p class="country">Вила-Нова-ди-Гая</p>
+                                    <p class="city">Португалия</p>
+                                    <p class="address">
+                                        Av. Gil Vicente 583 4400-166 Vila Nova
+                                        de Gaia
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer_countries">
+                        <div>
+                            <a href="#">Австрия</a>
+                            <a href="#">Испания</a>
+                            <a href="#">Португалия</a>
+                            <a href="#">Греция</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Велкобритания</a>
+                            <a href="#">Монако</a>
+                            <a href="#">Швейцария</a>
+                            <a href="#">Мальты</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Кипр</a>
+                            <a href="#">Черногории</a>
+                            <a href="#">Греция</a>
+                            <a href="#">Испания</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Антигуа и Барбуда</a>
+                            <a href="#">Сент-Киттс и Невис</a>
+                            <a href="#">Доминика</a>
+                            <a href="#">Вануату</a>
+                        </div>
+
+                        <div>
+                            <a href="#">Гренада</a>
+                            <a href="#">Сент-Люсия</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_footer">
+                        <ul>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">In English</a></li>
+                            <li class="footer_large_link">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                            <li class="footer_large_link">
+                                <a href="#">Разместить объявление</a>
+                            </li>
+                            <li class="footer_large_link">
+                                <a href="#">Вход и регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_socials">
+                        <a href="#"
+                            ><img src="assets/img/footer_logo.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_fb.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_inst.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_tg.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_tw.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_vk.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="assets/img/footer_yt.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Contact Modal -->
+        <div
+            class="modal fade"
+            id="contact_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="modal-body">
+                        <p class="modal_title">Запросить детали</p>
+                        <p class="modal_text">
+                            С Вами свяжется ведущий специалист по продаже
+                            недвижимости в Греции и проконсультирует по всем
+                            интересующим вопросам
+                        </p>
+                        <form action="" class="modal_form">
+                            <div class="inputs">
+                                <input
+                                    placeholder="E-mail"
+                                    type="text"
+                                    id="email"
+                                    class="about_input modal_input"
+                                />
+                                <input
+                                    placeholder="Введите имя"
+                                    type="text"
+                                    id="name"
+                                    class="about_input modal_input"
+                                />
+                                <div class="phone_select">
+                                    <div class="country_icon">
+                                        <img
+                                            class="selected_modal_country modal_country"
+                                            src="assets/img/select_country.png"
+                                            alt=""
+                                            data-value="kz"
+                                        />
+                                        <img
+                                            class="form_country_arrow"
+                                            src="assets/img/country_arr.svg"
+                                            alt=""
+                                        />
+                                        <div
+                                            class="hidden_countries hidden_modal_counties"
+                                        >
+                                            <img
+                                                class="modal_country"
+                                                src="assets/img/select_country1.png"
+                                                alt=""
+                                                data-value="ua"
+                                            />
+
+                                            <img
+                                                class="modal_country"
+                                                src="assets/img/select_country2.png"
+                                                alt=""
+                                                data-value="ru"
+                                            />
+                                        </div>
+                                    </div>
+                                    <input
+                                        placeholder="+38 (099) 999 - 99 - 99"
+                                        type="text"
+                                        id="modal_form_phone"
+                                        class="about_input"
+                                    />
+                                </div>
+                            </div>
+                            <button class="main_btn">Запросить детали</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourites Modal -->
+        <div
+            class="modal fade"
+            id="favourites_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal_favs_head">
+                            <p class="modal_favs_title">Избранное</p>
+                            <a href="#" class="modal_favs_link"
+                                >Смотреть избранное
+                                <img src="assets/img/modal_fav_arr.svg" alt=""
+                            /></a>
+                        </div>
+
+                        <div class="modal_favourites_content">
+                            <div class="non_empty">
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="modal_fav_object_wrap">
+                                    <a href="#"
+                                        ><div class="modal_fav_object">
+                                            <div
+                                                class="image"
+                                                style="
+                                                    background: url(assets/img/single_country_object.jpg)
+                                                        no-repeat;
+                                                "
+                                            ></div>
+                                            <div class="info">
+                                                <p class="title">
+                                                    3-комн. квартира в Порту с
+                                                    бассейном
+                                                </p>
+                                                <p class="price">
+                                                    € 300 000
+                                                    <span>1 029 €/м2</span>
+                                                </p>
+                                                <div class="help_info">
+                                                    <p>3-комн. квартира</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>169,2 м</p>
+                                                    <span class="divider"
+                                                        >•</span
+                                                    >
+                                                    <p>3/11 этаж</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <img
+                                        class="object_remove"
+                                        src="assets/img/modal_fav_x.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="empty">
+                                <img src="assets/img/empty_box.svg" alt="" />
+                                <p class="title">
+                                    Добавляйте обьявления в избранные
+                                </p>
+                                <p class="subtitle">
+                                    Отмечайте интересные обьявления и следите за
+                                    изменением цены
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal_favs_content">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        id="tab1_title"
+                                        data-toggle="tab"
+                                        href="#tab1"
+                                        role="tab"
+                                        aria-controls="tab1"
+                                        aria-selected="true"
+                                        >Квартиры</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="tab2_title"
+                                        data-toggle="tab"
+                                        href="#tab2"
+                                        role="tab"
+                                        aria-controls="tab2"
+                                        aria-selected="false"
+                                        >Дома</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="tab3_title"
+                                        data-toggle="tab"
+                                        href="#tab3"
+                                        role="tab"
+                                        aria-controls="tab3"
+                                        aria-selected="false"
+                                        >Земельные участки</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="tab1"
+                                    role="tabpanel"
+                                    aria-labelledby="tab1_title"
+                                >
+                                    tab1
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab2"
+                                    role="tabpanel"
+                                    aria-labelledby="tab2_title"
+                                >
+                                    tab2
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab3"
+                                    role="tabpanel"
+                                    aria-labelledby="tab3_title"
+                                >
+                                    tab3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://use.fontawesome.com/421d2d196c.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="assets/js/jquery.mask.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

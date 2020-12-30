@@ -1,3 +1,15 @@
+@media (max-width: 1600px) {
+    .reviews_slider .single_review {
+        width: 650px !important;
+    }
+    .reviews_slider .slick-list {
+        margin: 0;
+    }
+    #single_object_location {
+        background-size: cover;
+    }
+}
+
 @media (max-width: 1500px) {
     #main_section8 .sec8_right {
         right: 0;
@@ -126,6 +138,68 @@
         height: calc(100% + 40px);
         top: -20px;
         left: -20px;
+    }
+    #single_object .single_object_main_slider .single_object_main_slide {
+        height: 285px;
+    }
+    #single_object .single_object_help_slider .single_object_help_slide {
+        height: 50px;
+    }
+    #single_object .object_right_section .callback .title {
+        font-size: 23px;
+    }
+    #single_object_location .right_location p,
+    #single_object_location .right_location span {
+        max-width: 348px;
+    }
+    #single_object_location .left_location p {
+        max-width: 335px;
+    }
+    /* .reviews_slider .single_review .info .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .reviews_slider .single_review .info .text p {
+        font-size: 14px;
+    }
+    .reviews_slider .single_review {
+        z-index: 1;
+        box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+        max-width: unset;
+        margin: 0 15px;
+        border-radius: 5px;
+    }
+    .reviews_slider .single_review::after {
+        content: none;
+    } */
+    /* #main_section5 .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+    .reviews_slider .single_review::after {
+        content: none;
+    }
+    .reviews_slider .single_review {
+        margin: 0 303px;
+    }
+    .reviews_slider .slick-next {
+        right: 21%;
+    }
+    .reviews_slider .slick-prev {
+        left: 21%;
+    }
+    .reviews_slider .single_review .info {
+        /* width: calc(100% - 222px); */
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .reviews_slider .single_review .image {
+        /* width: 170px; */
+    }
+    .reviews_slider .single_review .info {
+        /* width: calc(100% - 170px); */
     }
 }
 
@@ -461,6 +535,39 @@
     #city_filter .city_filter_wrap {
         justify-content: center;
     }
+    #single_object .single_object_left_info {
+        display: none;
+    }
+    #single_object .object_right_section .mobile_object_left_info {
+        display: block;
+    }
+    #single_object .single_object_main_slider .single_object_main_slide {
+        height: 370px;
+    }
+
+    #single_object .object_right_section {
+        margin-top: 25px;
+    }
+    #single_object_page #single_object {
+        padding-top: 40px;
+    }
+    #single_object_location .left_location p,
+    #single_object_location .right_location p,
+    #single_object_location .right_location span {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #single_object_location .right_location p {
+        margin-top: 175px;
+    }
+    #single_object_location .location_title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    #single_object_location .left_location p {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -517,6 +624,9 @@
     }
     .estate_page_title .title_country_flag {
         display: none;
+    }
+    #single_object .single_object_main_slider .single_object_main_slide {
+        height: 300px;
     }
 }
 
@@ -780,9 +890,179 @@
         margin-right: 5px;
         width: 25px;
     }
+    /* ============= МОБИЛЬНЫЙ ФИЛЬТР ДЛЯ НЕДВИЖИМОСТИ ============= */
+
     .estate_filter_wrap {
+        display: flex;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 10;
+        align-items: center;
+    }
+    .estate_filter_wrap #main_filter {
+        /* height: 100%; */
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        max-width: unset;
+        z-index: auto;
+    }
+    .estate_filter_wrap #main_filter .filter_controls .filter_show_more {
         display: none;
     }
+    .estate_filter_hidden_label {
+        display: block;
+        font-style: normal;
+        font-weight: normal !important;
+        font-size: 12px !important;
+        line-height: 14px !important;
+        letter-spacing: 0.01em;
+        color: #696969 !important;
+        text-align: left !important;
+        border: none !important;
+        width: 100%;
+        margin-bottom: 5px !important;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap,
+    .estate_filter_wrap #main_filter .room_count {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .estate_filter_wrap #main_filter .hidden_dropdown {
+        z-index: 10;
+        overflow: visible;
+        max-height: unset;
+        left: 0;
+        width: 100%;
+        top: -10px !important;
+    }
+    .estate_filter_wrap #main_filter .custom_dropdown_ul {
+        padding: 10px 0;
+    }
+    .estate_filter_wrap #main_filter .custom_dropdown_ul li {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 10px 20px;
+    }
+
+    .estate_filter_wrap #main_filter .filter_input {
+        height: 35px;
+        border: 1px solid #9d9d9d;
+        box-sizing: border-box;
+        border-radius: 100px;
+        padding: 8px 0 5px;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap::after {
+        content: url(../img/mob_filter_arr.svg);
+        top: 7px;
+        right: 14px;
+        height: 21px;
+    }
+    .estate_filter_wrap #main_filter .filter_input::placeholder {
+        color: #9d9d9d;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap.price::after {
+        content: none;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap.price {
+        border: none;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap.price > label {
+        width: calc(50% - 3px);
+        border: 1px solid #9d9d9d !important;
+        padding-left: 15px;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap.price > label span {
+        display: none;
+    }
+    .estate_filter_wrap
+        #main_filter
+        .filter_input_wrap.price
+        > label.price_from_label {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .estate_filter_wrap
+        #main_filter
+        .filter_input_wrap.price
+        > label.price_to_label {
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    .estate_filter_wrap #main_filter .filter_input_wrap.price input {
+        border: none;
+    }
+    .estate_filter_wrap #main_filter #price_from {
+        width: calc(100% - 22px);
+    }
+    .estate_filter_wrap #main_filter #price_to {
+        width: calc(100% - 38px);
+    }
+    .estate_filter_wrap #main_filter .space_from_label #space_from {
+        width: calc(100% - 51px);
+    }
+    .estate_filter_wrap #main_filter .space_to_label #space_to {
+        width: calc(100% - 24px);
+    }
+    .estate_filter_wrap #main_filter .space_to_label {
+        left: -5px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    .estate_filter_wrap #main_filter .space_from_label {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .estate_filter_wrap #main_filter .room_count p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .estate_filter_wrap #main_filter .room_count p span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #9d9d9d;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .estate_filter_wrap #main_filter .room_count p span.active {
+        color: #fff;
+        background: #3f89ca;
+        border: 1px solid #3f89ca;
+    }
+    .estate_filter_wrap #main_filter .room_count p .room_count_title {
+        display: none;
+    }
+    .estate_filter_wrap #main_filter .filter_show_results a {
+        display: block;
+        width: 100%;
+    }
+    .estate_filter_wrap #main_filter .filter_show_results {
+        margin-top: 0;
+    }
+    /* ============= МОБИЛЬНЫЙ ФИЛЬТР ДЛЯ НЕДВИЖИМОСТИ ============= */
+
     #estate_section2 {
         padding: 35px 0 20px;
     }
@@ -835,13 +1115,21 @@
         padding: 8px 10px;
     }
     .estate_single_card {
-        max-width: 290px;
+        max-width: unset;
+        width: 100%;
     }
     .estate_single_card .estate_main_slider .single_main_slide {
-        height: 180px;
+        /* height: 180px; */
+        height: 240px;
     }
     .estate_single_card .estate_help_slide .estate_help_single_slide {
         height: 55px;
+    }
+    .estate_single_card .info_wrap .info {
+        justify-content: flex-start;
+    }
+    .estate_single_card .info_wrap .info .divider {
+        margin: 0 10px;
     }
     .estate_single_card .info_wrap .info p {
         font-size: 14px;
@@ -962,11 +1250,12 @@
         max-width: unset;
     }
     .single_country_object {
-        max-width: 280px;
-        margin: 0 auto;
+        max-width: unset;
+        margin: 0 15px;
     }
     .single_country_object_main_slider .single_county_main_slide {
-        min-height: 182px;
+        /* min-height: 182px; */
+        min-height: 240px;
     }
     .single_country_object_help_slider .single_country_help_slide {
         min-height: 55px;
@@ -1138,6 +1427,196 @@
         font-size: 14px;
         line-height: 17px;
     }
+    #single_object .object_right_section .title,
+    #single_object .object_right_section .price a {
+        display: none;
+    }
+    #single_object .object_right_section .price button {
+        display: block;
+        background: none;
+        padding: 0;
+        line-height: 0;
+        border: none;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    #single_object .object_right_section .price button i {
+        font-size: 24px;
+        color: #0f4c81;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    #single_object .object_right_section .price button i.fa-heart {
+        background: url(../img/fav_heart.svg) no-repeat;
+    }
+    #single_object .object_right_section .price button i.fa-heart-o {
+        background: url("../img/fav_heart_hov.svg") no-repeat;
+    }
+    #single_object .object_right_section .price button i.fa-heart-o::before {
+        content: none;
+    }
+    #single_object .object_right_section .price button i.fa-heart::before {
+        content: none;
+    }
+    #single_object .object_right_section .price button i:before {
+        content: none !important;
+    }
+    #single_object .object_right_section .price {
+        justify-content: space-between;
+    }
+    #single_object .object_right_section .price p {
+        color: #0f4c81;
+    }
+    #single_object .object_right_section .info {
+        margin-top: 16px;
+    }
+    #single_object .object_right_section .subprice,
+    #single_object .object_right_section .info p,
+    #single_object .object_right_section .categories,
+    #single_object .object_right_section .help_info {
+        font-size: 14px;
+    }
+    #single_object .object_right_section .categories {
+        margin-top: 10px;
+    }
+    #single_object .object_right_section .help_info {
+        margin-bottom: 15px;
+    }
+    #single_object .object_right_section .date {
+        margin-bottom: 17px;
+    }
+    #single_object .object_right_section .views button {
+        display: none;
+    }
+    #single_object .object_right_section .services_calculate {
+        margin-bottom: 30px;
+    }
+    #single_object .object_right_section .mobile_object_left_info {
+        margin-top: 0;
+        padding-top: 30px;
+        border-top: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    #single_object .single_object_left_info .specifications {
+        border-top: none;
+    }
+    #single_object .single_object_left_info .left_info_title {
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    #single_object .single_object_left_info .specifications .single_spec .type {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    #single_object .single_object_left_info .specifications .single_spec .value,
+    #single_object .single_object_left_info .description p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    #single_object .single_object_left_info .specifications {
+        padding-bottom: 10px;
+    }
+    #single_object .single_object_left_info .description {
+        margin-top: 30px;
+    }
+    #single_object .object_right_section .callback .title {
+        display: block;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #single_object
+        .object_right_section
+        .callback
+        .callback_info
+        .info_info
+        .title,
+    #single_object
+        .object_right_section
+        .callback
+        .callback_info
+        .info_info
+        .subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #single_object .object_right_section .callback .callback_info > img {
+        width: 80px;
+    }
+    #single_object_page .object_page_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    #similar_objects .similar_objects_wrap .single_country_object_wrap {
+        margin-bottom: 20px;
+    }
+    #similar_objects .similar_objects_wrap .single_country_object_wrap .call {
+        border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+    }
+    #single_object_location .location_title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    #single_object_location .left_location p,
+    #single_object_location .right_location p,
+    #single_object_location .right_location span {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 100%;
+    }
+    #single_object_location {
+        padding: 15px 0;
+    }
+    #single_object_location .left_location p {
+        margin-top: 50px;
+    }
+    #single_object_form .estate_form_wrap form .about_input {
+        width: 100%;
+    }
+    #single_object_form .estate_form_wrap .phone_select #form_phone {
+        width: calc(100% - 37px);
+    }
+    #single_object .object_right_section .callback .callback_info > img {
+        margin-right: 10px;
+    }
+    #single_object .object_right_section .callback {
+        padding: 20px 10px;
+    }
+    #similar_objects .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #single_object .object_right_section .callback .title {
+        margin-bottom: 10px !important;
+    }
+    #single_object_page .object_page_title {
+        padding-left: 15px;
+    }
+    #single_object .object_right_section .date,
+    #single_object .object_right_section .views p {
+        font-size: 12px;
+    }
+    #main_section7 .sec7_right {
+        display: none;
+    }
+    #main_section7 .sec7_left {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #single_object .single_object_main_slider .single_object_main_slide {
+        height: 233px;
+    }
+}
+
+@media (max-width: 456px) {
+    #single_object_location .left_location p {
+        margin-top: 28px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1201,5 +1680,46 @@
     .modal_favs_head .modal_favs_link {
         font-size: 12px;
         line-height: 17px;
+    }
+    .estate_single_card .info_wrap .info {
+        justify-content: space-between;
+    }
+    .estate_single_card .info_wrap .info .divider {
+        margin: 0;
+    }
+    .single_country_object_main_slider .single_county_main_slide {
+        min-height: 182px;
+        /* min-height: 240px; */
+    }
+    .estate_single_card .estate_main_slider .single_main_slide {
+        height: 180px;
+        /* height: 240px; */
+    }
+    #single_object .object_right_section .info .divider {
+        margin: 0 5px;
+    }
+    #single_object .single_object_main_slider .single_object_main_slide {
+        height: 210px;
+    }
+    #single_object_location {
+        min-height: 550px;
+    }
+    #single_object_location .left_location p {
+        margin-top: 49px;
+    }
+    #single_object_location .location_title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    #single_object_location .left_location p,
+    #single_object_location .right_location p,
+    #single_object_location .right_location span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 332px) {
+    #single_object_location .left_location p {
+        margin-top: 25px;
     }
 }

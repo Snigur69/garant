@@ -9,6 +9,14 @@ jQuery(function ($) {
         arrows: true,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    centerMode: false,
+                    centerPadding: "0px",
+                    slidesToShow: 1,
+                },
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     centerMode: false,
@@ -80,6 +88,32 @@ jQuery(function ($) {
             });
     }
 
+    $(".single_object_main_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".single_object_help_slider",
+    });
+
+    $(".single_object_help_slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: ".single_object_main_slider",
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+        ],
+    });
+
     // $(".estate_single_card .estate_main_slider").slick({
     //     slidesToShow: 1,
     //     slidesToScroll: 1,
@@ -98,7 +132,13 @@ jQuery(function ($) {
     // });
 
     // =========================== SLIDERS ===========================
-
+    function toggleHelpFilter() {
+        if ($(window).width() < 576) {
+            if ($("#filter_mob_bg").length) {
+                $("#filter_mob_bg").toggleClass("active");
+            }
+        }
+    }
     // =========================== FILTER ===========================
 
     $(".filter_show_more").on("click", function () {
@@ -108,6 +148,7 @@ jQuery(function ($) {
     });
 
     $(".filter_input").on("focus", function () {
+        toggleHelpFilter();
         $(this).parent().find(".hidden_dropdown").toggleClass("active");
         $(this).parent().toggleClass("open");
     });
@@ -118,6 +159,8 @@ jQuery(function ($) {
     });
 
     $(".filter_input").on("blur", function () {
+        toggleHelpFilter();
+
         if (!$(this).hasClass("type_input")) {
             $(this).parent().toggleClass("open");
             $(this).parent().find(".hidden_dropdown").toggleClass("active");
@@ -422,6 +465,22 @@ jQuery(function ($) {
     );
 
     $(".single_country_object .info_wrap .place .liked").on(
+        "click",
+        function () {
+            $(this).find("i").toggleClass("fa-heart-o");
+            $(this).find("i").toggleClass("fa-heart");
+        }
+    );
+
+    $("#single_object .object_right_section .price button").on(
+        "click",
+        function () {
+            $(this).find("i").toggleClass("fa-heart-o");
+            $(this).find("i").toggleClass("fa-heart");
+        }
+    );
+
+    $("#single_object .object_right_section .views button").on(
         "click",
         function () {
             $(this).find("i").toggleClass("fa-heart-o");
