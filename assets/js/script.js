@@ -484,6 +484,7 @@ jQuery(function ($) {
 
     // =================== MOBILE MENU ========================
     $(".button_menu").click(function () {
+        $("body").toggleClass("non_scrolled");
         $(this).toggleClass("active");
         $(".menu_responsive").toggleClass("active");
     });
