@@ -290,8 +290,19 @@ jQuery(function ($) {
         toggleHelpFilter();
     });
 
-    $(".room_count .room").on("click", function () {
+    $(".room_count .room").on("mousedown", function () {
         $(this).toggleClass("active");
+    });
+
+    $(".room_count .room").on("mouseup", function () {
+        let rooms = $(".room_count .room");
+        let rooms_count = [];
+        for (let i = 0; i < rooms.length; i++) {
+            if ($(rooms[i]).hasClass("active")) {
+                rooms_count.push($(rooms[i]).text());
+            }
+        }
+        $("#hidden_room_count").val(rooms_count.join(","));
     });
 
     $(document).mousedown(function (e) {

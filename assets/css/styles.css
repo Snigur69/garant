@@ -139,7 +139,9 @@ header {
 /* ================ HEADER ================ */
 
 /* ================ BODY ================ */
-
+#hidden_room_count {
+    display: none;
+}
 #main_section1 {
     background: #f6f8fa;
     min-height: 410px;

@@ -1661,9 +1661,47 @@
     }
 }
 
+@media (max-width: 450px) {
+    .sec3_country_wrap {
+        max-width: 100%;
+    }
+    #estate_section2 .sec3_country {
+        min-height: 220px;
+    }
+    .estate_doubled_block,
+    .estate_single_block {
+        max-width: 100%;
+    }
+    .estate_doubled_block .right_image {
+        min-height: 220px;
+    }
+    .estate_form_wrap form .about_input {
+        width: 100%;
+    }
+    .estate_form_wrap .phone_select #form_phone {
+        width: calc(100% - 37px);
+    }
+    .estate_objects_controls > button {
+        font-size: 15px;
+    }
+    .about_info .advs .single_adv {
+        width: 100%;
+        max-width: 100%;
+    }
+    .about_info .advs .single_adv .text {
+        font-size: 15px;
+    }
+    .about_info .advs .single_adv .text br {
+        display: none;
+    }
+}
+
 @media (max-width: 430px) {
     .about_logo_down {
         width: 100%;
+    }
+    .about_info .advs .single_adv .text {
+        font-size: 14px;
     }
 }
 
@@ -1756,6 +1794,25 @@
     #single_object_location .left_location p,
     #single_object_location .right_location p,
     #single_object_location .right_location span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .sec3_country_wrap {
+        max-width: 320px;
+    }
+    #estate_section2 .sec3_country {
+        min-height: 170px;
+    }
+    .estate_doubled_block,
+    .estate_single_block {
+        max-width: 320px;
+    }
+    .estate_doubled_block .right_image {
+        min-height: 165px;
+    }
+    .estate_objects_controls > button {
         font-size: 14px;
     }
 }
