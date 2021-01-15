@@ -144,14 +144,14 @@ header {
 }
 #main_section1 {
     background: #f6f8fa;
-    min-height: 410px;
+    min-height: 470px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
 }
 #main_section1.unpacked {
-    min-height: 470px;
+    /* min-height: 470px; */
 }
 
 .main_sec1_title {
@@ -214,7 +214,7 @@ header {
     z-index: 1;
 }
 #main_section1.unpacked > .container {
-    margin-top: -60px;
+    /* margin-top: -60px; */
 }
 #main_section2 {
     min-height: 452px;
@@ -3052,6 +3052,47 @@ input[type="number"] {
     border-top: 1px solid #ffffff;
     max-width: 400px;
     margin: 90px 0 15px auto;
+}
+#alternate_form_block {
+    padding: 27px 40px;
+    background: url("../img/alternate_bg.jpg") no-repeat;
+    background-position: right;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 40px 0;
+}
+#alternate_form_block .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+#alternate_form_block .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    max-width: 560px;
+}
+#alternate_form_block .alternate_place {
+    display: none;
+}
+#alternate_form_block .italic {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+#alternate_form_block button {
+    margin-top: 0;
+    padding: 10px 75px;
 }
 /* ================ BODY ================ */
 
