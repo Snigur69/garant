@@ -220,16 +220,20 @@ jQuery(function ($) {
         $("#space_to").val($(this).val());
     });
 
-    $("#main_filter .custom_dropdown_ul li").on("mousedown", function () {
-        $(this).parent().find("li").removeClass("selected");
-        $(this).addClass("selected");
-        $(this)
-            .parent()
-            .parent()
-            .parent()
-            .find(".filter_input")
-            .val($(this).text());
-    });
+    $(document).on(
+        "mousedown",
+        "#main_filter .custom_dropdown_ul li",
+        function () {
+            $(this).parent().find("li").removeClass("selected");
+            $(this).addClass("selected");
+            $(this)
+                .parent()
+                .parent()
+                .parent()
+                .find(".filter_input")
+                .val($(this).text());
+        }
+    );
 
     $(".hidden_checkbox_menu .checkbox > .custom-checkbox").on(
         "change",
