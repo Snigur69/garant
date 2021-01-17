@@ -433,13 +433,19 @@ jQuery(function ($) {
     $(document).on(
         "click",
         ".hidden_modal_counties > .modal_country",
-        function () {
-            let current = $(".country_icon .selected_modal_country").clone(
+        function (e) {
+            // let current = $(".country_icon .selected_modal_country").clone(
+            //     true
+            // );
+            let current = $(this).parent().parent().find(".selected_modal_country").clone(
                 true
             );
             let selected = $(this).clone();
+           
+            const phone_input  = $(this).parent().parent().parent().parent().find('.phone_select > input');
 
-            $(".selected_modal_country").replaceWith(selected);
+            // $(".selected_modal_country").replaceWith(selected);
+            $(this).parent().parent().find(".selected_modal_country").replaceWith(selected);
             $(selected)
                 .addClass("selected_modal_country")
                 .removeClass("modal_country");
@@ -447,22 +453,30 @@ jQuery(function ($) {
             $(current)
                 .removeClass("selected_modal_country")
                 .addClass("modal_country");
-            setMask("#modal_form_phone", ".selected_modal_country");
+            
+            setMask(phone_input, e.target);
         }
     );
 
-    $(document).on("click", ".hidden_about_countries > .country", function () {
-        let current = $(".country_icon .selected_country").clone(true);
+    $(document).on("click", ".hidden_about_countries > .country", function (e) {
+        // let current = $(".country_icon .selected_country").clone(true);
+        let current = $(this).parent().parent().find(".selected_country").clone(
+            true
+        );
         let selected = $(this).clone();
 
-        $(".selected_country").replaceWith(selected);
+        const phone_input  = $(this).parent().parent().parent().parent().find('.phone_select > input');
+
+        // $(".selected_country").replaceWith(selected);
+        $(this).parent().parent().find(".selected_country").replaceWith(selected);
         $(selected).addClass("selected_country").removeClass("country");
         $(this).replaceWith(current);
         $(current).removeClass("selected_country").addClass("country");
-        setMask("#form_phone", ".selected_country");
+
+        setMask(phone_input, e.target);
     });
 
-    setMask("#modal_form_phone", ".selected_modal_country");
+    setMask(".phone_select > input", ".selected_modal_country");
     setMask("#form_phone", ".selected_country");
     // =========================== FORM COUNTRY SELECT ===========================
 
@@ -596,6 +610,12 @@ jQuery(function ($) {
     $(".mobile_filter_header > button").on("click", function () {
         $(".estate_filter_wrap").toggleClass("mobile_active");
     });
+    
+    $("#calculate_callback_modal").on("hidden.bs.modal", function () {
+        if($('#calculate_utilities_modal').hasClass('show')) {
+            $("body").addClass("modal-open");
+        }
+      })
 
     // $(".question_header > button").on("click", function () {
     //     console.log($(this).parent().find(".single_question_body"));

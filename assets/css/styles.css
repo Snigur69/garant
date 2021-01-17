@@ -3094,6 +3094,110 @@ input[type="number"] {
     margin-top: 0;
     padding: 10px 75px;
 }
+#calculate_utilities_modal.show + body {
+    overflow: hidden !important;
+}
+#calculate_utilities_modal .modal-content .close, #calculate_callback_modal .modal-content .close {
+    right: 13px;
+    top: -15px;
+}
+#calculate_utilities_modal .calculate_utilities_title {
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #0F4C81;
+margin:0 auto 20px;
+max-width: 500px;
+}
+#calculate_utilities_modal .modal-dialog {
+    max-width: 700px;
+}
+#calculate_utilities_modal .modal-dialog .modal-body {
+    padding: 30px 20px;
+}
+#calculate_utilities_modal .calculate_modal_table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#calculate_utilities_modal .calculate_modal_table thead tr {
+    background-color: #FFF;
+}
+#calculate_utilities_modal .calculate_modal_table thead tr td {
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 15px;
+letter-spacing: 0.01em;
+color: #6D6D6D;
+padding: 0px 0 8px;
+}
+#calculate_utilities_modal .calculate_modal_table thead tr td:nth-child(2), #calculate_utilities_modal .calculate_modal_table thead tr td:nth-child(3) {
+    text-align: center;
+}
+#calculate_utilities_modal .calculate_modal_table tbody tr td {
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 15px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+color: #3A598F;
+padding: 6px 10px 4px;
+} 
+#calculate_utilities_modal .calculate_modal_table tbody tr td:nth-child(2), #calculate_utilities_modal .calculate_modal_table tbody tr td:nth-child(3) {
+    text-align: center;
+}
+#calculate_utilities_modal .calculate_modal_table tbody tr.total {
+    background: #3A598F;
+}
+#calculate_utilities_modal .calculate_modal_table tbody tr.total td {
+    color: #FFF;
+}
+#calculate_utilities_modal .buttons_wrap {
+    display: flex;
+    justify-content: center;
+}
+#calculate_utilities_modal .buttons_wrap a {
+    margin: 0 20px;
+    font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.01em;
+color: #3A598F;
+}
+#calculate_utilities_modal .buttons_wrap a img {
+    margin-right: 5px;
+}
+#calculate_callback_modal .modal-body {
+    padding: 20px 15px 30px;
+}
+#calculate_callback_modal .modal_title {
+    font-size: 24px;
+line-height: 27px;
+margin-bottom: 11px;
+}
+#calculate_callback_modal .modal_text {
+    margin-bottom: 20px;
+}
+#calculate_callback_modal .about_input {
+    font-size: 14px;
+line-height: 17px;
+margin-bottom: 23px;
+}
+#calculate_callback_modal .country_icon {
+    margin-bottom: 23px;
+}
+#calculate_callback_modal .modal_form button {
+    margin-top: 20px;
+    padding: 3px 40px;
+}
+#calculate_callback_modal.show + #calculate_utilities_modal {
+    z-index: 15 !important;
+}
 /* ================ BODY ================ */
 
 /* ================ FOOTER ================ */

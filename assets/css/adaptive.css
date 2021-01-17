@@ -1698,6 +1698,14 @@
     #main_section7 .sec7_left {
         margin-bottom: 0;
     }
+    #calculate_utilities_modal .calculate_utilities_title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    #calculate_utilities_modal .calculate_modal_table tbody tr td {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1750,6 +1758,20 @@
     }
     #main_section1.unpacked {
         min-height: 450px;
+    }
+    #calculate_utilities_modal .calculate_modal_table tbody tr td {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #calculate_utilities_modal .buttons_wrap a {
+        font-size: 10px;
+        margin: 0 10px;
+    }
+    #calculate_utilities_modal .modal-dialog .modal-body {
+        padding: 20px 15px;
+    }
+    #calculate_utilities_modal .calculate_modal_table thead tr td {
+        font-size: 12px;
     }
 }
 
@@ -1879,6 +1901,16 @@
     #main_section1.unpacked {
         min-height: 480px;
     }
+    #calculate_utilities_modal .calculate_utilities_title {
+        max-width: 93%;
+    }
+    #calculate_utilities_modal .calculate_modal_table tbody tr.total td {
+        font-size: 9px;
+    }
+    #calculate_utilities_modal .calculate_utilities_title {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1906,6 +1938,10 @@
 @media (max-width: 340px) {
     #alternate_form_block {
         background-position-y: -0;
+    }
+    #calculate_utilities_modal .calculate_modal_table tbody tr td {
+       
+        padding: 4px 10px 2px;
     }
 }
 
