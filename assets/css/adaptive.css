@@ -1712,6 +1712,15 @@
     #single_object .single_object_main_slider .single_object_main_slide {
         height: 233px;
     }
+    .foot_wg {
+        display: block;
+        margin-top: 10px !important;
+        width: 100%;
+        text-align: center;
+    }
+    .footer_socials {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 456px) {
@@ -1940,7 +1949,6 @@
         background-position-y: -0;
     }
     #calculate_utilities_modal .calculate_modal_table tbody tr td {
-       
         padding: 4px 10px 2px;
     }
 }

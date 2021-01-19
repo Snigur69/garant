@@ -3097,20 +3097,21 @@ input[type="number"] {
 #calculate_utilities_modal.show + body {
     overflow: hidden !important;
 }
-#calculate_utilities_modal .modal-content .close, #calculate_callback_modal .modal-content .close {
+#calculate_utilities_modal .modal-content .close,
+#calculate_callback_modal .modal-content .close {
     right: 13px;
     top: -15px;
 }
 #calculate_utilities_modal .calculate_utilities_title {
     font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-letter-spacing: 0.01em;
-color: #0F4C81;
-margin:0 auto 20px;
-max-width: 500px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0f4c81;
+    margin: 0 auto 20px;
+    max-width: 500px;
 }
 #calculate_utilities_modal .modal-dialog {
     max-width: 700px;
@@ -3123,38 +3124,40 @@ max-width: 500px;
     margin-bottom: 30px;
 }
 #calculate_utilities_modal .calculate_modal_table thead tr {
-    background-color: #FFF;
+    background-color: #fff;
 }
 #calculate_utilities_modal .calculate_modal_table thead tr td {
     font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 15px;
-letter-spacing: 0.01em;
-color: #6D6D6D;
-padding: 0px 0 8px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #6d6d6d;
+    padding: 0px 0 8px;
 }
-#calculate_utilities_modal .calculate_modal_table thead tr td:nth-child(2), #calculate_utilities_modal .calculate_modal_table thead tr td:nth-child(3) {
+#calculate_utilities_modal .calculate_modal_table thead tr td:nth-child(2),
+#calculate_utilities_modal .calculate_modal_table thead tr td:nth-child(3) {
     text-align: center;
 }
 #calculate_utilities_modal .calculate_modal_table tbody tr td {
     font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 15px;
-letter-spacing: 0.01em;
-text-transform: uppercase;
-color: #3A598F;
-padding: 6px 10px 4px;
-} 
-#calculate_utilities_modal .calculate_modal_table tbody tr td:nth-child(2), #calculate_utilities_modal .calculate_modal_table tbody tr td:nth-child(3) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #3a598f;
+    padding: 6px 10px 4px;
+}
+#calculate_utilities_modal .calculate_modal_table tbody tr td:nth-child(2),
+#calculate_utilities_modal .calculate_modal_table tbody tr td:nth-child(3) {
     text-align: center;
 }
 #calculate_utilities_modal .calculate_modal_table tbody tr.total {
-    background: #3A598F;
+    background: #3a598f;
 }
 #calculate_utilities_modal .calculate_modal_table tbody tr.total td {
-    color: #FFF;
+    color: #fff;
 }
 #calculate_utilities_modal .buttons_wrap {
     display: flex;
@@ -3163,11 +3166,11 @@ padding: 6px 10px 4px;
 #calculate_utilities_modal .buttons_wrap a {
     margin: 0 20px;
     font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 20px;
-letter-spacing: 0.01em;
-color: #3A598F;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #3a598f;
 }
 #calculate_utilities_modal .buttons_wrap a img {
     margin-right: 5px;
@@ -3177,16 +3180,16 @@ color: #3A598F;
 }
 #calculate_callback_modal .modal_title {
     font-size: 24px;
-line-height: 27px;
-margin-bottom: 11px;
+    line-height: 27px;
+    margin-bottom: 11px;
 }
 #calculate_callback_modal .modal_text {
     margin-bottom: 20px;
 }
 #calculate_callback_modal .about_input {
     font-size: 14px;
-line-height: 17px;
-margin-bottom: 23px;
+    line-height: 17px;
+    margin-bottom: 23px;
 }
 #calculate_callback_modal .country_icon {
     margin-bottom: 23px;
@@ -3197,6 +3200,15 @@ margin-bottom: 23px;
 }
 #calculate_callback_modal.show + #calculate_utilities_modal {
     z-index: 15 !important;
+}
+.foot_wg {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+.foot_wg:hover {
+    color: #fff;
+    text-decoration: none;
 }
 /* ================ BODY ================ */
 
