@@ -2203,7 +2203,13 @@ input[type="number"] {
     padding-top: 10px;
     border-top: 1px solid rgba(15, 76, 129, 0.1);
 }
-.single_country_object .info_wrap .description p {
+.single_country_object .info_wrap .description p,
+.single_country_object .info_wrap .description h1,
+.single_country_object .info_wrap .description h2,
+.single_country_object .info_wrap .description h3,
+.single_country_object .info_wrap .description h4,
+.single_country_object .info_wrap .description h5,
+.single_country_object .info_wrap .description h6 {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

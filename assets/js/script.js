@@ -156,6 +156,7 @@ jQuery(function ($) {
         "focus",
         function () {
             toggleHelpFilter();
+            console.log("FOCUSED");
         }
     );
 
@@ -211,6 +212,9 @@ jQuery(function ($) {
             toggleHelpFilter();
         }
     );
+    $("#main_filter .country_wrap #country").on("keyup", function (e) {
+        $("#main_filter .country_wrap #country").focus();
+    });
 
     $("#hidden_space_from").on("change", function () {
         $("#space_from").val($(this).val());
@@ -437,15 +441,26 @@ jQuery(function ($) {
             // let current = $(".country_icon .selected_modal_country").clone(
             //     true
             // );
-            let current = $(this).parent().parent().find(".selected_modal_country").clone(
-                true
-            );
+            let current = $(this)
+                .parent()
+                .parent()
+                .find(".selected_modal_country")
+                .clone(true);
             let selected = $(this).clone();
-           
-            const phone_input  = $(this).parent().parent().parent().parent().find('.phone_select > input');
+
+            const phone_input = $(this)
+                .parent()
+                .parent()
+                .parent()
+                .parent()
+                .find(".phone_select > input");
 
             // $(".selected_modal_country").replaceWith(selected);
-            $(this).parent().parent().find(".selected_modal_country").replaceWith(selected);
+            $(this)
+                .parent()
+                .parent()
+                .find(".selected_modal_country")
+                .replaceWith(selected);
             $(selected)
                 .addClass("selected_modal_country")
                 .removeClass("modal_country");
@@ -453,22 +468,33 @@ jQuery(function ($) {
             $(current)
                 .removeClass("selected_modal_country")
                 .addClass("modal_country");
-            
+
             setMask(phone_input, e.target);
         }
     );
 
     $(document).on("click", ".hidden_about_countries > .country", function (e) {
         // let current = $(".country_icon .selected_country").clone(true);
-        let current = $(this).parent().parent().find(".selected_country").clone(
-            true
-        );
+        let current = $(this)
+            .parent()
+            .parent()
+            .find(".selected_country")
+            .clone(true);
         let selected = $(this).clone();
 
-        const phone_input  = $(this).parent().parent().parent().parent().find('.phone_select > input');
+        const phone_input = $(this)
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .find(".phone_select > input");
 
         // $(".selected_country").replaceWith(selected);
-        $(this).parent().parent().find(".selected_country").replaceWith(selected);
+        $(this)
+            .parent()
+            .parent()
+            .find(".selected_country")
+            .replaceWith(selected);
         $(selected).addClass("selected_country").removeClass("country");
         $(this).replaceWith(current);
         $(current).removeClass("selected_country").addClass("country");
@@ -610,12 +636,12 @@ jQuery(function ($) {
     $(".mobile_filter_header > button").on("click", function () {
         $(".estate_filter_wrap").toggleClass("mobile_active");
     });
-    
+
     $("#calculate_callback_modal").on("hidden.bs.modal", function () {
-        if($('#calculate_utilities_modal').hasClass('show')) {
+        if ($("#calculate_utilities_modal").hasClass("show")) {
             $("body").addClass("modal-open");
         }
-      })
+    });
 
     // $(".question_header > button").on("click", function () {
     //     console.log($(this).parent().find(".single_question_body"));
