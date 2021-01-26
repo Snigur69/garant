@@ -643,6 +643,22 @@ jQuery(function ($) {
         }
     });
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $("#scroll_to_top").css("display", "flex");
+        } else {
+            $("#scroll_to_top").css("display", "none");
+        }
+    });
+
+    $("#scroll_to_top").click(function () {
+        //1 second of animation time
+        //html works for FFX but not Chrome
+        //body works for Chrome but not FFX
+        //This strange selector seems to work universally
+        $("html, body").scrollTop(0);
+    });
+
     // $(".question_header > button").on("click", function () {
     //     console.log($(this).parent().find(".single_question_body"));
     //     $(this)
