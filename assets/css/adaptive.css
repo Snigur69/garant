@@ -463,8 +463,8 @@
         text-align: left;
     }
     #main_filter #price_to {
-        width: 139px;
-        min-width: 127px;
+        /* width: 139px; */
+        /* min-width: 127px; */
     }
     .estate_filter_wrap #main_filter {
         max-width: 307px;

@@ -972,6 +972,24 @@ header {
 #main_filter .filter_input_wrap {
     position: relative;
 }
+#main_filter .filter_input_wrap {
+    width: 275px;
+}
+#main_filter .price_label {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main_filter .filter_input_wrap.price {
+    display: flex;
+}
+#main_filter .filter_input_wrap.price .price_label > span {
+    margin-right: 5px;
+}
+#main_filter .filter_input_wrap.price .price_label > input {
+    margin-left: 5px;
+}
 #main_filter .filter_input_wrap::after {
     content: url("../img/filter_arr.svg");
     position: absolute;
@@ -990,8 +1008,9 @@ header {
     padding-right: 0;
 }
 #main_filter #price_to {
-    width: 147px;
-    min-width: 147px;
+    /* width: 147px; */
+    /* min-width: 147px; */
+    min-width: calc(100% - 70px);
 }
 .price_to_label {
     position: relative;
