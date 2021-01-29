@@ -148,6 +148,7 @@ header {
     border-radius: 5px;
     margin-left: -10px;
     display: none;
+    z-index: 1;
 }
 .header_langs:hover .hidden_lang {
     display: block;
