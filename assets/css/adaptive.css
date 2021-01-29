@@ -59,7 +59,10 @@
     .card_bg {
         display: none;
     }
-
+    .estate_filter_wrap #main_filter .filter_input,
+    .estate_filter_wrap #main_filter label {
+        font-size: 15px;
+    }
     #main_section8 .sec8_right {
         display: none;
     }
@@ -1961,6 +1964,10 @@
     }
     #alternate_form_block {
         background-position-y: -24px;
+    }
+    .estate_filter_wrap #main_filter #price_to {
+        min-width: unset;
+        width: calc(100% - 60px);
     }
 }
 
