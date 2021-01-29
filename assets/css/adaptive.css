@@ -1102,12 +1102,12 @@
         padding-right: 0;
     }
     .estate_filter_wrap #main_filter .space_from_label #space_from {
-        width: calc(100% - 51px);
+        width: calc(100% - 70px);
         padding-right: 0;
         padding-left: 0;
     }
     .estate_filter_wrap #main_filter .space_to_label #space_to {
-        width: calc(100% - 24px);
+        width: calc(100% - 50px);
         padding-right: 0;
         padding-left: 0;
     }
@@ -1983,5 +1983,9 @@
 @media (max-width: 332px) {
     #single_object_location .left_location p {
         margin-top: 25px;
+    }
+    .estate_filter_wrap #main_filter .space_to_label #space_to {
+        min-width: unset !important;
+        width: calc(100% - 48px);
     }
 }

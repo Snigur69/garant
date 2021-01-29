@@ -1088,8 +1088,8 @@ header {
     min-width: 20px !important;
 }
 .space_to_label input {
-    width: 140px;
-    min-width: 140px !important;
+    width: 125px;
+    min-width: 125px !important;
     padding-left: 3px;
 }
 .space_to_label {
