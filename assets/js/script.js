@@ -156,7 +156,6 @@ jQuery(function ($) {
         "focus",
         function () {
             toggleHelpFilter();
-            console.log("FOCUSED");
         }
     );
 
@@ -193,23 +192,29 @@ jQuery(function ($) {
     });
 
     $(".filter_input").on("blur", function () {
+        if ($(this).attr("id") == "country") {
+            return 0;
+        }
         if (!$(this).hasClass("type_input")) {
-            $(this).parent().toggleClass("open");
-            $(this).parent().find(".hidden_dropdown").toggleClass("active");
+            $(this).parent().removeClass("open");
+            $(this).parent().find(".hidden_dropdown").removeClass("active");
         }
     });
-
-    $(".estate_filter_wrap #main_filter .filter_input#country").on(
-        "blur",
-        function () {
-            toggleHelpFilter();
-        }
-    );
+    // $(".estate_filter_wrap #main_filter .filter_input#country").on(
+    //     "blur",
+    //     function () {
+    //         toggleHelpFilter();
+    //     }
+    // );
 
     $(".estate_filter_wrap #main_filter .filter_input#build_type").on(
         "blur",
         function () {
-            toggleHelpFilter();
+            if ($(window).width() < 576) {
+                if ($("#filter_mob_bg").length) {
+                    $("#filter_mob_bg").removeClass("active");
+                }
+            }
         }
     );
     $("#main_filter .country_wrap #country").on("keyup", function (e) {
@@ -228,6 +233,9 @@ jQuery(function ($) {
         "mousedown",
         "#main_filter .custom_dropdown_ul li",
         function () {
+            if ($(this).parent().hasClass("filter_countries")) {
+                return 0;
+            }
             $(this).parent().find("li").removeClass("selected");
             $(this).addClass("selected");
             $(this)
@@ -236,6 +244,38 @@ jQuery(function ($) {
                 .parent()
                 .find(".filter_input")
                 .val($(this).text());
+        }
+    );
+
+    $(document).on(
+        "click",
+        "#main_filter .country_wrap #hidden_country > ul > li",
+        function (e) {
+            $(".filter_countries li").removeClass("selected");
+            $(this).toggleClass("active");
+            $(this).find("ul").toggleClass("active");
+        }
+    );
+    $(document).on(
+        "click",
+        "#main_filter .country_wrap #hidden_country > ul > li > ul > li",
+        function () {
+            let country = $(this)
+                .parent()
+                .parent()
+                .find(".country_span")
+                .text();
+            let city = $(this).text();
+            $("#country").val(country + ", " + city);
+            $("#hidden_country").removeClass("active");
+            $(".country_wrap").removeClass("open");
+            $("#hidden_country li ul").removeClass("active");
+            $("#hidden_country li").removeClass("active");
+            $(this).parent().toggleClass("active");
+            $(this).parent().parent().toggleClass("active");
+            if ($("#main_filter").parent().hasClass("estate_filter_wrap")) {
+                toggleHelpFilter();
+            }
         }
     );
 
@@ -314,6 +354,60 @@ jQuery(function ($) {
     });
 
     $(document).mousedown(function (e) {
+        if ($(".hidden_country").hasClass("active")) {
+            if (e.target.nodeName === "UL") {
+                if (
+                    !$(e.target).hasClass("filter_countries") &&
+                    !$(e.target).parent().parent().hasClass("filter_countries")
+                ) {
+                    $(".hidden_country").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    $("#hidden_country li ul").removeClass("active");
+                    $("#hidden_country li").removeClass("active");
+                    toggleHelpFilter();
+                }
+            } else if (e.target.nodeName === "LI") {
+                if (
+                    !$(e.target).parent().hasClass("filter_countries") &&
+                    !$(e.target)
+                        .parent()
+                        .parent()
+                        .parent()
+                        .hasClass("filter_countries")
+                ) {
+                    $(".hidden_country").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    $("#hidden_country li ul").removeClass("active");
+                    $("#hidden_country li").removeClass("active");
+                    toggleHelpFilter();
+                }
+            } else if (e.target.nodeName === "SPAN") {
+                if (
+                    !$(e.target).parent().parent().hasClass("filter_countries")
+                ) {
+                    $(".hidden_country").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    $("#hidden_country li ul").removeClass("active");
+                    $("#hidden_country li").removeClass("active");
+                    toggleHelpFilter();
+                }
+            } else if (e.target.nodeName === "DIV") {
+                if (!$(e.target).hasClass("hidden_country")) {
+                    $(".hidden_country").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    $("#hidden_country li ul").removeClass("active");
+                    $("#hidden_country li").removeClass("active");
+                    toggleHelpFilter();
+                }
+            } else {
+                $(".hidden_country").removeClass("active");
+                $(".filter_input_wrap").removeClass("open");
+                $("#hidden_country li ul").removeClass("active");
+                $("#hidden_country li").removeClass("active");
+                toggleHelpFilter();
+            }
+        }
+
         if ($(".hidden_type_dropdown").hasClass("active")) {
             if (e.target.nodeName === "P") {
                 if (!$(e.target).hasClass("hidden_checkbox_title")) {

@@ -11,22 +11,34 @@ body.non_scrolled {
 #scroll_to_top {
     height: 60px;
     width: 60px;
-    border-radius: 50%;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #282c31;
+    background: #fff;
     position: fixed;
     right: 50px;
     bottom: 100px;
     z-index: 100;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.34);
+    border: 1px solid #3f89ca;
     cursor: pointer;
     display: none;
 }
 #scroll_to_top img {
     width: 30px;
     margin-top: -3px;
+}
+#scroll_to_top .to_top_arrow_hover {
+    display: none;
+}
+#scroll_to_top:hover {
+    background: #3f89ca;
+}
+#scroll_to_top:hover .to_top_arrow_hover {
+    display: block;
+}
+#scroll_to_top:hover .to_top_arrow {
+    display: none;
 }
 header {
     background: #ffffff;
@@ -969,6 +981,32 @@ header {
 }
 .input_price_wallet {
     border-bottom: none;
+}
+#main_filter .hidden_country ul.filter_countries > li {
+    position: relative;
+}
+#main_filter .hidden_country ul.filter_countries > li::after {
+    content: url(../img/filter_arr.svg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    right: 10px;
+}
+#main_filter .hidden_country ul.filter_countries > li.active::after {
+    transform: rotate(180deg);
+    top: 0;
+    bottom: auto;
+}
+#main_filter .hidden_country ul.filter_countries > li:hover {
+    background: none;
+}
+#main_filter .hidden_country ul.filter_countries > li > ul {
+    list-style: none;
+    display: none;
+}
+#main_filter .hidden_country ul.filter_countries > li > ul.active {
+    display: block;
 }
 #main_filter .filter_input_wrap {
     position: relative;

@@ -954,6 +954,10 @@
     #scroll_to_top {
         right: 15px;
     }
+    #scroll_to_top {
+        width: 50px;
+        height: 50px;
+    }
     /* ============= МОБИЛЬНЫЙ ФИЛЬТР ДЛЯ НЕДВИЖИМОСТИ ============= */
 
     .estate_filter_wrap {
@@ -1004,10 +1008,11 @@
     .estate_filter_wrap #main_filter .hidden_dropdown {
         z-index: 10;
         overflow: visible;
-        max-height: unset;
+        max-height: 50vh;
         left: 0;
         width: 100%;
         top: -10px !important;
+        overflow: scroll;
     }
     .estate_filter_wrap .mobile_filter_header {
         display: flex;
