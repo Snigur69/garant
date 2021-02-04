@@ -850,7 +850,7 @@ header {
     left: 0;
     top: 0;
     opacity: 0.2;
-    z-index: 0;
+    z-index: -1;
 }
 .sec9_form .title {
     font-style: normal;
@@ -980,7 +980,10 @@ header {
     padding-right: 0;
 }
 .input_price_wallet {
-    border-bottom: none;
+    border-bottom: none !important;
+    position: absolute;
+    right: 6px;
+    color: #333333 !important;
 }
 #main_filter .hidden_country ul.filter_countries > li {
     position: relative;

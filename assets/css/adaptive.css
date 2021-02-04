@@ -1093,6 +1093,7 @@
         > label.price_from_label {
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
+        border-right: none !important;
     }
     .estate_filter_wrap
         #main_filter
@@ -1129,9 +1130,13 @@
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
     }
-    .estate_filter_wrap #main_filter .space_from_label {
+    .estate_filter_wrap
+        #main_filter
+        .filter_input_wrap.space
+        > .space_from_label {
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
+        border-right: none !important;
     }
     .estate_filter_wrap #main_filter .room_count p {
         display: flex;
@@ -1742,6 +1747,25 @@
     .country_empty_section img {
         margin-bottom: 10px;
     }
+    .estate_filter_wrap #main_filter .input_price_wallet {
+        color: #3f89ca !important;
+        font-size: 14px;
+        line-height: 17px;
+        right: -15px;
+    }
+    .estate_filter_wrap
+        #main_filter
+        .filter_input_wrap.price
+        > label
+        span.space_m_span {
+        display: block;
+        position: absolute;
+        right: -10px;
+        top: 11px;
+        color: #3f89ca !important;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1817,6 +1841,12 @@
     }
     #calculate_utilities_modal .calculate_modal_table thead tr td {
         font-size: 12px;
+    }
+    #single_object .single_object_left_info .description p {
+        font-size: 17px;
+    }
+    #single_object .single_object_left_info .description h3 {
+        font-size: 23px;
     }
 }
 
