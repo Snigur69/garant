@@ -605,8 +605,8 @@ jQuery(function ($) {
         let code = $(selected).data("value");
         switch (code) {
             case "ua": {
-                $(id).mask("+3 (000) 000 00 00");
-                $(id).attr("placeholder", "+3 (999) 999 99 99");
+                $(id).mask("+38 (000) 000 00 00");
+                $(id).attr("placeholder", "+38 (999) 999 99 99");
                 $(id).val("");
                 break;
             }
@@ -623,8 +623,8 @@ jQuery(function ($) {
                 break;
             }
             default: {
-                $(id).mask("+3 (000) 000 00 00");
-                $(id).attr("placeholder", "+3 (999) 999 99 99");
+                $(id).mask("+38 (000) 000 00 00");
+                $(id).attr("placeholder", "+38 (999) 999 99 99");
                 $(id).val("");
             }
         }
@@ -751,6 +751,18 @@ jQuery(function ($) {
         //body works for Chrome but not FFX
         //This strange selector seems to work universally
         $("html, body").scrollTop(0);
+    });
+
+    $("#contact_modal_submit_btn").on("click", function (e) {
+        e.preventDefault();
+    });
+
+    $(".modal_form button").on("click", function (e) {
+        e.preventDefault();
+    });
+
+    $(".estate_form_wrap form button").on("click", function (e) {
+        e.preventDefault();
     });
 
     // $(".question_header > button").on("click", function () {
