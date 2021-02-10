@@ -908,9 +908,16 @@ header {
 .phone_select {
     display: flex;
 }
+.content-form-modal .phone_select {
+    border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+}
+.content-form-modal .phone_select #form_phone {
+    border: none;
+}
 .country_icon {
     cursor: pointer;
     position: relative;
+    display: none;
 }
 .country_icon .hidden_countries {
     display: none;
@@ -933,11 +940,26 @@ header {
 .phone_select .country_icon {
     border-bottom: 0.5px solid #6d6d6d;
 }
-
+.sec9_form .phone_select {
+    border-bottom: 0.5px solid #6d6d6d;
+}
+.estate_form_wrap .phone_select {
+    border-bottom: 0.5px solid rgba(15, 76, 129, 0.5);
+}
 .phone_select #form_phone,
 .phone_select #modal_form_phone {
     width: 214px;
     padding-left: 10px;
+    border: none;
+}
+#single_object
+    .object_right_section
+    .callback
+    .callback_form
+    .phone_select
+    #form_phone,
+.estate_form_wrap .phone_select #form_phone {
+    margin-left: 35px;
 }
 
 .filter_top {

@@ -173,6 +173,34 @@ jQuery(function ($) {
         }
     );
 
+    $("#main_filter .filter_input#price_from").on("focus", function () {
+        setTimeout(function () {
+            $(this).blur();
+            $("#main_filter .hidden_dropdown #hidden_price_from").focus();
+        }, 300);
+    });
+
+    $("#main_filter .filter_input#price_to").on("focus", function () {
+        setTimeout(function () {
+            $(this).blur();
+            $("#main_filter .hidden_dropdown #hidden_price_to").focus();
+        }, 300);
+    });
+
+    $("#main_filter .filter_input#space_from").on("focus", function () {
+        setTimeout(function () {
+            $(this).blur();
+            $("#main_filter .hidden_dropdown #hidden_space_from").focus();
+        }, 300);
+    });
+
+    $("#main_filter .filter_input#space_to").on("focus", function () {
+        setTimeout(function () {
+            $(this).blur();
+            $("#main_filter .hidden_dropdown #hidden_space_to").focus();
+        }, 300);
+    });
+
     $(".filter_input_wrap.space").on("mousedown", function (e) {
         if ($(window).width() < 576) {
             if ($("#filter_mob_bg").length) {
@@ -218,7 +246,7 @@ jQuery(function ($) {
         }
     );
     $("#main_filter .country_wrap #country").on("keyup", function (e) {
-        $("#main_filter .country_wrap #country").focus();
+        // $("#main_filter .country_wrap #country").focus();
     });
 
     $("#hidden_space_from").on("change", function () {
@@ -596,39 +624,41 @@ jQuery(function ($) {
         setMask(phone_input, e.target);
     });
 
-    setMask(".phone_select > input", ".selected_modal_country");
-    setMask("#form_phone", ".selected_country");
     // =========================== FORM COUNTRY SELECT ===========================
 
-    // =========================== MASK ===========================
-    function setMask(id, selected) {
-        let code = $(selected).data("value");
-        switch (code) {
-            case "ua": {
-                $(id).mask("+38 (000) 000 00 00");
-                $(id).attr("placeholder", "+38 (999) 999 99 99");
-                $(id).val("");
-                break;
-            }
-            case "ru": {
-                $(id).mask("+7 (000) 000 00 00");
-                $(id).attr("placeholder", "+7 (999) 999 99 99");
-                $(id).val("");
-                break;
-            }
-            case "kz": {
-                $(id).mask("8 (000) 000 00 00");
-                $(id).attr("placeholder", "8 (999) 999 99 99");
-                $(id).val("");
-                break;
-            }
-            default: {
-                $(id).mask("+38 (000) 000 00 00");
-                $(id).attr("placeholder", "+38 (999) 999 99 99");
-                $(id).val("");
-            }
-        }
-    }
+    // // =========================== MASK ===========================
+    // function setMask(id, selected) {
+    //     let code = $(selected).data("value");
+    //     switch (code) {
+    //         case "ua":
+    //             {
+    //                 $(id).mask("+3 (000) 000 00 00");
+    //                 $(id).attr("placeholder", "+3 (999) 999 99 99");
+    //                 $(id).val("");
+    //                 break;
+    //             }
+    //         case "ru":
+    //             {
+    //                 $(id).mask("+7 (000) 000 00 00");
+    //                 $(id).attr("placeholder", "+7 (999) 999 99 99");
+    //                 $(id).val("");
+    //                 break;
+    //             }
+    //         case "kz":
+    //             {
+    //                 $(id).mask("8 (000) 000 00 00");
+    //                 $(id).attr("placeholder", "8 (999) 999 99 99");
+    //                 $(id).val("");
+    //                 break;
+    //             }
+    //         default:
+    //             {
+    //                 $(id).mask("+3 (000) 000 00 00");
+    //                 $(id).attr("placeholder", "+3 (999) 999 99 99");
+    //                 $(id).val("");
+    //             }
+    //     }
+    // }
     // =========================== MASK ===========================
 
     // =================== MOBILE MENU ========================
@@ -750,19 +780,57 @@ jQuery(function ($) {
         //html works for FFX but not Chrome
         //body works for Chrome but not FFX
         //This strange selector seems to work universally
-        $("html, body").scrollTop(0);
+        $("html, body").animate({ scrollTop: 0 }, 250);
     });
 
-    $("#contact_modal_submit_btn").on("click", function (e) {
-        e.preventDefault();
+    $(document).ready(function () {
+        let code = $(".iti__country-list > li");
+        $(".phone_select #form_phone").attr(
+            "placeholder",
+            `+38 (099) 999-99-99`
+        );
+        $(".phone_select #form_phone").mask(`+38 (099) 999-99-99`);
+
+        $(".phone_select #modal_form_phone").attr(
+            "placeholder",
+            `+38 (099) 999-99-99`
+        );
+        $(".phone_select #modal_form_phone").mask(`+38 (099) 999-99-99`);
     });
 
-    $(".modal_form button").on("click", function (e) {
-        e.preventDefault();
-    });
+    $(document).on("click", ".iti__country-list li", function (e) {
+        // console.log($(e.currentTarget).parent().parent().parent());
+        // $(this)
+        //     .parent()
+        //     .parent()
+        //     .parent()
+        //     .find("input")
+        //     .attr(
+        //         "placeholder",
+        //         `${$(this).find(".iti__dial-code").text()} (099) 999-99-99`
+        //     );
 
-    $(".estate_form_wrap form button").on("click", function (e) {
-        e.preventDefault();
+        // $(this)
+        //     .parent()
+        //     .parent()
+        //     .parent()
+        //     .find("input")
+        //     .mask(`${$(this).find(".iti__dial-code").text()} (000) 000 00 00`);
+        $("form .phone_select #form_phone").attr(
+            "placeholder",
+            `${$(this).find(".iti__dial-code").text()} (099) 999-99-99`
+        );
+        $("form .phone_select #form_phone").mask(
+            `${$(this).find(".iti__dial-code").text()} (000) 000 00 00`
+        );
+
+        $("form .phone_select #modal_form_phone").attr(
+            "placeholder",
+            `${$(this).find(".iti__dial-code").text()} (099) 999-99-99`
+        );
+        $("form .phone_select #modal_form_phone").mask(
+            `${$(this).find(".iti__dial-code").text()} (000) 000 00 00`
+        );
     });
 
     // $(".question_header > button").on("click", function () {

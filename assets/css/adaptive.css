@@ -434,7 +434,8 @@
         margin-bottom: 15px;
     }
     .reviews_slider .single_review .info .text p {
-        font-size: 14px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .reviews_slider .single_review {
         z-index: 1;
@@ -680,6 +681,9 @@
 }
 
 @media (max-width: 576px) {
+    .sec2_content_down .title {
+        font-size: 17px;
+    }
     .main_sec1_title {
         font-size: 24px;
         line-height: 29px;
@@ -689,11 +693,12 @@
         line-height: 20px;
     }
     .sec2_content_up .text {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
+        width: 91%;
     }
     .sec2_content_down .bottom div .subtitle {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 17px;
     }
     .sec2_content_up {
@@ -712,16 +717,16 @@
         line-height: 14px;
     }
     #main_section4 .mobile_hidden_link {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 16px;
     }
     .single_news .subtitle {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .single_news .text {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .sec5_title {
         font-size: 24px;
@@ -732,12 +737,12 @@
         line-height: 29px;
     }
     .sec6_subtitle {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
         margin-bottom: 10px;
     }
     .sec6_subtitle span {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .mobile_card_img {
@@ -750,12 +755,12 @@
         display: none;
     }
     .sec6_steps .single_step .title {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
         margin-bottom: 5px;
     }
     .sec6_steps .single_step .text {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .sec6_steps .single_step .num {
@@ -775,7 +780,7 @@
         line-height: 20px;
     }
     .sec7_text {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .sec7_left button,
@@ -795,7 +800,7 @@
         line-height: 29px;
     }
     .sec8_text {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .about_info .about_title {
@@ -804,8 +809,8 @@
     }
     .about_info .about_subtitle {
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .about_items {
         flex-direction: column;
@@ -831,6 +836,10 @@
     }
     .sec9_form .subtitle {
         font-size: 14px;
+        line-height: 20px;
+    }
+    .reviews_slider .single_review.slick-center .info .text p {
+        font-size: 17px;
         line-height: 20px;
     }
     .sec9_form .inputs > .about_input {
@@ -1022,6 +1031,11 @@
         top: -10px !important;
         overflow: scroll;
     }
+
+    .estate_filter_wrap #main_filter #country_parent .hidden_dropdown {
+        top: 35px !important;
+    }
+
     .estate_filter_wrap .mobile_filter_header {
         display: flex;
         align-items: center;
@@ -1320,8 +1334,8 @@
         margin-top: 20px;
     }
     #estate_section5 .about_info .about_subtitle {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     #estate_section5 .about_items .about_item {
         border-left: none;
@@ -1361,7 +1375,7 @@
         line-height: 19px;
     }
     .estate_faq_wrap .single_question .single_question_body p {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .estate_faq_wrap .single_question {
@@ -1390,6 +1404,8 @@
     }
     .single_country_object .info_wrap .price button {
         display: block;
+        width: 25px;
+        height: 25px;
     }
     .single_country_object .info_wrap .place button,
     .single_country_object .info_wrap .description {
@@ -1399,16 +1415,16 @@
         padding: 30px 0 0;
     }
     .single_country_object .info_wrap .help_price {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
         margin-bottom: 12px;
     }
     .single_country_object .info_wrap .info p {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .single_country_object .info_wrap .help_info {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .single_country_object .info_wrap .info .divider {
@@ -1602,7 +1618,8 @@
     #single_object .object_right_section .info p,
     #single_object .object_right_section .categories,
     #single_object .object_right_section .help_info {
-        font-size: 14px;
+        font-size: 17px;
+        line-height: 20px;
     }
     #single_object .object_right_section .categories {
         margin-top: 10px;
@@ -1633,13 +1650,13 @@
         line-height: 19px;
     }
     #single_object .single_object_left_info .specifications .single_spec .type {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     #single_object .single_object_left_info .specifications .single_spec .value,
     #single_object .single_object_left_info .description p {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     #single_object .single_object_left_info .specifications {
         padding-bottom: 10px;
@@ -1664,7 +1681,7 @@
         .callback_info
         .info_info
         .subtitle {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     #single_object .object_right_section .callback .callback_info > img {
@@ -1766,6 +1783,9 @@
         font-size: 14px;
         line-height: 17px;
     }
+    .single_country_object .info_wrap .place p {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1817,7 +1837,7 @@
         max-width: 100%;
     }
     .about_info .advs .single_adv .text {
-        font-size: 15px;
+        font-size: 17px;
     }
     .about_info .advs .single_adv .text br {
         display: none;
@@ -1844,6 +1864,7 @@
     }
     #single_object .single_object_left_info .description p {
         font-size: 17px;
+        line-height: 20px;
     }
     #single_object .single_object_left_info .description h3 {
         font-size: 23px;
@@ -1855,7 +1876,7 @@
         width: 100%;
     }
     .about_info .advs .single_adv .text {
-        font-size: 14px;
+        font-size: 17px;
     }
     #alternate_form_block {
         background: url("../img/alternate_mob_bg.jpg") no-repeat;
