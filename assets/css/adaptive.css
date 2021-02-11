@@ -681,6 +681,10 @@
 }
 
 @media (max-width: 576px) {
+    .estate_doubled_block .left_info ul li a,
+    .estate_single_block ul li a {
+        font-size: 17px;
+    }
     .sec2_content_down .title {
         font-size: 17px;
     }
@@ -698,7 +702,7 @@
         width: 91%;
     }
     .sec2_content_down .bottom div .subtitle {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 17px;
     }
     .sec2_content_up {
@@ -1233,12 +1237,12 @@
     }
     .estate_doubled_block .left_info .left_info_title,
     .estate_single_block .left_info_title {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
         margin-bottom: 15px;
     }
     .estate_single_with_form .estate_single_subtitle {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .estate_single_block {
@@ -1270,20 +1274,20 @@
         margin: 0 10px;
     }
     .estate_single_card .info_wrap .info p {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .estate_single_card .info_wrap .info span {
         font-size: 14px;
         line-height: 17px;
     }
     .estate_single_card .info_wrap .info1 {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 20px;
     }
     .estate_single_card .info_wrap .info2 {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 17px;
+        line-height: 20px;
         margin-bottom: 0;
     }
     .estate_single_card .info_wrap .date {
@@ -1567,9 +1571,14 @@
         font-size: 14px;
         line-height: 17px;
     }
-    #single_object .object_right_section .title,
-    #single_object .object_right_section .price a {
+    #single_object .object_right_section .title {
         display: none;
+    }
+
+    #single_object .object_right_section .price a {
+        position: absolute;
+        right: 0;
+        bottom: -30px;
     }
     #single_object .object_right_section .price button {
         display: block;
@@ -1607,6 +1616,7 @@
     }
     #single_object .object_right_section .price {
         justify-content: space-between;
+        position: relative;
     }
     #single_object .object_right_section .price p {
         color: #0f4c81;
@@ -1738,7 +1748,7 @@
     }
     #single_object .object_right_section .date,
     #single_object .object_right_section .views p {
-        font-size: 12px;
+        font-size: 15px;
     }
     #main_section7 .sec7_right {
         display: none;
@@ -1784,6 +1794,25 @@
         line-height: 17px;
     }
     .single_country_object .info_wrap .place p {
+        font-size: 17px;
+    }
+    .estate_single_card .info_wrap .help_price {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .all-project {
+        font-size: 17px;
+    }
+    .lc-name-text2 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .lc-adv-item,
+    .ib_text,
+    .content-info__item p,
+    .gar-adv_item p,
+    .gar-left-text,
+    .fonds-content__list-item {
         font-size: 17px;
     }
 }
