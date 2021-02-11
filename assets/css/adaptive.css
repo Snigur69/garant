@@ -1237,7 +1237,7 @@
     }
     .estate_doubled_block .left_info .left_info_title,
     .estate_single_block .left_info_title {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 20px;
         margin-bottom: 15px;
     }
@@ -1691,7 +1691,7 @@
         .callback_info
         .info_info
         .subtitle {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 20px;
     }
     #single_object .object_right_section .callback .callback_info > img {
