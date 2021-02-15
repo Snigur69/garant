@@ -2696,6 +2696,9 @@ input[type="number"] {
     height: 51px;
     width: 81px;
 }
+.modal_favourites_content .modal_fav_object .info {
+    width: calc(100% - 81px);
+}
 .modal_favourites_content .modal_fav_object .info .title {
     font-style: normal;
     font-weight: 500;

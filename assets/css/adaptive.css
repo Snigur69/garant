@@ -224,6 +224,9 @@
 }
 
 @media (max-width: 992px) {
+    .header_mob_wrap:hover .header_hidden_phones {
+        display: none;
+    }
     .header_menu {
         display: none;
     }
