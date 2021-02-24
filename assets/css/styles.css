@@ -237,7 +237,7 @@ header {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: -57px;
+    bottom: -85px;
     background: #ffffff;
     border: 1px solid #f1f1f1;
     box-sizing: border-box;
@@ -1147,7 +1147,7 @@ header {
 }
 .space_from_label input {
     margin-left: 3px;
-    width: 20px;
+    width: 25px;
     min-width: 20px !important;
 }
 .space_to_label input {
@@ -3421,6 +3421,92 @@ input[type="number"] {
 
     color: #8a8a8a;
     margin: 0;
+}
+#main_filter .hidden_price .filter_additional_prices {
+    display: block;
+}
+#main_filter .filter_additional_prices .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+#main_filter .filter_additional_prices .variant {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+#main_filter .filter_additional_prices .variant img {
+    margin-right: 10px;
+    max-width: 21px;
+    max-height: 14px;
+}
+#main_filter .filter_additional_prices .variant p {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #4a7aa3;
+}
+#main_filter .hidden_space {
+    max-height: unset;
+}
+#main_filter .addition_hidden_space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#main_filter .hidden_space .space_variants {
+    margin: 0;
+    list-style: none;
+    width: 112px;
+}
+#main_filter .hidden_space .space_variants li {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
+}
+#main_filter .hidden_space .space_variants li:hover {
+    color: #0f4c81;
+}
+#main_filter .country_wrap .help_cities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#main_filter .country_wrap .help_cities span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #3f89ca;
+    cursor: pointer;
+}
+.filter_top {
+    align-items: flex-start;
+}
+#main_filter .filter_input_wrap.country_wrap::after {
+    bottom: unset;
+    top: 3px;
+}
+.estate_filter_wrap #main_filter .country_wrap .help_cities span {
+    font-size: 15px;
 }
 /* ================ BODY ================ */
 

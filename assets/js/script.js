@@ -472,7 +472,8 @@ jQuery(function ($) {
             if (e.target.nodeName === "DIV") {
                 if (
                     !$(e.target).hasClass("hidden_space") &&
-                    !$(e.target).hasClass("hidden_space_help")
+                    !$(e.target).hasClass("hidden_space_help") &&
+                    !$(e.target).hasClass("addition_hidden_space")
                 ) {
                     $(".hidden_space").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
@@ -496,6 +497,18 @@ jQuery(function ($) {
                     $(".filter_input_wrap").removeClass("open");
                     toggleHelpFilter();
                 }
+            } else if (e.target.nodeName === "UL") {
+                if (!$(e.target).hasClass("space_variants")) {
+                    $(".hidden_space").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
+                }
+            } else if (e.target.nodeName === "LI") {
+                if (!$(e.target).parent().hasClass("space_variants")) {
+                    $(".hidden_space").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
+                }
             } else {
                 $(".hidden_space").removeClass("active");
                 $(".filter_input_wrap").removeClass("open");
@@ -509,7 +522,9 @@ jQuery(function ($) {
                     !$(e.target).hasClass("hidden_price") &&
                     !$(e.target).hasClass("hidden_price_help") &&
                     !$(e.target).hasClass("price_variants") &&
-                    !$(e.target).hasClass("price_wallet")
+                    !$(e.target).hasClass("price_wallet") &&
+                    !$(e.target).hasClass("filter_additional_prices") &&
+                    !$(e.target).hasClass("variant")
                 ) {
                     $(".hidden_price").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
@@ -540,6 +555,21 @@ jQuery(function ($) {
                 }
             } else if (e.target.nodeName === "BUTTON") {
                 if (!$(e.target).hasClass("wallet")) {
+                    $(".hidden_price").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
+                }
+            } else if (e.target.nodeName === "P") {
+                if (
+                    !$(e.target).hasClass("additional_title") &&
+                    !$(e.target).parent().hasClass("variant")
+                ) {
+                    $(".hidden_price").removeClass("active");
+                    $(".filter_input_wrap").removeClass("open");
+                    toggleHelpFilter();
+                }
+            } else if (e.target.nodeName === "IMG") {
+                if (!$(e.target).parent().hasClass("variant")) {
                     $(".hidden_price").removeClass("active");
                     $(".filter_input_wrap").removeClass("open");
                     toggleHelpFilter();

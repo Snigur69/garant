@@ -1818,6 +1818,15 @@
     .fonds-content__list-item {
         font-size: 17px;
     }
+    #main_filter {
+        bottom: -150px;
+    }
+    .estate_filter_wrap #main_filter .country_wrap .help_cities span {
+        font-size: 14px;
+    }
+    .estate_filter_wrap #main_filter .country_wrap .help_cities {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 480px) {
