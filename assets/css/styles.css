@@ -3491,7 +3491,7 @@ input[type="number"] {
 #main_filter .country_wrap .help_cities span {
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 20px;
     text-align: justify;
     letter-spacing: 0.01em;
@@ -3506,7 +3506,7 @@ input[type="number"] {
     top: 3px;
 }
 .estate_filter_wrap #main_filter .country_wrap .help_cities span {
-    font-size: 15px;
+    font-size: 10px;
 }
 /* ================ BODY ================ */
 

@@ -1821,8 +1821,14 @@
     #main_filter {
         bottom: -150px;
     }
+    #main_filter .country_wrap .help_cities span {
+        font-size: 13px;
+    }
     .estate_filter_wrap #main_filter .country_wrap .help_cities span {
         font-size: 14px;
+    }
+    #main_filter .country_wrap .help_cities span.desktop_variant {
+        display: none;
     }
     .estate_filter_wrap #main_filter .country_wrap .help_cities {
         justify-content: space-around;
