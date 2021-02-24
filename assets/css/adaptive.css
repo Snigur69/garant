@@ -227,11 +227,31 @@
     .header_mob_wrap:hover .header_hidden_phones {
         display: none;
     }
+    .header_mob_wrap {
+        margin-right: 18px;
+        position: relative;
+    }
+
+    .header_mob_wrap::after {
+        position: absolute;
+        right: -18px;
+        top: -4px;
+        content: " ";
+        height: 31px;
+        width: 1px;
+        background: rgba(15, 76, 129, 0.1);
+    }
+    .header_favourites_link {
+        margin-left: 18px;
+    }
+
     .header_menu {
         display: none;
     }
     .header_logo img {
-        width: auto;
+        /* width: auto; */
+        width: 100px;
+        padding: 9px 0;
         margin: 0 auto;
         position: relative;
         z-index: 3;
